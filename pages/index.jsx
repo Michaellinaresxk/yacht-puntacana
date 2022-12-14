@@ -2,7 +2,7 @@ import Head from "next/head";
 import { ThemeProvider } from "@mui/system";
 import DrawerAppBar from "../components/Header/DrawerAppBar";
 import { theme } from "../styles/theme";
-
+ 
 export default function Home() {
 	return (
 		<>
