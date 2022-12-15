@@ -1,8 +1,11 @@
 import Head from "next/head";
 import { ThemeProvider } from "@mui/system";
 import DrawerAppBar from "../components/Header/DrawerAppBar";
+import { Banner } from "../components/Banner";
 import { theme } from "../styles/theme";
- 
+import { Footer } from "../components/Footer";
+import { Contact } from "../components/Contact";
+
 export default function Home() {
 	return (
 		<>
@@ -13,6 +16,9 @@ export default function Home() {
 					<link rel="icon" href="/favicon.ico" />
 				</Head>
 				<DrawerAppBar />
+				<Banner />
+				<Contact />
+				<Footer />
 			</ThemeProvider>
 		</>
 	);
