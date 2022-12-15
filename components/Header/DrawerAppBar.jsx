@@ -12,6 +12,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Colors } from "../../styles/theme";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import "@fontsource/raleway";
 import "@fontsource/open-sans";
 
@@ -119,7 +121,7 @@ function DrawerAppBar(props) {
 							display: { xs: "none", sm: "block" },
 						}}
 					>
-						{navItems.map((item) => (
+						{/* {navItems.map((item) => (
 							<Button
 								key={item}
 								sx={{
@@ -130,9 +132,54 @@ function DrawerAppBar(props) {
 									marginRight: "30px",
 								}}
 							>
-								{item}
+								<Link href={}>{item}</Link>
 							</Button>
-						))}
+						))} */}
+
+						<Button
+							sx={{
+								color: Colors.title,
+								fontFamily: "Raleway",
+								fontWeight: "700",
+								fontSize: { md: "14px", lg: "18px" },
+								marginRight: "30px",
+							}}
+						>
+							<Link href="/">Inicio</Link>
+						</Button>
+						<Button
+							sx={{
+								color: Colors.title,
+								fontFamily: "Raleway",
+								fontWeight: "700",
+								fontSize: { md: "14px", lg: "18px" },
+								marginRight: "30px",
+							}}
+						>
+							<Link href="/services">Servicios</Link>
+						</Button>
+						<Button
+							sx={{
+								color: Colors.title,
+								fontFamily: "Raleway",
+								fontWeight: "700",
+								fontSize: { md: "14px", lg: "18px" },
+								marginRight: "30px",
+							}}
+						>
+							<Link href="/destiny">Destino</Link>
+						</Button>
+						<Button
+							sx={{
+								color: Colors.title,
+								fontFamily: "Raleway",
+								fontWeight: "700",
+								fontSize: { md: "14px", lg: "18px" },
+								marginRight: "30px",
+							}}
+						>
+							<Link href="/contact_us">Contact</Link>
+						</Button>
 					</Box>
 				</Toolbar>
 			</AppBar>
