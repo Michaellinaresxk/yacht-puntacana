@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material/styles";
 export const Colors = {
 	primary: "#154875",
 	secondary: "#868589",
-	title: "#154875",
+	title: "rgba(0, 0, 0, 0.7)",
 	body: "#fafafa",
 	white: "#FFF",
 };
