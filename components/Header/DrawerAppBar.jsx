@@ -13,7 +13,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Colors } from "../../styles/theme";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { SelectLanguageButton } from "../buttons/SelectLanguageButton";
 import "@fontsource/raleway";
 import "@fontsource/open-sans";
 
@@ -81,7 +81,9 @@ function DrawerAppBar(props) {
 			<AppBar
 				component="nav"
 				sx={{
+					display: "flex",
 					justifyContent: "space-between",
+					alignItems: "center",
 					backgroundColor: Colors.white,
 				}}
 			>
@@ -115,6 +117,18 @@ function DrawerAppBar(props) {
 							alt="yatch logo company"
 							style={{ width: "200px", height: "50px", marginLeft: "30px" }}
 						/>
+					</Box>
+
+					<Box
+						sx={{
+							display: "flex",
+							flexGrow: 1,
+							alignItems: "center",
+							justifyContent: "center",
+							marginRight: "200px",
+						}}
+					>
+						<SelectLanguageButton />
 					</Box>
 					<Box
 						sx={{
