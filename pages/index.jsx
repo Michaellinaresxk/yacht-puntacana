@@ -6,7 +6,6 @@ import { theme } from "../styles/theme";
 import { Footer } from "../components/Footer";
 import { Contact } from "../components/Contact";
 import { WhatsAppButton } from "../components/buttons/WhatsAppButton";
-import { Typography } from "@mui/material";
 
 export default function Home() {
 	return (
