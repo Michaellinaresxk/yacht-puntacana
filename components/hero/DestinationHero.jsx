@@ -8,20 +8,22 @@ export const DestinationHero = () => {
            <Paper
                 sx={{
                     backgroundImage: "url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1671227462/DJI_0344_wxwfit.jpg)",
-                    width: "100wv",
+                    width: "100%",
                     maxWidth: "100%",
                     height: "400px",
-                    backgroundPosition: "center",
+                    backgroundPosition: "50% 50%",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
                 }}
 		        >
                 <Box sx={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "centeer",
-                        alignItems: "center",
-                        // position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    // position: "absolute",
                     }}>
                     <Typography  variant="h2">DESTINATIONS:</Typography>
                     <Typography  variant="h4">Choose one of the destinations we have for you.</Typography>
