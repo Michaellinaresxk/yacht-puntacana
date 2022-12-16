@@ -9,7 +9,7 @@ export const Contact = () => {
 				sx={{
 					display: "flex",
 					flexDirection: "column",
-					backgroundColor: Colors.primary,
+					backgroundColor: Colors.blur_blue,
 					alignContent: "space-between",
 					justifyContent: "center",
 					width: "100%",
