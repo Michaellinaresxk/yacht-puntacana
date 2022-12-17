@@ -1,13 +1,21 @@
 import DrawerAppBar from "../components/Header/DrawerAppBar";
 import { ContactHero } from "../components/hero/ContactHero";
-import { ContactPageIcons } from "../components/icons/ContactPageIcons";
+import { ContactIcons } from "../components/icons/ContactIcons";
+
+import { LocationOn } from "@mui/icons-material";
+
+const icon = <LocationOn />;
 
 function contact_us() {
 	return (
 		<>
 			<DrawerAppBar />
 			<ContactHero />
-			<ContactPageIcons />
+			<ContactIcons
+				icon={icon}
+				contact="Direccion"
+				contact_value="Casa de Campo"
+			/>
 		</>
 	);
 }
