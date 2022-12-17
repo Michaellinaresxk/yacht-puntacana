@@ -1,13 +1,13 @@
 import DrawerAppBar from "../components/Header/DrawerAppBar";
 import { ContactHero } from "../components/hero/ContactHero";
-import { ContactPageIcons } from "../components/icons/ContactPageIcons";
+import { ContactGroupIcons } from "../components/icons/ContactGroupIcons";
 
 function contact_us() {
 	return (
 		<>
 			<DrawerAppBar />
 			<ContactHero />
-			<ContactPageIcons />
+			<ContactGroupIcons />
 		</>
 	);
 }
