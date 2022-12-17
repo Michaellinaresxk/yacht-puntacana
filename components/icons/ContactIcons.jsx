@@ -10,8 +10,7 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 					display: "flex",
 					flexDirection: "column",
 					justifyContent: "space-between",
-					backgroundColor: "#eeeeee",
-					border: "1px solid red",
+					backgroundColor: "white",
 					marginTop: "30px",
 					marginLeft: "100px",
 					marginBottom: "100px",
@@ -21,7 +20,14 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 				}}
 			>
 				<Box>
-					<Avatar sx={{ color: "white", backgroundColor: Colors.soft_blue }}>
+					<Avatar
+						sx={{
+							color: "white",
+							backgroundColor: Colors.soft_blue,
+							width: "70px",
+							height: "70px",
+						}}
+					>
 						{icon}
 					</Avatar>
 				</Box>
