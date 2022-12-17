@@ -11,11 +11,9 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 					flexDirection: "column",
 					justifyContent: "space-between",
 					backgroundColor: "white",
-					marginTop: "30px",
-					marginLeft: "100px",
 					marginBottom: "100px",
 					alignItems: "center",
-					width: "20%",
+					width: "10%",
 					height: "5%",
 				}}
 			>
@@ -23,7 +21,7 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 					<Avatar
 						sx={{
 							color: "white",
-							backgroundColor: Colors.soft_blue,
+							backgroundColor: Colors.second_blue,
 							width: "70px",
 							height: "70px",
 						}}
@@ -31,9 +29,22 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 						{icon}
 					</Avatar>
 				</Box>
-				<Box sx={{ marginTop: "30px" }}>
+				<Box
+					sx={{
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: "center",
+						alignItems: "center",
+						marginTop: "30px",
+					}}
+				>
 					<Typography variant="subtitle1">{contact}:</Typography>
-					<Typography variant="subtitle1">{contact_value}</Typography>
+					<Typography
+						variant="subtitle1"
+						sx={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.6)" }}
+					>
+						{contact_value}
+					</Typography>
 				</Box>
 			</Box>
 		</>
