@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { ThemeProvider } from "@mui/system";
 import DrawerAppBar from "../components/Header/DrawerAppBar";
-import { Banner } from "../components/Banner";
+import { MainBanner } from "../components/MainBanner";
 import { theme } from "../styles/theme";
 import { Footer } from "../components/Footer";
-import { Contact } from "../components/Contact";
+import { SupportBanner } from "../components/SupportBanner";
 import { WhatsAppButton } from "../components/buttons/WhatsAppButton";
 import { MainTitle } from "../components/MainTitle";
 import { BannerImageClip } from "../components/BannerImageClip";
@@ -26,9 +26,9 @@ export default function Home() {
 					/>
 				</Head>
 				<DrawerAppBar />
-				<Banner />
+				<MainBanner />
 				<MainTitle />
-				<Contact />
+				<SupportBanner />
 				<BannerImageClip />
 				<Footer />
 				<WhatsAppButton />

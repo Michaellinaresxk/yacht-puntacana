@@ -2,7 +2,7 @@ import { Typography, Paper, Button, Box } from "@mui/material";
 import { WhatsApp, Email, Phone } from "@mui/icons-material";
 import { Colors } from "../styles/theme";
 
-export const Contact = () => {
+export const SupportBanner = () => {
 	return (
 		<>
 			<Paper
