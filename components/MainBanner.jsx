@@ -1,6 +1,6 @@
 import { Paper, Typography, Box, Button } from "@mui/material";
 
-export const Banner = () => {
+export const MainBanner = () => {
 	return (
 		<>
 			<Box sx={{ marginTop: 0 }}>
