@@ -8,6 +8,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import { CssBaseline } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
@@ -73,69 +74,71 @@ function DrawerAppBar(props) {
 		window !== undefined ? () => window().document.body : undefined;
 
 	return (
-		<Box
-			sx={{
-				display: "flex",
-			}}
-		>
-			<AppBar
-				component="nav"
+		<>
+			<CssBaseline />
+			<Box
 				sx={{
 					display: "flex",
-					justifyContent: "space-between",
-					alignItems: "center",
-					backgroundColor: Colors.white,
 				}}
 			>
-				<Toolbar>
-					<IconButton
-						color="inherit"
-						aria-label="open drawer"
-						edge="start"
-						onClick={handleDrawerToggle}
-						sx={{ mr: 2, display: { sm: "none" } }}
-					>
-						<MenuIcon
-							sx={{ color: Colors.title, width: "40px", height: "40px" }}
-						/>
-					</IconButton>
-					{/* <Typography
+				<AppBar
+					component="nav"
+					sx={{
+						display: "flex",
+						justifyContent: "space-between",
+						alignItems: "center",
+						backgroundColor: Colors.white,
+					}}
+				>
+					<Toolbar>
+						<IconButton
+							color="inherit"
+							aria-label="open drawer"
+							edge="start"
+							onClick={handleDrawerToggle}
+							sx={{ mr: 2, display: { sm: "none" } }}
+						>
+							<MenuIcon
+								sx={{ color: Colors.title, width: "40px", height: "40px" }}
+							/>
+						</IconButton>
+						{/* <Typography
 						variant="h6"
 						component="div"
 						sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
 					>
 						MUI
 					</Typography> */}
-					<Box
-						sx={{
-							flexGrow: 1,
-							display: { xs: "none", sm: "block" },
-						}}
-					>
-						<Image
-							src={yatch_logo}
-							alt="yatch logo company"
-							style={{ width: "200px", height: "50px", marginLeft: "30px" }}
-						/>
-					</Box>
+						<Box
+							sx={{
+								flexGrow: 1,
+								display: { xs: "none", sm: "block" },
+							}}
+						>
+							<Image
+								src={yatch_logo}
+								alt="yatch logo company"
+								style={{ width: "200px", height: "50px", marginLeft: "30px" }}
+							/>
+						</Box>
 
-					<Box
-						sx={{
-							display: "flex",
-							flexGrow: 1,
-							alignItems: "center",
-							justifyContent: "center",
-							marginRight: "200px",
-						}}
-					>
-						<SelectLanguageButton />
-					</Box>
-					<Box
-						sx={{
-							display: { xs: "none", sm: "block" },
-						}}
-					>
-						{/* {navItems.map((item) => (
+						<Box
+							sx={{
+								display: "flex",
+								flexGrow: 1,
+								alignItems: "center",
+								justifyContent: "center",
+								marginRight: "200px",
+							}}
+						>
+							<SelectLanguageButton />
+						</Box>
+						<Box
+							sx={{
+								display: { xs: "none", sm: "block" },
+							}}
+						>
+							{/* {navItems.map((item) => (
 							<Button
 								key={item}
 								sx={{
@@ -150,77 +153,78 @@ function DrawerAppBar(props) {
 							</Button>
 						))} */}
 
-						<Button
-							sx={{
-								color: Colors.title,
-								fontFamily: "Raleway",
-								fontWeight: "700",
-								fontSize: { md: "14px", lg: "18px" },
-								marginRight: "30px",
-							}}
-						>
-							<Link href="/">Inicio</Link>
-						</Button>
-						<Button
-							sx={{
-								color: Colors.title,
-								fontFamily: "Raleway",
-								fontWeight: "700",
-								fontSize: { md: "14px", lg: "18px" },
-								marginRight: "30px",
-							}}
-						>
-							<Link href="/services">Servicios</Link>
-						</Button>
-						<Button
-							sx={{
-								color: Colors.title,
-								fontFamily: "Raleway",
-								fontWeight: "700",
-								fontSize: { md: "14px", lg: "18px" },
-								marginRight: "30px",
-							}}
-						>
-							<Link href="/destiny">Destino</Link>
-						</Button>
-						<Button
-							sx={{
-								color: Colors.title,
-								fontFamily: "Raleway",
-								fontWeight: "700",
-								fontSize: { md: "14px", lg: "18px" },
-								marginRight: "30px",
-							}}
-						>
-							<Link href="/contact_us">Contact</Link>
-						</Button>
-					</Box>
-				</Toolbar>
-			</AppBar>
-			<Box component="nav">
-				<Drawer
-					container={container}
-					variant="temporary"
-					open={mobileOpen}
-					onClose={handleDrawerToggle}
-					ModalProps={{
-						keepMounted: true, // Better open performance on mobile.
-					}}
-					sx={{
-						display: { xs: "block", sm: "none" },
-						"& .MuiDrawer-paper": {
-							boxSizing: "border-box",
-							width: drawerWidth,
-						},
-					}}
-				>
-					{drawer}
-				</Drawer>
+							<Button
+								sx={{
+									color: Colors.title,
+									fontFamily: "Raleway",
+									fontWeight: "700",
+									fontSize: { md: "14px", lg: "18px" },
+									marginRight: "30px",
+								}}
+							>
+								<Link href="/">Inicio</Link>
+							</Button>
+							<Button
+								sx={{
+									color: Colors.title,
+									fontFamily: "Raleway",
+									fontWeight: "700",
+									fontSize: { md: "14px", lg: "18px" },
+									marginRight: "30px",
+								}}
+							>
+								<Link href="/services">Servicios</Link>
+							</Button>
+							<Button
+								sx={{
+									color: Colors.title,
+									fontFamily: "Raleway",
+									fontWeight: "700",
+									fontSize: { md: "14px", lg: "18px" },
+									marginRight: "30px",
+								}}
+							>
+								<Link href="/destiny">Destino</Link>
+							</Button>
+							<Button
+								sx={{
+									color: Colors.title,
+									fontFamily: "Raleway",
+									fontWeight: "700",
+									fontSize: { md: "14px", lg: "18px" },
+									marginRight: "30px",
+								}}
+							>
+								<Link href="/contact_us">Contact</Link>
+							</Button>
+						</Box>
+					</Toolbar>
+				</AppBar>
+				<Box component="nav">
+					<Drawer
+						container={container}
+						variant="temporary"
+						open={mobileOpen}
+						onClose={handleDrawerToggle}
+						ModalProps={{
+							keepMounted: true, // Better open performance on mobile.
+						}}
+						sx={{
+							display: { xs: "block", sm: "none" },
+							"& .MuiDrawer-paper": {
+								boxSizing: "border-box",
+								width: drawerWidth,
+							},
+						}}
+					>
+						{drawer}
+					</Drawer>
+				</Box>
+				<Box component="main" sx={{ p: 3 }}>
+					<Toolbar />
+				</Box>
 			</Box>
-			<Box component="main" sx={{ p: 3 }}>
-				<Toolbar />
-			</Box>
-		</Box>
+		</>
 	);
 }
 
