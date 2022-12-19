@@ -8,6 +8,7 @@ import { SupportBanner } from "../components/SupportBanner";
 import { WhatsAppButton } from "../components/buttons/WhatsAppButton";
 import { MainTitle } from "../components/MainTitle";
 import { BannerImageClip } from "../components/BannerImageClip";
+import { BookNowButton } from "../components/buttons/BookNowButton";
 import TabsHomeComponent from "../components/TabsHomeComponent";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
 				<DrawerAppBar />
 				<MainBanner />
 				<MainTitle />
+				<BookNowButton />
 				<SupportBanner />
 				<TabsHomeComponent />
 				<BannerImageClip />
