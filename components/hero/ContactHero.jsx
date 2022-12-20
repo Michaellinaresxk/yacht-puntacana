@@ -1,6 +1,7 @@
 import { Paper, Box, Typography } from "@mui/material";
+import { Colors } from "../../styles/theme";
 
-export const ContactHero = () => {
+export const ContactHero = ({ theme }) => {
 	return (
 		<>
 			<Paper
@@ -19,11 +20,13 @@ export const ContactHero = () => {
 			>
 				<Box
 					sx={{
-						color: "white",
+						color: Colors.white,
 						// position: "absolute",
 					}}
 				>
-					<Typography variant="h4">Contact Us:</Typography>
+					<Typography variant="h4" color={Colors.white}>
+						Contact Us:
+					</Typography>
 				</Box>
 			</Paper>
 		</>

@@ -13,13 +13,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Colors } from "../../styles/theme";
-import Link from "next/link";
+
 import { SelectLanguageButton } from "../buttons/SelectLanguageButton";
 import "@fontsource/raleway";
 import "@fontsource/open-sans";
 
 import Image from "next/image";
-// Image = img
+import Link from "next/link";
+
 import { useState } from "react";
 
 import yatch_logo from "../../assets/icons/logo-colorfull-1.png";
@@ -37,16 +38,18 @@ function DrawerAppBar(props) {
 
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-			<Image
-				src={yatch_logo}
-				alt="logo image"
-				style={{
-					alignItems: "center",
-					width: "100px",
-					height: "40px",
-					margin: "10px",
-				}}
-			/>
+			<Link href="/">
+				<Image
+					src={yatch_logo}
+					alt="logo image"
+					style={{
+						alignItems: "center",
+						width: "100px",
+						height: "40px",
+						margin: "10px",
+					}}
+				/>
+			</Link>
 			<Divider sx={{ color: Colors.title }} />
 			<List
 				sx={{
@@ -89,6 +92,7 @@ function DrawerAppBar(props) {
 						alignItems: "center",
 						backgroundColor: Colors.white,
 					}}
+					elevation={0}
 				>
 					<Toolbar>
 						<IconButton
@@ -115,11 +119,13 @@ function DrawerAppBar(props) {
 								display: { xs: "none", sm: "block" },
 							}}
 						>
-							<Image
-								src={yatch_logo}
-								alt="yatch logo company"
-								style={{ width: "200px", height: "50px", marginLeft: "30px" }}
-							/>
+							<Link href="/">
+								<Image
+									src={yatch_logo}
+									alt="yatch logo company"
+									style={{ width: "200px", height: "50px", marginLeft: "30px" }}
+								/>
+							</Link>
 						</Box>
 
 						<Box
