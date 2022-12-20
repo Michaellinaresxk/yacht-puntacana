@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { ContactIcons } from "./ContactIcons";
+import Link from "next/link";
 
 import { LocationOn, Phone, Email, Instagram } from "@mui/icons-material";
 
@@ -26,11 +27,13 @@ export const ContactGroupIcons = () => {
 					contact="Dirección"
 					contact_value="Casa Punta Cana"
 				/>
+
 				<ContactIcons
 					icon={phone}
 					contact="Telófono"
 					contact_value="+ 1 829 296 3529"
 				/>
+
 				<ContactIcons
 					icon={email}
 					contact="Correo"

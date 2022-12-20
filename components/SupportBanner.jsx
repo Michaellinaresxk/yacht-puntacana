@@ -1,6 +1,17 @@
 import { Typography, Paper, Button, Box } from "@mui/material";
 import { WhatsApp, Email, Phone } from "@mui/icons-material";
+
 import { Colors } from "../styles/theme";
+import Link from "next/link";
+
+// creating string for links
+
+const whastapp_api =
+	"https://api.whatsapp.com/send?phone=18292963529&text=%C2%A1Bienvenido%20a%20bordo!%20%C2%BFC%C3%B3mo%20podemos%20ayudarte";
+
+const phone_number = "tel:+18292963529";
+
+const email_address = "mailto:booking@yachtpuntacana.com";
 
 export const SupportBanner = () => {
 	return (
@@ -46,56 +57,62 @@ export const SupportBanner = () => {
 						marginLeft: "30%",
 					}}
 				>
-					<Button
-						variant="contained"
-						color="first_blue"
-						sx={{
-							":hover": { backgroundColor: Colors.second_blue },
-						}}
-					>
-						<WhatsApp color="white" />
-						<Typography
-							variant="caption"
-							color={Colors.white}
-							sx={{ marginLeft: 1, width: "65px" }}
+					<Link href={whastapp_api} target="_blank">
+						<Button
+							variant="contained"
+							color="first_blue"
+							sx={{
+								":hover": { backgroundColor: Colors.second_blue },
+							}}
 						>
-							WHATSAPP
-						</Typography>
-					</Button>
-					<Button
-						variant="contained"
-						color="first_blue"
-						sx={{
-							marginLeft: 1,
-							":hover": { backgroundColor: Colors.second_blue },
-						}}
-					>
-						<Phone color="white" />
-						<Typography
-							variant="caption"
-							color={Colors.white}
-							sx={{ marginLeft: 1, width: "65px" }}
+							<WhatsApp color="white" />
+							<Typography
+								variant="caption"
+								color={Colors.white}
+								sx={{ marginLeft: 1, width: "65px" }}
+							>
+								WHATSAPP
+							</Typography>
+						</Button>
+					</Link>
+					<Link href={phone_number}>
+						<Button
+							variant="contained"
+							color="first_blue"
+							sx={{
+								marginLeft: 1,
+								":hover": { backgroundColor: Colors.second_blue },
+							}}
 						>
-							LLAMANOS
-						</Typography>
-					</Button>
-					<Button
-						variant="contained"
-						color="first_blue"
-						sx={{
-							marginLeft: 1,
-							":hover": { backgroundColor: Colors.second_blue },
-						}}
-					>
-						<Email color="white" />
-						<Typography
-							variant="caption"
-							color={Colors.white}
-							sx={{ marginLeft: 1, width: "65px" }}
+							<Phone color="white" />
+							<Typography
+								variant="caption"
+								color={Colors.white}
+								sx={{ marginLeft: 1, width: "65px" }}
+							>
+								LLAMANOS
+							</Typography>
+						</Button>
+					</Link>
+					<Link href={email_address}>
+						<Button
+							variant="contained"
+							color="first_blue"
+							sx={{
+								marginLeft: 1,
+								":hover": { backgroundColor: Colors.second_blue },
+							}}
 						>
-							CORREO
-						</Typography>
-					</Button>
+							<Email color="white" />
+							<Typography
+								variant="caption"
+								color={Colors.white}
+								sx={{ marginLeft: 1, width: "65px" }}
+							>
+								CORREO
+							</Typography>
+						</Button>
+					</Link>
 				</Box>
 			</Paper>
 		</>
