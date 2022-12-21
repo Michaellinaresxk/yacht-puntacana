@@ -1,6 +1,4 @@
 import Head from "next/head";
-// import { theme } from "../styles/theme";
-// import { ThemeProvider } from "@mui/material";
 import DrawerAppBar from "../components/Header/DrawerAppBar";
 import { MainBanner } from "../components/MainBanner";
 import { Footer } from "../components/Footer";
@@ -10,9 +8,9 @@ import { BannerImageClip } from "../components/BannerImageClip";
 import { BookNowButton } from "../components/buttons/BookNowButton";
 import { VideoComponent } from "../components/VideoComponent";
 import TabsHomeComponent from "../components/TabsHomeComponent";
-import { GoingUpButton } from "../components/buttons/GoingUpButton";
+import { BoatsComponent } from "../components/BoatsComponent";
 
-export default function Home() {
+export default function Home(props) {
 	return (
 		<>
 			<Head>
@@ -30,13 +28,26 @@ export default function Home() {
 			<DrawerAppBar />
 			<MainBanner />
 			<MainTitle />
+			<BoatsComponent props={props} />
 			<BookNowButton />
 			<SupportBanner />
 			<VideoComponent />
 			<TabsHomeComponent />
 			<BannerImageClip />
 			<Footer />
-			<GoingUpButton />
 		</>
 	);
+}
+
+import fsPromises from "fs/promises";
+import path from "path";
+
+export async function getStaticProps() {
+	const filePathBoats = path.join(process.cwd(), "database/yachtsDB.json");
+	const jsonData = await fsPromises.readFile(filePathBoats);
+	const objectDataBoats = JSON.parse(jsonData);
+
+	return {
+		props: objectDataBoats,
+	};
 }

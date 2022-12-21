@@ -1,7 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Fab } from "@mui/material";
 import { ArrowUpward } from "@mui/icons-material";
 import { Colors } from "../../styles/theme";
+
+const useIsSsr = () => {
+	const [isSsr, setIsSsr] = useState(true);
+
+	useEffect(() => {
+		setIsSsr(false);
+	}, []);
+
+	return isSsr;
+};
 
 export const GoingUpButton = () => {
 	const [visible, setVisible] = useState(false);
@@ -21,6 +31,9 @@ export const GoingUpButton = () => {
 			behavior: "smooth",
 		});
 	};
+
+	const isSsr = useIsSsr();
+	if (isSsr) return null;
 
 	window.addEventListener("scroll", toggleVisible);
 
