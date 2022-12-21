@@ -1,7 +1,7 @@
 export const VideoComponent = () => {
 	return (
 		<>
-			<div>hola</div>
+			<div>Video Component</div>
 		</>
 	);
 };
