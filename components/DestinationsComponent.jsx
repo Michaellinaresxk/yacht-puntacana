@@ -28,6 +28,7 @@ export const DestinationsComponent = () => {
 			>
 				{destinos.map((destino) => (
 					<Link href="/destiny" key={destino.id}>
+
 						<Paper elevation={10} sx={{ marginTop: "50px" }}>
 							<Card>
 								<CardMedia>

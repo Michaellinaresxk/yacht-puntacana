@@ -72,6 +72,18 @@ export const BoatsComponent = ({ props }) => {
 												Más información
 											</Button>
 										</Link>
+										<Button
+											color="primary"
+											size="large"
+											mt={2}
+											variant="contained"
+											sx={{
+												marginBottom: "50px",
+											}}
+										>
+											Más información
+										</Button>
+
 									</CardActions>
 								</Card>
 							</Paper>
