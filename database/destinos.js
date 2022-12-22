@@ -1,17 +1,19 @@
-export default destinos = [
+const destinos = [
 	{
 		id: "1",
 		place: "Palmilla Beach",
-		img: "https://res.cloudinary.com/michaelxk-com/image/upload/v1643830113/cygnus%20yachts/pictures/destinations/pages/palmilla/DJI_0427_gxhvz1.jpg",
+		img: "/static/images/destino-1.jpg",
 	},
 	{
 		id: "2",
 		place: "Punta Cana",
-		img: "https://res.cloudinary.com/michaelxk-com/image/upload/v1649090188/cygnus%20yachts/pictures/destinations/pages/puntacana/PCYRC_dfgmbs.jpg",
+		img: "/static/images/destino-2.jpg",
 	},
 	{
 		id: "3",
 		place: "Catalina Island",
-		img: "https://res.cloudinary.com/michaelxk-com/image/upload/v1635954415/cygnus%20yachts/pictures/destinations/pages/catalina/4_g5pkfh.jpg",
+		img: "/static/images/destino-3.jpg",
 	},
 ];
+
+export default destinos;

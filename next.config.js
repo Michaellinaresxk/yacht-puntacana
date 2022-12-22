@@ -8,6 +8,6 @@ module.exports = nextConfig;
 module.export = {
 	i18n: {
 		locales: ["es", "en"],
-		defaultLocale: 'en',
-	}
-}
+		defaultLocale: "en",
+	},
+};

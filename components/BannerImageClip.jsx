@@ -16,6 +16,7 @@ export const BannerImageClip = () => {
 					backgroundColor: "#eeeeee",
 					marginTop: "100px",
 				}}
+				elevation={0}
 			>
 				<Box
 					sx={{
