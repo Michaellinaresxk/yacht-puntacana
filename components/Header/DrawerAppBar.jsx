@@ -92,7 +92,7 @@ function DrawerAppBar(props) {
 						alignItems: "center",
 						backgroundColor: Colors.white,
 					}}
-					elevation={0}
+					elevation={5}
 				>
 					<Toolbar>
 						<IconButton
