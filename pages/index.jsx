@@ -8,6 +8,7 @@ import { BookNowButton } from "../components/buttons/BookNowButton";
 import { VideoComponent } from "../components/VideoComponent";
 import TabsHomeComponent from "../components/TabsHomeComponent";
 import { BoatsComponent } from "../components/BoatsComponent";
+import { DestinationsContainer } from "../components/DestinationsContainer";
 
 export default function Home(props) {
 	return (
@@ -32,6 +33,7 @@ export default function Home(props) {
 			<VideoComponent />
 			<TabsHomeComponent />
 			<BannerImageClip />
+			<DestinationsContainer />
 			<Footer />
 		</>
 	);
