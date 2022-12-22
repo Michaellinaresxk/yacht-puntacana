@@ -15,8 +15,7 @@ import Button from "@mui/material/Button";
 import { Colors } from "../../styles/theme";
 
 import { SelectLanguageButton } from "../buttons/SelectLanguageButton";
-import "@fontsource/raleway";
-import "@fontsource/open-sans";
+import "@fontsource/roboto";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -53,7 +52,7 @@ function DrawerAppBar(props) {
 			<Divider sx={{ color: Colors.title }} />
 			<List
 				sx={{
-					fontFamily: "Raleway",
+					fontFamily: "Roboto",
 					fontWeight: "700",
 					fontSize: "18px",
 				}}
@@ -162,7 +161,7 @@ function DrawerAppBar(props) {
 							<Button
 								sx={{
 									color: Colors.title,
-									fontFamily: "Raleway",
+									fontFamily: "Roboto",
 									fontWeight: "700",
 									fontSize: { md: "14px", lg: "18px" },
 									marginRight: "30px",
@@ -173,7 +172,7 @@ function DrawerAppBar(props) {
 							<Button
 								sx={{
 									color: Colors.title,
-									fontFamily: "Raleway",
+									fontFamily: "Roboto",
 									fontWeight: "700",
 									fontSize: { md: "14px", lg: "18px" },
 									marginRight: "30px",
@@ -184,7 +183,7 @@ function DrawerAppBar(props) {
 							<Button
 								sx={{
 									color: Colors.title,
-									fontFamily: "Raleway",
+									fontFamily: "Roboto",
 									fontWeight: "700",
 									fontSize: { md: "14px", lg: "18px" },
 									marginRight: "30px",
@@ -195,7 +194,7 @@ function DrawerAppBar(props) {
 							<Button
 								sx={{
 									color: Colors.title,
-									fontFamily: "Raleway",
+									fontFamily: "Roboto",
 									fontWeight: "700",
 									fontSize: { md: "14px", lg: "18px" },
 									marginRight: "30px",
