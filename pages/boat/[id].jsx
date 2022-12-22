@@ -7,6 +7,7 @@ const BoatsDetails = ({ boat }) => {
 
 	return (
 		<>
+			<h1>Los barcos</h1>
 			<h1>esta es la pagina de los detalles del bote numero {id}</h1>
 		</>
 	);
