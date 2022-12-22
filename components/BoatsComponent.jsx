@@ -59,6 +59,19 @@ export const BoatsComponent = ({ props }) => {
 											alignItems: "center",
 										}}
 									>
+										<Link href={`/boat/${boat.id}`}>
+											<Button
+												color="primary"
+												size="large"
+												mt={2}
+												variant="contained"
+												sx={{
+													marginBottom: "50px",
+												}}
+											>
+												Más información
+											</Button>
+										</Link>
 										<Button
 											color="primary"
 											size="large"
@@ -70,6 +83,7 @@ export const BoatsComponent = ({ props }) => {
 										>
 											Más información
 										</Button>
+
 									</CardActions>
 								</Card>
 							</Paper>

@@ -9,8 +9,8 @@ export function BookNowButton() {
 					display: "flex",
 					justifyContent: "center",
 					padding: "2em",
-					marginTop: "40px",
-					marginBottom: "40px",
+					marginTop: "50px",
+					marginBottom: "50px",
 				}}
 			>
 				<Link href="/contact_us">
