@@ -1,5 +1,4 @@
 import Head from "next/head";
-import DrawerAppBar from "../components/Header/DrawerAppBar";
 import { MainBanner } from "../components/MainBanner";
 import { Footer } from "../components/Footer";
 import { SupportBanner } from "../components/SupportBanner";
@@ -25,7 +24,6 @@ export default function Home(props) {
 					content="XvBRJKvRQn33_vzkKZlM4dEP2f0NyUc6wRa02xEJdFU"
 				/>
 			</Head>
-			<DrawerAppBar />
 			<MainBanner />
 			<MainTitle />
 			<BoatsComponent props={props} />

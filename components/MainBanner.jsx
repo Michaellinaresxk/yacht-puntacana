@@ -50,6 +50,8 @@ export const MainBanner = () => {
 						backgroundColor: "#fff",
 						marginLeft: "70px",
 						marginTop: "250px",
+						paddingRight: "20px",
+						paddingLeft: "20px",
 						":hover": { backgroundColor: "#ddd" },
 						position: "absolute",
 					}}
