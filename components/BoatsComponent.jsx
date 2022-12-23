@@ -1,5 +1,6 @@
 import {
 	Container,
+	Box,
 	Typography,
 	Button,
 	Grid,
@@ -20,16 +21,21 @@ export const BoatsComponent = ({ props }) => {
 			<Container
 				sx={{
 					marginTop: "20px",
+					maxWidth: "lg",
 				}}
 			>
-				<Grid container spacing={3} rowGap={2} columnGap={0}>
+				<Grid container spacing={3} rowGap={2}>
 					{boats.map((boat) => (
 						<Grid item key={boat.id} xs={12} sm={6} md={4}>
 							<Paper
 								sx={{
-									width: { xs: "80%" },
+									width: { xs: "80%", sm: "280px", lg: "350px" },
 									marginLeft: { xs: "auto" },
 									marginRight: { xs: "auto" },
+									columnGap: {
+										sm: "10px",
+										md: "15px",
+									},
 								}}
 								elevation={10}
 							>
@@ -42,20 +48,18 @@ export const BoatsComponent = ({ props }) => {
 										alt="image of boat"
 									/>
 
-									<CardContent
-										sx={{
-											flexGrow: 1,
-										}}
-									>
-										<Typography gutterBottom variant="h5" mt={2}>
+									<CardContent sx={{ padding: "30px" }}>
+										<Typography variant="h5" mt={2}>
 											{boat.name}
 										</Typography>
-										<Typography mt={2} sx={{ padding: "15px" }}>
-											dbdvbsdjbjhsdhjcsd z zxcjasncasc
-											scsajcscnksncsnkcnjsncksacascascsakcmskacksamckasmkcsacas
-											scjsancjsnjsancjnsajkcnjsancjsanjcnasjncjsancjsncksjanckasc
-											ascsachjasbcjhasbchbsahcbhasbchsabchsbhcb
-										</Typography>
+										<Box ml={1} sx={{ display: "flex" }}>
+											<Typography mt={2} flexWrap="wrap">
+												dbdvbsdjbjhsdhjcsd z zxcjasncasc
+												scsajcscnksncsnkcnjsncksacascascsakcmskacksamckasmkcsacas
+												scjsancjsnjsancjnsajkcnjsancjsanjcnasjncjsancjsncksjanckasc
+												ascsachjasbcjha
+											</Typography>
+										</Box>
 									</CardContent>
 									<CardActions
 										sx={{

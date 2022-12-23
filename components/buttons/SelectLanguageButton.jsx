@@ -15,9 +15,9 @@ export const SelectLanguageButton = () => {
 		<>
 			<Box
 				sx={{
+					display: { xs: "none", sm: "block" },
 					width: { sm: "50px", md: "80px" },
 					height: "50px",
-					marginRight: { xs: "5px" },
 				}}
 			>
 				<FormControl fullWidth>
