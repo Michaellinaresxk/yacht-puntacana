@@ -11,19 +11,25 @@ export const MainTitle = () => {
 					justifyContent: "center",
 					marginTop: "150px",
 					marginBottom: "100px",
+					marginLeft: { xs: "15px" },
+					marginRight: { xs: "15px" },
 				}}
 			>
-				<Typography variant="subtitle1"> Somos: </Typography>
+				<Typography sx={{ fontSize: "1.2rem" }}> Somos: </Typography>
 				<Typography
 					variant="h2"
-					sx={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.8)" }}
+					sx={{
+						fontWeight: "bold",
+						color: "rgba(0, 0, 0, 0.8)",
+						fontSize: "clamp(2em, 5vw, 4em)",
+					}}
 				>
 					Yacht Punta Cana
 				</Typography>
-				<Typography variant="h6">
+				<Typography sx={{ fontSize: "1.2rem" }}>
 					Disponemos de una amplia selección de alquiler de yates, super yates,
 				</Typography>
-				<Typography variant="h6">
+				<Typography sx={{ fontSize: "1.2rem" }}>
 					lanchas y catamaranes únicos, en Punta Cana y Casa de campo.
 				</Typography>
 			</Box>

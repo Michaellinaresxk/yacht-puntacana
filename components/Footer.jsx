@@ -22,8 +22,12 @@ export const Footer = () => {
 				<Box
 					sx={{
 						display: "flex",
-						flexDirection: "row",
-						alignContent: "space-around",
+						flexDirection: { xs: "column", sm: "column", md: "row" },
+						justifyContent: { xs: "center" },
+
+						alignContent: {
+							xs: "space-between",
+						},
 						paddingTop: "70px",
 					}}
 				>
@@ -59,7 +63,8 @@ export const Footer = () => {
 							display: "flex",
 							flex: 1,
 							flexDirection: "column",
-							marginLeft: "100px",
+							marginLeft: { xs: "40px", md: "100px" },
+							marginTop: { xs: "30px" },
 						}}
 					>
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
@@ -80,7 +85,15 @@ export const Footer = () => {
 							</Link>
 						</Box>
 					</Box>
-					<Box sx={{ display: "flex", flex: 1, flexDirection: "column" }}>
+					<Box
+						sx={{
+							display: "flex",
+							flex: 1,
+							flexDirection: "column",
+							marginLeft: { xs: "40px" },
+							marginTop: { xs: "30px" },
+						}}
+					>
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
 							Metodos de pago
 						</Typography>

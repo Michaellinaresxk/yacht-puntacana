@@ -8,8 +8,11 @@ export const MainBanner = () => {
 					backgroundImage:
 						"url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1671125052/bg_rdqa9f.jpg)",
 					width: "100%",
-					height: "700px",
-					backgroundPosition: "50% 50%",
+					height: { xs: "300px", sm: "400px", md: "500px", lg: "700px" },
+					backgroundPosition: {
+						sm: "30% 30%",
+						md: "50% 50%",
+					},
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
 				}}
@@ -19,12 +22,18 @@ export const MainBanner = () => {
 					sx={{
 						display: "flex",
 						flexDirection: "column",
-						marginLeft: "70px",
-						marginTop: "100px",
+						marginLeft: { xs: "20px", sm: "40px", md: "60px", lg: "70px" },
+						marginTop: { xs: "40px", sm: "60px", md: "80px", lg: "100px" },
 						position: "absolute",
 					}}
 				>
-					<Typography sx={{ color: "rgba(0, 0, 0, 0.5)" }} variant="h2">
+					<Typography
+						sx={{
+							color: "rgba(0, 0, 0, 0.5)",
+							fontSize: "clamp(2em, 4vw, 3em)",
+							marginTop: { xs: "20px" },
+						}}
+					>
 						Welcome aboard
 					</Typography>
 					<Box
@@ -32,12 +41,20 @@ export const MainBanner = () => {
 							display: "inline-flex",
 						}}
 					>
-						<Typography sx={{ color: "rgba(0, 0, 0, 0.5)" }} variant="h2">
+						<Typography
+							sx={{
+								color: "rgba(0, 0, 0, 0.5)",
+								fontSize: "clamp(1.5em, 4vw, 3em)",
+							}}
+						>
 							live the
 						</Typography>
 						<Typography
-							sx={{ color: "rgba(0, 0, 0, 0.8)", marginLeft: "10px" }}
-							variant="h2"
+							sx={{
+								color: "rgba(0, 0, 0, 0.8)",
+								marginLeft: "10px",
+								fontSize: "clamp(1.5em, 4vw, 3em)",
+							}}
 						>
 							Experience!
 						</Typography>
@@ -48,12 +65,13 @@ export const MainBanner = () => {
 					size="medium"
 					sx={{
 						backgroundColor: "#fff",
-						marginLeft: "70px",
-						marginTop: "250px",
-						paddingRight: "20px",
-						paddingLeft: "20px",
+						marginLeft: { xs: "20px", sm: "40px", md: "60px", lg: "70px" },
+						marginTop: { xs: "150px", sm: "200px", md: "280px" },
+						paddingRight: { xs: "5px", sm: "10px", md: "20px" },
+						paddingLeft: { xs: "5px", sm: "10px", md: "20px" },
 						":hover": { backgroundColor: "#ddd" },
 						position: "absolute",
+						fontSize: { xs: "10px", sm: "13px", md: "18px" },
 					}}
 				>
 					LUXURY YACHt
