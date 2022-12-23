@@ -13,9 +13,15 @@ export const SelectLanguageButton = () => {
 	};
 	return (
 		<>
-			<Box sx={{ minWidth: "90px", marginLeft: "200px" }}>
+			<Box
+				sx={{
+					width: { sm: "50px", md: "80px" },
+					height: "50px",
+					marginRight: { xs: "5px" },
+				}}
+			>
 				<FormControl fullWidth>
-					<InputLabel id="demo-simple-select-label">Idioma</InputLabel>
+					<InputLabel id="demo-simple-select-label">Ln</InputLabel>
 					<Select
 						labelId="demo-simple-select-label"
 						id="demo-simple-select"
@@ -23,8 +29,8 @@ export const SelectLanguageButton = () => {
 						label="Idioma"
 						onChange={handleLanguageChange}
 					>
-						<MenuItem value="Es">Español</MenuItem>
-						<MenuItem value="En">Inglés</MenuItem>
+						<MenuItem value="Es">Esp</MenuItem>
+						<MenuItem value="En">Ing</MenuItem>
 					</Select>
 				</FormControl>
 			</Box>

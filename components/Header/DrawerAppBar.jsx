@@ -77,73 +77,66 @@ function DrawerAppBar(props) {
 
 	return (
 		<>
-			<CssBaseline />
-			<Box
+			<AppBar
+				component="nav"
 				sx={{
 					display: "flex",
+					flexDirection: "row",
+					justifyContent: { xs: "space-between", sm: "space-around" },
+					alignItems: "center",
+					backgroundColor: Colors.white,
 				}}
+				elevation={5}
 			>
-				<AppBar
-					component="nav"
+				<Toolbar>
+					<IconButton
+						color="inherit"
+						aria-label="open drawer"
+						edge="start"
+						onClick={handleDrawerToggle}
+						sx={{ ml: 2, display: { sm: "none" } }}
+					>
+						<MenuIcon
+							sx={{
+								color: Colors.title,
+								width: "40px",
+								height: "40px",
+							}}
+						/>
+					</IconButton>
+
+					<Box
+						sx={{
+							display: { xs: "none", sm: "block" },
+							width: { sm: "180px" },
+						}}
+					>
+						<Link href="/">
+							<Image
+								src={yatch_logo}
+								alt="yatch logo company"
+								style={{ width: "200px", height: "50px" }}
+							/>
+						</Link>
+					</Box>
+				</Toolbar>
+
+				<Box
 					sx={{
 						display: "flex",
-						justifyContent: "space-between",
 						alignItems: "center",
-						backgroundColor: Colors.white,
+						justifyContent: "center",
+						marginRight: "10px",
 					}}
-					elevation={5}
 				>
-					<Toolbar>
-						<IconButton
-							color="inherit"
-							aria-label="open drawer"
-							edge="start"
-							onClick={handleDrawerToggle}
-							sx={{ mr: 2, display: { sm: "none" } }}
-						>
-							<MenuIcon
-								sx={{ color: Colors.title, width: "40px", height: "40px" }}
-							/>
-						</IconButton>
-						{/* <Typography
-						variant="h6"
-						component="div"
-						sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-					>
-						MUI
-					</Typography> */}
-						<Box
-							sx={{
-								flexGrow: 1,
-								display: { xs: "none", sm: "block" },
-							}}
-						>
-							<Link href="/">
-								<Image
-									src={yatch_logo}
-									alt="yatch logo company"
-									style={{ width: "200px", height: "50px", marginLeft: "30px" }}
-								/>
-							</Link>
-						</Box>
-
-						<Box
-							sx={{
-								display: "flex",
-								flexGrow: 1,
-								alignItems: "center",
-								justifyContent: "center",
-								marginRight: "200px",
-							}}
-						>
-							<SelectLanguageButton />
-						</Box>
-						<Box
-							sx={{
-								display: { xs: "none", sm: "block" },
-							}}
-						>
-							{/* {navItems.map((item) => (
+					<SelectLanguageButton />
+				</Box>
+				<Box
+					sx={{
+						display: { xs: "none", sm: "block" },
+					}}
+				>
+					{/* {navItems.map((item) => (
 							<Button
 								key={item}
 								sx={{
@@ -158,76 +151,71 @@ function DrawerAppBar(props) {
 							</Button>
 						))} */}
 
-							<Button
-								sx={{
-									color: Colors.title,
-									fontFamily: "Roboto",
-									fontWeight: "700",
-									fontSize: { md: "14px", lg: "18px" },
-									marginRight: "30px",
-								}}
-							>
-								<Link href="/">Inicio</Link>
-							</Button>
-							<Button
-								sx={{
-									color: Colors.title,
-									fontFamily: "Roboto",
-									fontWeight: "700",
-									fontSize: { md: "14px", lg: "18px" },
-									marginRight: "30px",
-								}}
-							>
-								<Link href="/services">Servicios</Link>
-							</Button>
-							<Button
-								sx={{
-									color: Colors.title,
-									fontFamily: "Roboto",
-									fontWeight: "700",
-									fontSize: { md: "14px", lg: "18px" },
-									marginRight: "30px",
-								}}
-							>
-								<Link href="/destiny">Destino</Link>
-							</Button>
-							<Button
-								sx={{
-									color: Colors.title,
-									fontFamily: "Roboto",
-									fontWeight: "700",
-									fontSize: { md: "14px", lg: "18px" },
-									marginRight: "30px",
-								}}
-							>
-								<Link href="/contact_us">Contact</Link>
-							</Button>
-						</Box>
-					</Toolbar>
-				</AppBar>
-				<Box component="nav">
-					<Drawer
-						container={container}
-						variant="temporary"
-						open={mobileOpen}
-						onClose={handleDrawerToggle}
-						ModalProps={{
-							keepMounted: true, // Better open performance on mobile.
-						}}
+					<Button
 						sx={{
-							display: { xs: "block", sm: "none" },
-							"& .MuiDrawer-paper": {
-								boxSizing: "border-box",
-								width: drawerWidth,
-							},
+							color: Colors.title,
+							fontFamily: "Roboto",
+							fontWeight: "700",
+							fontSize: { sm: "12px", md: "14px", lg: "18px" },
+							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
-						{drawer}
-					</Drawer>
+						<Link href="/">Inicio</Link>
+					</Button>
+					<Button
+						sx={{
+							color: Colors.title,
+							fontFamily: "Roboto",
+							fontWeight: "700",
+							fontSize: { sm: "12px", md: "14px", lg: "18px" },
+							marginRight: { sm: "10px", md: "30px" },
+						}}
+					>
+						<Link href="/services">Servicios</Link>
+					</Button>
+					<Button
+						sx={{
+							color: Colors.title,
+							fontFamily: "Roboto",
+							fontWeight: "700",
+							fontSize: { sm: "12px", md: "14px", lg: "18px" },
+							marginRight: { sm: "10px", md: "30px" },
+						}}
+					>
+						<Link href="/destiny">Destino</Link>
+					</Button>
+					<Button
+						sx={{
+							color: Colors.title,
+							fontFamily: "Roboto",
+							fontWeight: "700",
+							fontSize: { sm: "12px", md: "14px", lg: "18px" },
+							marginRight: { sm: "10px", md: "30px" },
+						}}
+					>
+						<Link href="/contact_us">Contact</Link>
+					</Button>
 				</Box>
-				<Box component="main" sx={{ p: 3 }}>
-					<Toolbar />
-				</Box>
+			</AppBar>
+			<Box component="nav">
+				<Drawer
+					container={container}
+					variant="temporary"
+					open={mobileOpen}
+					onClose={handleDrawerToggle}
+					ModalProps={{
+						keepMounted: true, // Better open performance on mobile.
+					}}
+					sx={{
+						display: { xs: "block", sm: "none" },
+						"& .MuiDrawer-paper": {
+							boxSizing: "border-box",
+							width: drawerWidth,
+						},
+					}}
+				>
+					{drawer}
+				</Drawer>
 			</Box>
 		</>
 	);
