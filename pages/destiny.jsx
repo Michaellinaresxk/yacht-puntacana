@@ -1,9 +1,15 @@
 import { DestinationHero } from "../components/hero/DestinationHero";
+import { Footer } from "../components/Footer";
+import { SupportBanner } from "../components/SupportBanner";
+import { BookNowButton } from "../components/buttons/BookNowButton";
 
 function destiny() {
 	return (
 		<>
 			<DestinationHero />
+			<BookNowButton />
+			<SupportBanner />
+			<Footer />
 		</>
 	);
 }
