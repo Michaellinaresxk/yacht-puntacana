@@ -8,8 +8,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import { CssBaseline } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Language } from "@mui/icons-material";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Colors } from "../../styles/theme";
@@ -129,7 +129,18 @@ function DrawerAppBar(props) {
 						marginRight: "10px",
 					}}
 				>
-					<SelectLanguageButton />
+					<Box>
+						<Language
+							sx={{
+								display: { xs: "block", sm: "none" },
+								marginRight: "10px",
+								width: "40px",
+								height: "40px",
+								color: Colors.first_blue,
+							}}
+						/>
+						<SelectLanguageButton />
+					</Box>
 				</Box>
 				<Box
 					sx={{
