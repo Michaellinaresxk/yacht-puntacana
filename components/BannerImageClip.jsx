@@ -8,11 +8,11 @@ export const BannerImageClip = () => {
 			<Paper
 				sx={{
 					display: "flex",
-					flexDirection: "row",
+					flexDirection: { xs: "column", md: "row" },
 					justifyContent: "space-around",
 					width: "100%",
 					height: "700px",
-
+					flexWrap: "wrap",
 					backgroundColor: "#eeeeee",
 					marginTop: "100px",
 				}}
@@ -102,14 +102,14 @@ export const BannerImageClip = () => {
 						flex: 1,
 						backgroundImage:
 							"url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1671227427/DJI_0426_aisn2a.jpg)",
-						maxWidth: "100%",
-						height: "500px",
+						width: "100%",
+						height: { xs: "300px", sm: "400px", md: "500px" },
 						backgroundPosition: "50% 50%",
 						backgroundSize: "cover",
 						backgroundRepeat: "no-repeat",
 						clipPath:
 							"polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%)",
-						marginTop: "100px",
+						marginTop: { xs: "50px", md: "100px" },
 						marginLeft: "50px",
 					}}
 				></Box>

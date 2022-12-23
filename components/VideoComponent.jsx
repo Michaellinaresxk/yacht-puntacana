@@ -9,7 +9,6 @@ export const VideoComponent = () => {
 					margin: "auto",
 					marginTop: "50px",
 					marginBottom: "50px",
-					backgroundColor: "aqua",
 				}}
 				elevation={10}
 			>
