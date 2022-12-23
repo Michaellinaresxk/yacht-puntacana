@@ -24,10 +24,10 @@ export const BoatsComponent = ({ props }) => {
 			>
 				<Grid container spacing={3} rowGap={2} columnGap={0}>
 					{boats.map((boat) => (
-						<Grid item key={boat.id} sx={12} sm={6} md={4}>
+						<Grid item key={boat.id} xs={12} sm={6} md={4}>
 							<Paper
 								sx={{
-									maxWidth: { xs: "90%" },
+									width: { xs: "80%" },
 									marginLeft: { xs: "auto" },
 									marginRight: { xs: "auto" },
 								}}
@@ -50,7 +50,7 @@ export const BoatsComponent = ({ props }) => {
 										<Typography gutterBottom variant="h5" mt={2}>
 											{boat.name}
 										</Typography>
-										<Typography mt={2} sx={{ padding: "20px" }}>
+										<Typography mt={2} sx={{ padding: "15px" }}>
 											dbdvbsdjbjhsdhjcsd z zxcjasncasc
 											scsajcscnksncsnkcnjsncksacascascsakcmskacksamckasmkcsacas
 											scjsancjsnjsancjnsajkcnjsancjsanjcnasjncjsancjsncksjanckasc
