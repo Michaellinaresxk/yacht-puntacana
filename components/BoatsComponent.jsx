@@ -21,12 +21,18 @@ export const BoatsComponent = ({ props }) => {
 				sx={{
 					marginTop: "20px",
 				}}
-				maxWidth="lg"
 			>
 				<Grid container spacing={3} rowGap={2} columnGap={0}>
 					{boats.map((boat) => (
 						<Grid item key={boat.id} sx={12} sm={6} md={4}>
-							<Paper elevation={10}>
+							<Paper
+								sx={{
+									maxWidth: { xs: "90%" },
+									marginLeft: { xs: "auto" },
+									marginRight: { xs: "auto" },
+								}}
+								elevation={10}
+							>
 								<Card>
 									<CardMedia
 										sx={{

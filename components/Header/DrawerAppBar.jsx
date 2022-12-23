@@ -94,7 +94,7 @@ function DrawerAppBar(props) {
 						aria-label="open drawer"
 						edge="start"
 						onClick={handleDrawerToggle}
-						sx={{ ml: 2, display: { sm: "none" } }}
+						sx={{ ml: 1, display: { sm: "none" } }}
 					>
 						<MenuIcon
 							sx={{

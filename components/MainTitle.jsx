@@ -11,6 +11,8 @@ export const MainTitle = () => {
 					justifyContent: "center",
 					marginTop: "150px",
 					marginBottom: "100px",
+					marginLeft: { xs: "15px" },
+					marginRight: { xs: "15px" },
 				}}
 			>
 				<Typography sx={{ fontSize: "1.2rem" }}> Somos: </Typography>
