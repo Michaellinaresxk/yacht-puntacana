@@ -50,7 +50,7 @@ export const BoatsComponent = ({ props }) => {
 										<Typography gutterBottom variant="h5" mt={2}>
 											{boat.name}
 										</Typography>
-										<Typography mt={2} sx={{ padding: "20px" }}>
+										<Typography mt={2} sx={{ padding: "15px" }}>
 											dbdvbsdjbjhsdhjcsd z zxcjasncasc
 											scsajcscnksncsnkcnjsncksacascascsakcmskacksamckasmkcsacas
 											scjsancjsnjsancjnsajkcnjsancjsanjcnasjncjsancjsncksjanckasc
