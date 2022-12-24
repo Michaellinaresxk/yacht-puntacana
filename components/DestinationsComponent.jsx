@@ -16,22 +16,24 @@ export const DestinationsComponent = () => {
 		<>
 			<Stack
 				direction="row"
-				spacing={4}
+				spacing={3}
 				sx={{
 					display: "flex",
 					flexDirection: {
 						xs: "column",
-						sm: "column",
 						md: "row",
+					},
+
+					spacing: {
+						sm: 2,
 					},
 				}}
 			>
 				{destinos.map((destino) => (
 					<Link href="/destiny" key={destino.id}>
-
 						<Paper elevation={10} sx={{ marginTop: "50px" }}>
 							<Card>
-								<CardMedia>
+								<CardMedia sx={{ width: "100%" }}>
 									<Image
 										alt="destiny images"
 										src={destino.img}
@@ -41,9 +43,6 @@ export const DestinationsComponent = () => {
 								</CardMedia>
 								<CardContent>
 									<Typography variant="h4">{destino.place}</Typography>
-									<Typography variant="body1" mt={2}>
-										Un paraiso terrenal
-									</Typography>
 								</CardContent>
 							</Card>
 						</Paper>
