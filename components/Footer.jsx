@@ -15,7 +15,7 @@ export const Footer = () => {
 					flexDirection: "column",
 					marginTop: "200px",
 					backgroundColor: Colors.body,
-					marginBottom: "50px",
+					marginBottom: 0,
 				}}
 				elevation={0}
 			>
