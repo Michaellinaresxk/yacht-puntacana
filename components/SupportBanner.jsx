@@ -22,13 +22,27 @@ export const SupportBanner = () => {
 					flexDirection: "row",
 					backgroundColor: Colors.blur_blue,
 					justifyContent: "center",
+					flexWrap: "wrap",
 					alignItems: "center",
 					width: "100%",
-					height: "260px",
+					height: {
+						xs: "350px",
+						sm: "260px",
+					},
 				}}
 				elevation={0}
 			>
-				<Box sx={{ display: "flex", flexDirection: "column" }}>
+				<Box
+					sx={{
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: { xs: "center" },
+						alignItems: { xs: "center", sm: "start" },
+						marginTop: {
+							xs: "20px",
+						},
+					}}
+				>
 					<Box>
 						<Typography variant="h4" color={Colors.white}>
 							Contacto
@@ -38,11 +52,28 @@ export const SupportBanner = () => {
 						sx={{
 							display: "flex",
 							flexWrap: "wrap",
-							width: "600px",
+							width: {
+								xs: "450px",
+								sm: "550px",
+								md: "600px",
+							},
 							marginTop: "10px",
+							marginLeft: {
+								xs: "30px",
+								sm: 0,
+							},
 						}}
 					>
-						<Typography variant="subtitle1" color={Colors.white}>
+						<Typography
+							variant="subtitle1"
+							color={Colors.white}
+							sx={{
+								padding: {
+									xs: "10px",
+									sm: "5px",
+								},
+							}}
+						>
 							Si no sabes exactamente que tipo de barco alquilar o no tienes
 							tiempo, rellana este formulario y dinos cuantas personas irán a
 							bordo, posibles fechas, presupuesto aproximado y te enviaremos una
@@ -52,8 +83,11 @@ export const SupportBanner = () => {
 					<Box
 						sx={{
 							display: "flex",
-							flexDirection: { md: "row" },
-							marginTop: "30px",
+							flexDirection: { xs: "column", sm: "row" },
+							// justifyContent: { xs: "space-between", sm: "space-around" },
+							flexWrap: { xs: "wrap" },
+							marginTop: { xs: "10px", sm: "30px" },
+							marginBottom: { xs: "10px" },
 						}}
 					>
 						<Link href={whastapp_api} target="_blank">
@@ -62,13 +96,27 @@ export const SupportBanner = () => {
 								color="first_blue"
 								sx={{
 									":hover": { backgroundColor: Colors.second_blue },
+									// marginLeft: {
+									// 	xs: 0,
+									// 	sm: "px",
+									// 	md: "2px",
+									// 	lg: "3px",
+									// },
 								}}
 							>
 								<WhatsApp color="white" />
 								<Typography
 									variant="caption"
 									color={Colors.white}
-									sx={{ marginLeft: 1, width: "65px" }}
+									sx={{
+										marginLeft: 1,
+
+										width: {
+											xs: "65px",
+											sm: "50px",
+											md: "65px",
+										},
+									}}
 								>
 									WHATSAPP
 								</Typography>
@@ -79,7 +127,13 @@ export const SupportBanner = () => {
 								variant="contained"
 								color="first_blue"
 								sx={{
-									marginLeft: 1,
+									marginLeft: {
+										xs: 0,
+										sm: "5px",
+										md: "10px",
+										lg: "15px",
+									},
+									marginTop: { xs: "10px", sm: 0 },
 									":hover": { backgroundColor: Colors.second_blue },
 								}}
 							>
@@ -87,7 +141,14 @@ export const SupportBanner = () => {
 								<Typography
 									variant="caption"
 									color={Colors.white}
-									sx={{ marginLeft: 1, width: "65px" }}
+									sx={{
+										marginLeft: 1,
+										width: {
+											xs: "65px",
+											sm: "50px",
+											md: "65px",
+										},
+									}}
 								>
 									LLAMANOS
 								</Typography>
@@ -98,15 +159,28 @@ export const SupportBanner = () => {
 								variant="contained"
 								color="first_blue"
 								sx={{
-									marginLeft: 1,
+									marginLeft: {
+										xs: 0,
+										sm: "5px",
+										md: "10px",
+										lg: "15px",
+									},
 									":hover": { backgroundColor: Colors.second_blue },
+									marginTop: { xs: "10px", sm: 0 },
 								}}
 							>
 								<Email color="white" />
 								<Typography
 									variant="caption"
 									color={Colors.white}
-									sx={{ marginLeft: 1, width: "65px" }}
+									sx={{
+										marginLeft: 1,
+										width: {
+											xs: "65px",
+											sm: "50px",
+											md: "65px",
+										},
+									}}
 								>
 									CORREO
 								</Typography>
