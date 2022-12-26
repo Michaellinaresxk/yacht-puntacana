@@ -53,8 +53,8 @@ function DrawerAppBar(props) {
 			<List
 				sx={{
 					fontFamily: "Roboto",
-					fontWeight: "700",
-					fontSize: "18px",
+					fontWeight: "300",
+					fontSize: "16px",
 				}}
 			>
 				{navItems.map((item) => (
@@ -166,7 +166,7 @@ function DrawerAppBar(props) {
 						sx={{
 							color: Colors.title,
 							fontFamily: "Roboto",
-							fontWeight: "700",
+							fontWeight: "300",
 							fontSize: { sm: "12px", md: "14px", lg: "18px" },
 							marginRight: { sm: "10px", md: "30px" },
 						}}
