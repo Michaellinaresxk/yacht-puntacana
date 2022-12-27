@@ -1,16 +1,31 @@
-import { useRouter } from "next/router";
 import { BookNowButton } from "../../components/buttons/BookNowButton";
 import { Footer } from "../../components/Footer";
 
+import { Paper, Typography } from "@mui/material";
+
+//importing boats data
+
+import { boats } from "../../database/boat_data";
+
 const BoatsDetails = ({ boat }) => {
-	const router = useRouter();
-
-	const { id } = router.query;
-
 	return (
 		<>
-			<h1>Los barcos</h1>
-			<h1>esta es la pagina de los detalles del bote { name } {id}</h1>
+			<Paper
+				sx={{
+					backgroundImage: `url(${boat.principalImage})`,
+					width: "100%",
+					height: { xs: "300px", sm: "400px", md: "500px", lg: "700px" },
+					backgroundPosition: {
+						sm: "30% 30%",
+						md: "50% 50%",
+					},
+					backgroundSize: "cover",
+					backgroundRepeat: "no-repeat",
+				}}
+			></Paper>
+
+			<Typography variant="h1">{boat.name}</Typography>
+
 			<BookNowButton />
 			<Footer />
 		</>
@@ -19,4 +34,19 @@ const BoatsDetails = ({ boat }) => {
 
 export default BoatsDetails;
 
+export const getStaticPaths = async () => {
+	const paths = boats.map((boat) => ({
+		params: { id: boat.id.toString() },
+	}));
 
+	return { paths, fallback: false };
+};
+
+export const getStaticProps = async ({ params }) => {
+	const boat = boats.filter((boat) => boat.id.toString() === params.id);
+	return {
+		props: {
+			boat: boat[0],
+		},
+	};
+};
