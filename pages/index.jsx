@@ -10,7 +10,9 @@ import TabsHomeComponent from "../components/TabsHomeComponent";
 import { BoatsComponent } from "../components/BoatsComponent";
 import { DestinationsContainer } from "../components/DestinationsContainer";
 
-export default function Home(props) {
+import { boats } from "../database/boat_data";
+
+export default function Home({ boat_list }) {
 	return (
 		<>
 			<Head>
@@ -27,7 +29,7 @@ export default function Home(props) {
 			</Head>
 			<MainBanner />
 			<MainTitle />
-			<BoatsComponent props={props} />
+			<BoatsComponent data={boat_list} />
 			<BookNowButton />
 			<SupportBanner />
 			<VideoComponent />
@@ -39,15 +41,10 @@ export default function Home(props) {
 	);
 }
 
-import fsPromises from "fs/promises";
-import path from "path";
-
 export async function getStaticProps() {
-	const filePathBoats = path.join(process.cwd(), "database/yachtsDB.json");
-	const jsonData = await fsPromises.readFile(filePathBoats);
-	const objectDataBoats = JSON.parse(jsonData);
-
 	return {
-		props: objectDataBoats,
+		props: {
+			boat_list: boats,
+		},
 	};
 }

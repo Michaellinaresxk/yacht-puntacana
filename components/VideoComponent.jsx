@@ -16,6 +16,7 @@ export const VideoComponent = () => {
 					<CardMedia
 						component="iframe"
 						allowFullScreen={true}
+						frameBorder="0"
 						sx={{
 							width: {
 								sx: "90%",

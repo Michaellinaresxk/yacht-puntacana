@@ -13,9 +13,7 @@ import {
 
 import Link from "next/link";
 
-export const BoatsComponent = ({ props }) => {
-	const boats = props.boats;
-
+export const BoatsComponent = ({ data }) => {
 	return (
 		<>
 			<Container
@@ -25,7 +23,7 @@ export const BoatsComponent = ({ props }) => {
 				}}
 			>
 				<Grid container spacing={3} rowGap={2}>
-					{boats.map((boat) => (
+					{data.map((boat) => (
 						<Grid item key={boat.id} xs={12} sm={6} md={4}>
 							<Paper
 								sx={{
