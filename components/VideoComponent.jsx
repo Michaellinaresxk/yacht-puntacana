@@ -10,13 +10,12 @@ export const VideoComponent = () => {
 					marginTop: "50px",
 					marginBottom: "50px",
 				}}
-				elevation={10}
+				elevation={0}
 			>
 				<Card sx={{}}>
 					<CardMedia
 						component="iframe"
 						allowFullScreen={true}
-						frameBorder="0"
 						sx={{
 							width: {
 								sx: "90%",
@@ -30,6 +29,8 @@ export const VideoComponent = () => {
 								md: "350px",
 								lg: "500px",
 							},
+
+							border: "none",
 						}}
 						image="https://res.cloudinary.com/freelancer2222222222222222/video/upload/v1671285248/video-tour_sxqsw8.mp4"
 					/>
