@@ -4,7 +4,7 @@ export const boats = [
 		name: "Cranchi 50",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911999/PC-YACHTS/yachts/cranchi-50/bg_dxwftv.jpg",
-		shortDesc: "With this rental yacht in Punta Cana and La Romana Casa de Campo, you will make your dreams of sailing around the island of the Dominican Republic come true, so... don't hesitate and book this yacht!",
+		shortDesc: "With this rental yacht in Punta Cana and La Romana Casa de Campo, you will make your dreams of sailing around the island of the Dominican Republic come true, so...",
 			gallery: [
 			{
 				id: "1",
@@ -273,7 +273,7 @@ export const boats = [
 		name: "Meridian",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1624144245/nuestra%20flota/meridian-42/Yate-5_wzfnuv.jpg",
-		shortDesc: "This Punta Cana Meridian 42 charter yacht is a magnificent motor charter boat designed for superior comfort with spacious open areas.",
+		shortDesc: "This Punta Cana Meridian 42 charter yacht is a magnificent motor charter boat designed for superior comfort with spacious open areas. Don't hesitate and book this yacht!",
 		gallery: [
 			{
 				id: "1",
