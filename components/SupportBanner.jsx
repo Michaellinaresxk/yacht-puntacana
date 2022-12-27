@@ -26,8 +26,8 @@ export const SupportBanner = () => {
 					alignItems: "center",
 					width: "100%",
 					height: {
-						xs: "350px",
-						sm: "260px",
+						xs: "400px",
+						sm: "300px",
 					},
 				}}
 				elevation={0}

@@ -49,7 +49,7 @@ export const Footer = () => {
 								flexWrap: "wrap",
 							}}
 						>
-							<Typography variant="subtitle1">
+							<Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
 								Estás planeando rentar un yate en punta cana? Disfruta de un
 								yacht charter privado en sail en el mar del caribe. Tenemos la
 								mejor experiencia en renta de yates y contamos con nuestra flota
@@ -70,7 +70,7 @@ export const Footer = () => {
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
 							Enlaces
 						</Typography>
-						<Box>
+						<Box sx={{ marginTop: "1em" }}>
 							<Link href="/">
 								<Typography>Inicio</Typography>
 							</Link>
@@ -97,7 +97,7 @@ export const Footer = () => {
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
 							Metodos de pago
 						</Typography>
-						<Box>
+						<Box sx={{ marginTop: "1em" }}>
 							<Image alt="metodos de pago" src={pay_image} />
 						</Box>
 					</Box>

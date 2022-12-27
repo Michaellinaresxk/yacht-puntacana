@@ -25,7 +25,6 @@ const BoatsDetails = ({ boat }) => {
 			></Paper>
 
 			<Typography variant="h1">{boat.name}</Typography>
-
 			<BookNowButton />
 			<Footer />
 		</>
