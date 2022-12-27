@@ -1,4 +1,5 @@
 import { BookNowButton } from "../../components/buttons/BookNowButton";
+import { SupportBanner } from "../../components/SupportBanner";
 import { Footer } from "../../components/Footer";
 
 import { Paper, Typography } from "@mui/material";
@@ -26,6 +27,7 @@ const BoatsDetails = ({ boat }) => {
 
 			<Typography variant="h1">{boat.name}</Typography>
 			<BookNowButton />
+			<SupportBanner />
 			<Footer />
 		</>
 	);

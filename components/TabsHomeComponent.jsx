@@ -77,7 +77,7 @@ const TabsHomeComponent = () => {
 								}}
 								icon={<AirportShuttle />}
 								iconPosition="start"
-								label="Transporte"
+								label="Transport"
 								value="3"
 							/>
 							<Tab
@@ -96,10 +96,7 @@ const TabsHomeComponent = () => {
 					</Box>
 					<TabPanel value="1">
 						<Typography>
-							En Yachts Punta Cana hacemos todo posible, organizando chárteres
-							de yates privados de lujo bajo las especificaciones del cliente y
-							proporcionando el mejor servicio personalizado para cubrir todas
-							las necesidades de tu evento.
+						At Punta Cana Yacht Rentals we make everything possible, organizing private luxury yacht charters under customer specifications and providing the best personalized service to cover all the needs of your event.
 						</Typography>
 						<Button
 							variant="outlined"
@@ -113,16 +110,13 @@ const TabsHomeComponent = () => {
 								sx={{ ":hover": { color: "black" } }}
 								color={Colors.white}
 							>
-								Reserva ya
+								BOOK NOW
 							</Typography>
 						</Button>
 					</TabPanel>
 					<TabPanel value="2">
 						<Typography>
-							Trabajamos con las mejores empresas de Catering de eventos
-							privados de República Dominicana. Dinos que evento deseas celebrar
-							y nuestro equipo se pondrá en contacto contigo para escucharte y
-							ofrecerte propuestas personalizadas ajustadas a tus necesidades.
+						We work with the best catering companies for private events in the Republic Dominican. Tell us what event you want to celebrate and our team will contact you to listen to you and offer you personalized proposals tailored to your needs.
 						</Typography>
 						<Button
 							variant="outlined"
@@ -136,17 +130,13 @@ const TabsHomeComponent = () => {
 								sx={{ ":hover": { color: "black" } }}
 								color={Colors.white}
 							>
-								Contáctanos
+								KEEP IN TOUCH
 							</Typography>
 						</Button>
 					</TabPanel>
 					<TabPanel value="3">
 						<Typography>
-							Ofrecemos un servicio garantizado desde la puntualidad, el confort
-							de nuestros vehículos, la cálida atención de nuestros choferes y
-							el compromiso por tu seguridad. Te recogemos en tu hotel o villa y
-							te llevamos directamente a la Marina, para abordar tu yate,
-							navegar a tu destino y vivir una experiencia inolvidable.
+						We work with the best catering companies for private events in the Republic Dominican. Tell us what event you want to celebrate and our team will contact you to listen to you and offer you personalized proposals tailored to your needs.
 						</Typography>
 						<Button
 							variant="outlined"
@@ -160,17 +150,13 @@ const TabsHomeComponent = () => {
 								sx={{ ":hover": { color: "black" } }}
 								color={Colors.white}
 							>
-								Contáctanos
+								CONTACT US
 							</Typography>
 						</Button>
 					</TabPanel>
 					<TabPanel value="4">
 						<Typography>
-							Somos una empresa con la experiencia, el conocimiento y la
-							reputación de ofrecer los mejores eventos a la medida de nuestros
-							clientes. Desde Punta Cana Yacht Rentals organizamos fiestas
-							privadas, celebraciones de cumpleaños, despedida de solteros/as,
-							eventos de empresa, fiestas de cóctel…
+						We are a company with the experience, knowledge and reputation of offering the best events tailored to our clients. At Punta Cana Yacht Rentals we organize private parties, birthday celebrations, bachelor parties, company events, cocktail parties...
 						</Typography>
 						<Button
 							variant="outlined"
@@ -184,7 +170,7 @@ const TabsHomeComponent = () => {
 								sx={{ ":hover": { color: "black" } }}
 								color={Colors.white}
 							>
-								Más información
+								MORE INFORMATION
 							</Typography>
 						</Button>
 					</TabPanel>

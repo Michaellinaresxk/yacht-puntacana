@@ -171,7 +171,7 @@ function DrawerAppBar(props) {
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
-						<Link href="/">Inicio</Link>
+						<Link href="/">Home</Link>
 					</Button>
 					<Button
 						sx={{
@@ -182,7 +182,7 @@ function DrawerAppBar(props) {
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
-						<Link href="/services">Servicios</Link>
+						<Link href="/services">Services</Link>
 					</Button>
 					<Button
 						sx={{
@@ -193,7 +193,7 @@ function DrawerAppBar(props) {
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
-						<Link href="/destiny">Destino</Link>
+						<Link href="/destiny">Destinations</Link>
 					</Button>
 					<Button
 						sx={{
