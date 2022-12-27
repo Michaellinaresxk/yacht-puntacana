@@ -43,9 +43,7 @@ export const BoatsComponent = ({ data }) => {
 										{boat.name}
 									</Typography>
 									<Typography variant="body2" color="text.secondary">
-										Lizards are a widespread group of squamate reptiles, with
-										over 6,000 species, ranging across all continents except
-										Antarctica andres se fue de paseo en la noche oscura y fria
+									   {boat.shortDesc}
 									</Typography>
 								</CardContent>
 								<CardActions
@@ -65,7 +63,7 @@ export const BoatsComponent = ({ data }) => {
 												marginBottom: "50px",
 											}}
 										>
-											Más información
+											More Information
 										</Button>
 									</Link>
 								</CardActions>

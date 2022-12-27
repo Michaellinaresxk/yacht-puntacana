@@ -24,19 +24,19 @@ export const ContactGroupIcons = () => {
 			>
 				<ContactIcons
 					icon={location}
-					contact="Dirección"
+					contact="Address"
 					contact_value="Casa Punta Cana"
 				/>
 
 				<ContactIcons
 					icon={phone}
-					contact="Telófono"
+					contact="Phone"
 					contact_value="+ 1 829 296 3529"
 				/>
 
 				<ContactIcons
 					icon={email}
-					contact="Correo"
+					contact="E-mail"
 					contact_value="booking@yachtpuntacana.com"
 				/>
 				<ContactIcons

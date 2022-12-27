@@ -77,17 +77,6 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Garantiza tu seguridad
-							</Typography>
-						</Box>
-						<Box
-							sx={{
-								display: "flex",
-								flexDirection: "row",
-							}}
-						>
-							<Check />
-							<Typography variant="h5" marginLeft={1}>
 							Ensure your safety
 							</Typography>
 						</Box>
