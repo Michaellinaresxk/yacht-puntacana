@@ -24,7 +24,7 @@ export const DestinationsContainer = () => {
 				>
 					<Typography variant="h4">Destinations:</Typography>
 					<Typography variant="body1">
-						Chosee one of the destinations we have for you
+						Chosee one of the destinations we have for you.
 					</Typography>
 				</Box>
 

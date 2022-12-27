@@ -77,7 +77,7 @@ export const BoatsComponent = ({ data }) => {
 													marginBottom: "50px",
 												}}
 											>
-												Más información
+												More Information
 											</Button>
 										</Link>
 									</CardActions>

@@ -29,15 +29,11 @@ export const BannerImageClip = () => {
 					}}
 				>
 					<Typography variant="h4">
-						Más de 10 años trabajando con los mejores precios, sin
-						intermediarios para una mejor experiencia de alquiler de yates.
+					More than 10 years providing the best yacht charter prices without intermediaries for a perfect and beautiful experience.
 					</Typography>
 
 					<Typography variant="h6" marginTop={5}>
-						Somos propietarios de nuestra flota de yates, los cuales están en
-						perfecto estado de conservación y cuentan con todas las medidas de
-						seguiridad necesarias para que su alquiler sea una experiencia
-						inolvidable.
+					We are owners of our yacht fleet and we have the experience and knowledge to offer you the best
 					</Typography>
 					<Box sx={{ color: Colors.first_blue }} marginTop={5}>
 						<Box
@@ -48,7 +44,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Ahorra disgustos
+							Save Hassle
 							</Typography>
 						</Box>
 						<Box
@@ -59,7 +55,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Contrata expertos
+							Hire Experts
 							</Typography>
 						</Box>
 						<Box
@@ -70,7 +66,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Sin intermediarios
+							Without Intermediaries
 							</Typography>
 						</Box>
 						<Box
@@ -92,7 +88,18 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Vamos a navegar
+							Ensure your safety
+							</Typography>
+						</Box>
+						<Box
+							sx={{
+								display: "flex",
+								flexDirection: "row",
+							}}
+						>
+							<Check />
+							<Typography variant="h5" marginLeft={1}>
+							Let's go yachting
 							</Typography>
 						</Box>
 					</Box>

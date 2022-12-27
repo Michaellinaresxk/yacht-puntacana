@@ -45,7 +45,7 @@ export const SupportBanner = () => {
 				>
 					<Box>
 						<Typography variant="h4" color={Colors.white}>
-							Contacto
+							Contact Us
 						</Typography>
 					</Box>
 					<Box
@@ -74,10 +74,7 @@ export const SupportBanner = () => {
 								},
 							}}
 						>
-							Si no sabes exactamente que tipo de barco alquilar o no tienes
-							tiempo, rellana este formulario y dinos cuantas personas irán a
-							bordo, posibles fechas, presupuesto aproximado y te enviaremos una
-							propuesta por email.
+							If you do not know exactly what type of boat to rent or you do not have time, fill out this form and tell us how many people will be on board, possible dates, approximate budget and we will send you a proposal by email.
 						</Typography>
 					</Box>
 					<Box
@@ -150,7 +147,7 @@ export const SupportBanner = () => {
 										},
 									}}
 								>
-									LLAMANOS
+									CALL US
 								</Typography>
 							</Button>
 						</Link>
@@ -182,7 +179,7 @@ export const SupportBanner = () => {
 										},
 									}}
 								>
-									CORREO
+									E-MAIL
 								</Typography>
 							</Button>
 						</Link>

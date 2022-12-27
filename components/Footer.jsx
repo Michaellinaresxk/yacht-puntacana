@@ -50,11 +50,7 @@ export const Footer = () => {
 							}}
 						>
 							<Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
-								Estás planeando rentar un yate en punta cana? Disfruta de un
-								yacht charter privado en sail en el mar del caribe. Tenemos la
-								mejor experiencia en renta de yates y contamos con nuestra flota
-								de lujo. Con nosostros podrás encontrar las mejores ofertas para
-								que tengas una experiencia inolvidable.
+							Are you planning to rent a yacht in punta cana? Enjoy a private yacht charter and sail in the Caribbean Sea. We provide the best yacht experience with our luxury yachts. With us you will find the best offers for your unforgettable trip.
 							</Typography>
 						</Box>
 					</Box>
@@ -68,20 +64,20 @@ export const Footer = () => {
 						}}
 					>
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
-							Enlaces
+							Quick Links
 						</Typography>
 						<Box sx={{ marginTop: "1em" }}>
 							<Link href="/">
-								<Typography>Inicio</Typography>
+								<Typography>Home</Typography>
 							</Link>
 							<Link href="/services">
-								<Typography>Servicios</Typography>
+								<Typography>Services</Typography>
 							</Link>
 							<Link href="/destiny">
-								<Typography>Destino</Typography>
+								<Typography>Destinations</Typography>
 							</Link>
 							<Link href="/contact_us">
-								<Typography>Contacto</Typography>
+								<Typography>Contact</Typography>
 							</Link>
 						</Box>
 					</Box>
@@ -95,7 +91,7 @@ export const Footer = () => {
 						}}
 					>
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
-							Metodos de pago
+						Payment Methods
 						</Typography>
 						<Box sx={{ marginTop: "1em" }}>
 							<Image alt="metodos de pago" src={pay_image} />

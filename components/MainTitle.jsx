@@ -15,7 +15,7 @@ export const MainTitle = () => {
 					marginRight: { xs: "15px" },
 				}}
 			>
-				<Typography sx={{ fontSize: "1.2rem" }}> Somos: </Typography>
+				<Typography sx={{ fontSize: "1.2rem" }}> We are: </Typography>
 				<Typography
 					variant="h2"
 					sx={{
@@ -27,10 +27,10 @@ export const MainTitle = () => {
 					Yacht Punta Cana
 				</Typography>
 				<Typography sx={{ fontSize: "1.2rem" }}>
-					Disponemos de una amplia selección de alquiler de yates, super yates,
+				  We have a wide selection of unique yachts for rent, 
 				</Typography>
 				<Typography sx={{ fontSize: "1.2rem" }}>
-					lanchas y catamaranes únicos, en Punta Cana y Casa de campo.
+				in Punta Cana and Casa de Campo.
 				</Typography>
 			</Box>
 		</>
