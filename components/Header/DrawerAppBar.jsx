@@ -25,6 +25,7 @@ import { useState } from "react";
 import yatch_logo from "../../assets/icons/logo-colorfull-1.png";
 
 const drawerWidth = 240;
+
 const navItems = ["Inicio", "Servicios", "Destino", "Contacto"];
 
 function DrawerAppBar(props) {
@@ -57,17 +58,64 @@ function DrawerAppBar(props) {
 					fontSize: "16px",
 				}}
 			>
-				{navItems.map((item) => (
+				{/* {navItems.map((item) => (
 					<ListItem key={item} disablePadding>
 						<ListItemButton
 							sx={{
 								textAlign: "left",
 							}}
 						>
-							<ListItemText primary={item} sx={{}} />
+							<ListItemText primary={item} />
 						</ListItemButton>
 					</ListItem>
-				))}
+				))} */}
+
+				<ListItem disablePadding>
+					<Link href="/">
+						<ListItemButton
+							sx={{
+								textAlign: "left",
+							}}
+						>
+							<ListItemText primary="Inicio" />
+						</ListItemButton>
+					</Link>
+				</ListItem>
+
+				<ListItem disablePadding>
+					<Link href="/services">
+						<ListItemButton
+							sx={{
+								textAlign: "left",
+							}}
+						>
+							<ListItemText primary="Servicio" />
+						</ListItemButton>
+					</Link>
+				</ListItem>
+
+				<ListItem disablePadding>
+					<Link href="/destiny">
+						<ListItemButton
+							sx={{
+								textAlign: "left",
+							}}
+						>
+							<ListItemText primary="Destino" />
+						</ListItemButton>
+					</Link>
+				</ListItem>
+				<ListItem disablePadding>
+					<Link href="/contact_us">
+						<ListItemButton
+							sx={{
+								textAlign: "left",
+							}}
+						>
+							<ListItemText primary="Contacto" />
+						</ListItemButton>
+					</Link>
+				</ListItem>
 			</List>
 		</Box>
 	);
