@@ -8,32 +8,32 @@ export const boats = [
 			"With this rental yacht in Punta Cana and La Romana Casa de Campo, you will make your dreams of sailing around the island of the Dominican Republic come true, so...",
 		gallery: [
 			{
-				// id: "1",
+				id: "1",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911999/PC-YACHTS/yachts/cranchi-50/12_tunpng.jpg",
 			},
 			{
-				// id: "2",
+				id: "2",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911998/PC-YACHTS/yachts/cranchi-50/4_toicol.jpg",
 			},
 			{
-				// id: "3",
+				id: "3",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911998/PC-YACHTS/yachts/cranchi-50/3_ck2qws.jpg",
 			},
 			{
-				// id: "4",
+				id: "4",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911999/PC-YACHTS/yachts/cranchi-50/bg_dxwftv.jpg",
 			},
 			{
-				// id: "5",
+				id: "5",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911998/PC-YACHTS/yachts/cranchi-50/8_xtvv1i.jpg",
 			},
 			{
-				// id: "6",
+				id: "6",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911998/PC-YACHTS/yachts/cranchi-50/7_vol2bn.jpg",
 			},
