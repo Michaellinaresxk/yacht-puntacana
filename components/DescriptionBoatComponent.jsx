@@ -10,7 +10,7 @@ export const DescriptionBoatComponent = ({ data }) => {
 		>
 			<Typography variant="h4">Description</Typography>
 			<Typography variant="subtitle1" mt={5}>
-				Aqui va el contenido de la descripcion del barco {data.name}
+				zvnjvnjkcx vcjvnjcvkjc vcjvnjnvjkxc
 			</Typography>
 		</Box>
 	);
