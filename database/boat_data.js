@@ -4,35 +4,36 @@ export const boats = [
 		name: "Cranchi 50",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911999/PC-YACHTS/yachts/cranchi-50/bg_dxwftv.jpg",
-		shortDesc: "With this rental yacht in Punta Cana and La Romana Casa de Campo, you will make your dreams of sailing around the island of the Dominican Republic come true, so...",
-			gallery: [
+		shortDesc:
+			"With this rental yacht in Punta Cana and La Romana Casa de Campo, you will make your dreams of sailing around the island of the Dominican Republic come true, so...",
+		gallery: [
 			{
-				id: "1",
+				// id: "1",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911999/PC-YACHTS/yachts/cranchi-50/12_tunpng.jpg",
 			},
 			{
-				id: "2",
+				// id: "2",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911998/PC-YACHTS/yachts/cranchi-50/4_toicol.jpg",
 			},
 			{
-				id: "3",
+				// id: "3",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911998/PC-YACHTS/yachts/cranchi-50/3_ck2qws.jpg",
 			},
 			{
-				id: "4",
+				// id: "4",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911999/PC-YACHTS/yachts/cranchi-50/bg_dxwftv.jpg",
 			},
 			{
-				id: "5",
+				// id: "5",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911998/PC-YACHTS/yachts/cranchi-50/8_xtvv1i.jpg",
 			},
 			{
-				id: "6",
+				// id: "6",
 				imageUrl:
 					"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911998/PC-YACHTS/yachts/cranchi-50/7_vol2bn.jpg",
 			},
@@ -63,8 +64,9 @@ export const boats = [
 		name: "Fairline 48 Targa",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1654295753/PC-YACHTS/yachts/fairline-48-targa/bg1_gvvwgv.jpg",
-		shortDesc: "Ideal yacht designed to have a luxurious stay and enjoy an unforgettable vacation. It is excellent to be able to move quickly and explore the island of the Dominican Republic.",
-			gallery: [
+		shortDesc:
+			"Ideal yacht designed to have a luxurious stay and enjoy an unforgettable vacation. It is excellent to be able to move quickly and explore the island of the Dominican Republic.",
+		gallery: [
 			{
 				id: "1",
 				imageUrl:
@@ -121,7 +123,8 @@ export const boats = [
 		name: "Icon Fly 60",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1624143983/nuestra%20flota/aicon-fly-56/Aicon%20fly%2056.jpg",
-		shortDesc: "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests.",
+		shortDesc:
+			"The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests.",
 		gallery: [
 			{
 				id: "1",
@@ -179,7 +182,8 @@ export const boats = [
 		name: "Tiara 43 Sovran",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1654297562/PC-YACHTS/yachts/Tiara-43-Sovran/1_gvy77c.jpg",
-		shortDesc: "Perfect yacht to anchor very close to the beach or in the natural pools of Saona island or Palmilla beach, where the water will come up to your waist.",
+		shortDesc:
+			"Perfect yacht to anchor very close to the beach or in the natural pools of Saona island or Palmilla beach, where the water will come up to your waist.",
 		gallery: [
 			{
 				id: "1",
@@ -219,7 +223,8 @@ export const boats = [
 		name: "Tiara 39 Open",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1654298934/PC-YACHTS/yachts/tiara-39-open/3_mnzxmo.jpg",
-		shortDesc: "Are you looking for to rent a private yacht a good price? Tiara 39 Open is a fantastic yacht charter option in these destinations: Punta Cana, Cap Cana and Casa de Campo",
+		shortDesc:
+			"Are you looking for to rent a private yacht a good price? Tiara 39 Open is a fantastic yacht charter option in these destinations: Punta Cana, Cap Cana and Casa de Campo",
 		gallery: [
 			{
 				id: "1",
@@ -273,7 +278,8 @@ export const boats = [
 		name: "Meridian",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1624144245/nuestra%20flota/meridian-42/Yate-5_wzfnuv.jpg",
-		shortDesc: "This Punta Cana Meridian 42 charter yacht is a magnificent motor charter boat designed for superior comfort with spacious open areas. Don't hesitate and book this yacht!",
+		shortDesc:
+			"This Punta Cana Meridian 42 charter yacht is a magnificent motor charter boat designed for superior comfort with spacious open areas. Don't hesitate and book this yacht!",
 		gallery: [
 			{
 				id: "1",

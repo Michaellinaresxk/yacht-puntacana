@@ -11,3 +11,16 @@ module.export = {
 		defaultLocale: "en",
 	},
 };
+
+module.exports = {
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "res.cloudinary.com",
+				port: "3000",
+				pathname: "/account123/**",
+			},
+		],
+	},
+};

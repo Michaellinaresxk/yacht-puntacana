@@ -1,8 +1,11 @@
 import { BookNowButton } from "../../components/buttons/BookNowButton";
 import { SupportBanner } from "../../components/SupportBanner";
 import { Footer } from "../../components/Footer";
-
-import { Paper, Typography } from "@mui/material";
+import { DescriptionBoatComponent } from "../../components/DescriptionBoatComponent";
+import { ImageBoatsGallery } from "../../components/ImageBoatsGallery";
+import { BoatsBanner } from "../../components/BoatsBanner";
+import { BoatServices } from "../../components/BoatServices";
+import { BoatsTechnicalData } from "../../components/BoatsTechnicalData";
 
 //importing boats data
 
@@ -11,23 +14,13 @@ import { boats } from "../../database/boat_data";
 const BoatsDetails = ({ boat }) => {
 	return (
 		<>
-			<Paper
-				sx={{
-					backgroundImage: `url(${boat.principalImage})`,
-					width: "100%",
-					height: { xs: "300px", sm: "400px", md: "500px", lg: "700px" },
-					backgroundPosition: {
-						sm: "30% 30%",
-						md: "50% 50%",
-					},
-					backgroundSize: "cover",
-					backgroundRepeat: "no-repeat",
-				}}
-			></Paper>
-
-			<Typography variant="h1">{boat.name}</Typography>
-			<BookNowButton />
+			<BoatsBanner data={boat} />
+			<DescriptionBoatComponent data={boat} />
+			<ImageBoatsGallery data={boat} />
+			<BoatServices data={boat} />
 			<SupportBanner />
+			<BoatsTechnicalData data={boat} />
+			<BookNowButton />
 			<Footer />
 		</>
 	);
