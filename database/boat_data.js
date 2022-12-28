@@ -4,6 +4,7 @@ export const boats = [
 		name: "Cranchi 50",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1653911999/PC-YACHTS/yachts/cranchi-50/bg_dxwftv.jpg",
+
 		shortDesc: "With this rental yacht in Punta Cana and La Romana Casa de Campo, you will make your dreams of sailing around the island of the Dominican Republic come true, so...",
 		p1: "Cranchi 50 means fun. Being aboard in the Cranchi yacht is always an excellent experience. Experience the exceptional, be better than the best. This yacht has an elegant profile and can offer you an experience fit for a king.",
 		p2: "The cranchi 50 yacht guarantees agility and excellent performance. On the water, this boat will not let you down: it can offer you an exciting experience and always guarantee your safety. It is light, balanced and super strong thanks to the premium materials used to build the hull and superstructure.",
@@ -134,8 +135,10 @@ export const boats = [
 		name: "Icon Fly 60",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1624143983/nuestra%20flota/aicon-fly-56/Aicon%20fly%2056.jpg",
+
 		shortDesc: "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests.",
 		p1: "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests. It also has a crew cabin, 3 bathrooms/showers, a living and dining room and a kitchen. It has air conditioning throughout the boat and its two 800Hp CAT diesel engines give it great power that will take you far to the places you have been dreaming of.",
+
 		gallery: [
 			{
 				id: "1",
@@ -197,9 +200,11 @@ export const boats = [
 		name: "Tiara 43 Sovran",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1654297562/PC-YACHTS/yachts/Tiara-43-Sovran/1_gvy77c.jpg",
+
 		shortDesc: "Perfect yacht to anchor very close to the beach or in the natural pools of Saona island or Palmilla beach, where the water will come up to your waist.",
 		p1: "Why is this yacht charter in Punta Cana a very good choice for families? Because with this yacht you will find all the comfort both during navigation and during anchorage, thanks to its large comfort zone at the rear of the yacht. It is a boat with very easy access to the sea and with very little draft, so you can anchor very close to the beach or in the natural pools of Isla Saona or Playa Palmilla, where the water will come up to your waist. Thanks to this yacht for rent in Punta Cana, you can be 200 meters from the beach with the water at waist level and share a totally paradisiacal experience with all your family or friends.",
 		p2: "This Punta Cana charter yacht is a magnificent power charter boat designed for superior comfort with spacious open areas. With a length of 13.10 m and a width of 4.57 meters, this rental yacht in Punta Cana offers the necessary comfort to enjoy a yacht excursion along the most impressive transparent waters of the Caribbean Sea.",
+
 		gallery: [
 			{
 				id: "1",
@@ -238,9 +243,11 @@ export const boats = [
 		name: "Tiara 39 Open",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1654298934/PC-YACHTS/yachts/tiara-39-open/3_mnzxmo.jpg",
+
 		shortDesc: "Are you looking for to rent a private yacht a good price? Tiara 39 Open is a fantastic yacht charter option in these destinations: Punta Cana, Cap Cana and Casa de Campo",
 		p1: "This yacht for rent in Punta Cana Tiara 38 is a magnificent boat for cruising, fishing and family tourism. If you are looking for a private boat at a good price in Punta Cana, this Tiara 38 is a fantastic yacht rental option in Punta Cana.",
 		p2: "Is a motor charter boat with a design that perfectly combines comfort and speed. With its two powerful engines of 400 hp each, all our clients enjoy a pleasant navigation. Is one of those exceptional boats whose enduring popularity makes it’s a classic design. Aside from its quality construction and sporty profile, its appeal has a lot to do with its large fishing cabin and comfortable teak trimmed interior. Notable features of it include wide side decks, hard top, excellent skid decks and diesel engines.",
+
 		gallery: [
 			{
 				id: "1",
@@ -298,6 +305,7 @@ export const boats = [
 		name: "Meridian",
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1624144245/nuestra%20flota/meridian-42/Yate-5_wzfnuv.jpg",
+
 		shortDesc: "This Punta Cana Meridian 42 charter yacht is a magnificent motor charter boat designed for superior comfort with spacious open areas. Don't hesitate and book this yacht!",
 		p1: "This yacht for rent in Punta Cana Tiara 38 is a magnificent boat for cruising, fishing and family tourism. If you are looking for a private boat at a good price in Punta Cana, this Tiara 38 is a fantastic yacht rental option in Punta Cana.",
 		gallery: [
