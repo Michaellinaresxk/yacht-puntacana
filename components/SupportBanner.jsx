@@ -20,6 +20,7 @@ export const SupportBanner = () => {
 				sx={{
 					display: "flex",
 					flexDirection: "row",
+
 					backgroundColor: Colors.blur_blue,
 					justifyContent: "center",
 					flexWrap: "wrap",
@@ -74,7 +75,10 @@ export const SupportBanner = () => {
 								},
 							}}
 						>
-							If you do not know exactly what type of boat to rent or you do not have time, fill out this form and tell us how many people will be on board, possible dates, approximate budget and we will send you a proposal by email.
+							If you do not know exactly what type of boat to rent or you do not
+							have time, fill out this form and tell us how many people will be
+							on board, possible dates, approximate budget and we will send you
+							a proposal by email.
 						</Typography>
 					</Box>
 					<Box
@@ -93,12 +97,6 @@ export const SupportBanner = () => {
 								color="first_blue"
 								sx={{
 									":hover": { backgroundColor: Colors.second_blue },
-									// marginLeft: {
-									// 	xs: 0,
-									// 	sm: "px",
-									// 	md: "2px",
-									// 	lg: "3px",
-									// },
 								}}
 							>
 								<WhatsApp color="white" />

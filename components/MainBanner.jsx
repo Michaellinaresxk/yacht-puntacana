@@ -8,10 +8,10 @@ export const MainBanner = () => {
 					backgroundImage:
 						"url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1671125052/bg_rdqa9f.jpg)",
 					width: "100%",
-					height: { xs: "300px", sm: "400px", md: "500px", lg: "700px" },
+					height: { xs: "500px", sm: "600px", md: "750px", lg: "900px" },
 					backgroundPosition: {
-						sm: "30% 30%",
-						md: "50% 50%",
+						xs: "50% 50%",
+						md: "70% 50%",
 					},
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
@@ -23,7 +23,7 @@ export const MainBanner = () => {
 						display: "flex",
 						flexDirection: "column",
 						marginLeft: { xs: "20px", sm: "40px", md: "60px", lg: "70px" },
-						marginTop: { xs: "40px", sm: "60px", md: "80px", lg: "100px" },
+						marginTop: { xs: "70px", sm: "60px", md: "80px", lg: "100px" },
 						position: "absolute",
 					}}
 				>
@@ -66,7 +66,7 @@ export const MainBanner = () => {
 					sx={{
 						backgroundColor: "#fff",
 						marginLeft: { xs: "20px", sm: "40px", md: "60px", lg: "70px" },
-						marginTop: { xs: "150px", sm: "200px", md: "280px" },
+						marginTop: { xs: "180px", sm: "200px", md: "250px", lg: "280px" },
 						paddingRight: { xs: "5px", sm: "10px", md: "20px" },
 						paddingLeft: { xs: "5px", sm: "10px", md: "20px" },
 						":hover": { backgroundColor: "#ddd" },
