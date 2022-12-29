@@ -13,7 +13,7 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 					backgroundColor: "white",
 					marginBottom: "100px",
 					alignItems: "center",
-					width: "10%",
+					width: { xs: "80%", sm: "50%", md: "15%", lg: "20%", xl: "12%" },
 					height: "5%",
 				}}
 			>
@@ -41,7 +41,10 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 					<Typography variant="subtitle1">{contact}:</Typography>
 					<Typography
 						variant="subtitle1"
-						sx={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.6)" }}
+						sx={{
+							fontWeight: "bold",
+							color: "rgba(0, 0, 0, 0.6)",
+						}}
 					>
 						{contact_value}
 					</Typography>

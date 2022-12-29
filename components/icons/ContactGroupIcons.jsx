@@ -15,8 +15,8 @@ export const ContactGroupIcons = () => {
 			<Box
 				sx={{
 					display: "flex",
-					flexDirection: "row",
-					flexWrap: "wrap",
+					flexDirection: { xs: "column", md: "row" },
+
 					justifyContent: "space-around",
 					alignItems: "center",
 					marginTop: "50px",

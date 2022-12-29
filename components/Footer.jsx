@@ -37,6 +37,7 @@ export const Footer = () => {
 							flex: 1,
 							flexDirection: "column",
 							marginLeft: "50px",
+							marginTop: "30px",
 						}}
 					>
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
@@ -50,7 +51,10 @@ export const Footer = () => {
 							}}
 						>
 							<Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
-							Are you planning to rent a yacht in punta cana? Enjoy a private yacht charter and sail in the Caribbean Sea. We provide the best yacht experience with our luxury yachts. With us you will find the best offers for your unforgettable trip.
+								Are you planning to rent a yacht in punta cana? Enjoy a private
+								yacht charter and sail in the Caribbean Sea. We provide the best
+								yacht experience with our luxury yachts. With us you will find
+								the best offers for your unforgettable trip.
 							</Typography>
 						</Box>
 					</Box>
@@ -91,7 +95,7 @@ export const Footer = () => {
 						}}
 					>
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
-						Payment Methods
+							Payment Methods
 						</Typography>
 						<Box sx={{ marginTop: "1em" }}>
 							<Image alt="metodos de pago" src={pay_image} />
