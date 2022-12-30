@@ -29,11 +29,13 @@ export const BannerImageClip = () => {
 					}}
 				>
 					<Typography variant="h4">
-					More than 10 years providing the best yacht charter prices without intermediaries for a perfect and beautiful experience.
+						More than 10 years providing the best yacht charter prices without
+						intermediaries for a perfect and beautiful experience.
 					</Typography>
 
 					<Typography variant="h6" marginTop={5}>
-					We are owners of our yacht fleet and we have the experience and knowledge to offer you the best
+						We are owners of our yacht fleet and we have the experience and
+						knowledge to offer you the best
 					</Typography>
 					<Box sx={{ color: Colors.first_blue }} marginTop={5}>
 						<Box
@@ -44,7 +46,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-							Save Hassle
+								Save Hassle
 							</Typography>
 						</Box>
 						<Box
@@ -55,7 +57,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-							Hire Experts
+								Hire Experts
 							</Typography>
 						</Box>
 						<Box
@@ -66,7 +68,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-							Without Intermediaries
+								Without Intermediaries
 							</Typography>
 						</Box>
 						<Box
@@ -77,7 +79,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-							Ensure your safety
+								Ensure your safety
 							</Typography>
 						</Box>
 						<Box
@@ -88,13 +90,14 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-							Let's go yachting
+								Let's go yachting
 							</Typography>
 						</Box>
 					</Box>
 				</Box>
 				<Box
 					sx={{
+						display: { xs: "none", md: "block" },
 						flex: 1,
 						backgroundImage:
 							"url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1671227427/DJI_0426_aisn2a.jpg)",

@@ -72,16 +72,39 @@ export const Footer = () => {
 						</Typography>
 						<Box sx={{ marginTop: "1em" }}>
 							<Link href="/">
-								<Typography>Home</Typography>
+								<Typography sx={{ ":hover": { color: Colors.first_blue } }}>
+									Home
+								</Typography>
 							</Link>
 							<Link href="/services">
-								<Typography>Services</Typography>
+								<Typography
+									sx={{
+										":hover": { color: Colors.first_blue },
+										marginTop: "5px",
+									}}
+								>
+									Services
+								</Typography>
 							</Link>
 							<Link href="/destiny">
-								<Typography>Destinations</Typography>
+								<Typography
+									sx={{
+										":hover": { color: Colors.first_blue },
+										marginTop: "5px",
+									}}
+								>
+									Destinations
+								</Typography>
 							</Link>
 							<Link href="/contact_us">
-								<Typography>Contact</Typography>
+								<Typography
+									sx={{
+										":hover": { color: Colors.first_blue },
+										marginTop: "5px",
+									}}
+								>
+									Contact
+								</Typography>
 							</Link>
 						</Box>
 					</Box>

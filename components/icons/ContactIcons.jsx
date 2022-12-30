@@ -13,8 +13,9 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 					backgroundColor: "white",
 					marginBottom: "100px",
 					alignItems: "center",
-					width: { xs: "80%", sm: "50%", md: "15%", lg: "20%", xl: "12%" },
-					height: "5%",
+					width: { xs: "60%", sm: "50%", md: "15%", lg: "20%", xl: "12%" },
+					height: { xs: "10%", md: "5%" },
+					marginTop: { xs: "5px", sm: "10px" },
 				}}
 			>
 				<Box>
