@@ -4,7 +4,7 @@ export const DescriptionBoatComponent = ({ data }) => {
 	return (
 		<Box
 			sx={{
-				marginTop: "50px",
+				marginTop: "70px",
 				width: "auto",
 				maxWidth: "90%",
 				marginLeft: "auto",

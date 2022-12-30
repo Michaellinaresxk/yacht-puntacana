@@ -9,7 +9,13 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Language } from "@mui/icons-material";
+import {
+	House,
+	Language,
+	RoomService,
+	Navigation,
+	PhoneCallback,
+} from "@mui/icons-material";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Colors } from "../../styles/theme";
@@ -44,18 +50,20 @@ function DrawerAppBar(props) {
 					alt="logo image"
 					style={{
 						alignItems: "center",
-						width: "100px",
-						height: "40px",
+						// width: "100px",
+						// height: "40px",
 						margin: "10px",
 					}}
+					width={140}
+					height={50}
 				/>
 			</Link>
-			<Divider sx={{ color: Colors.title }} />
+			<Divider sx={{ backgroundColor: Colors.first_blue }} />
 			<List
 				sx={{
 					fontFamily: "Roboto",
 					fontWeight: "300",
-					fontSize: "16px",
+					fontSize: "22px",
 				}}
 			>
 				{/* {navItems.map((item) => (
@@ -70,50 +78,106 @@ function DrawerAppBar(props) {
 					</ListItem>
 				))} */}
 
-				<ListItem disablePadding>
+				<ListItem
+					disablePadding
+					sx={{ ":hover": { backgroundColor: "rgba(0, 0, 0, 0.1)" } }}
+				>
 					<Link href="/">
-						<ListItemButton
+						<Box
 							sx={{
-								textAlign: "left",
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
 							}}
 						>
-							<ListItemText primary="Inicio" />
-						</ListItemButton>
+							<House sx={{ marginLeft: "10px", color: Colors.first_blue }} />
+							<ListItemButton
+								sx={{
+									textAlign: "left",
+								}}
+							>
+								<ListItemText primary="Inicio" />
+							</ListItemButton>
+						</Box>
 					</Link>
 				</ListItem>
 
-				<ListItem disablePadding>
+				<ListItem
+					disablePadding
+					sx={{ ":hover": { backgroundColor: "rgba(0, 0, 0, 0.1)" } }}
+				>
 					<Link href="/services">
-						<ListItemButton
+						<Box
 							sx={{
-								textAlign: "left",
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
 							}}
 						>
-							<ListItemText primary="Servicio" />
-						</ListItemButton>
+							<RoomService
+								sx={{ color: Colors.first_blue, marginLeft: "15px" }}
+							/>
+							<ListItemButton
+								sx={{
+									textAlign: "left",
+								}}
+							>
+								<ListItemText primary="Servicio" />
+							</ListItemButton>
+						</Box>
 					</Link>
 				</ListItem>
 
-				<ListItem disablePadding>
+				<ListItem
+					disablePadding
+					sx={{ ":hover": { backgroundColor: "rgba(0, 0, 0, 0.1)" } }}
+				>
 					<Link href="/destiny">
-						<ListItemButton
+						<Box
 							sx={{
-								textAlign: "left",
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
 							}}
 						>
-							<ListItemText primary="Destino" />
-						</ListItemButton>
+							<Navigation
+								sx={{ color: Colors.first_blue, marginLeft: "15px" }}
+							/>
+							<ListItemButton
+								sx={{
+									textAlign: "left",
+									":hover": { backgroundColor: "rgba(0, 0, 0, 0.1)" },
+								}}
+							>
+								<ListItemText primary="Destino" />
+							</ListItemButton>
+						</Box>
 					</Link>
 				</ListItem>
-				<ListItem disablePadding>
+
+				<ListItem
+					disablePadding
+					sx={{ ":hover": { backgroundColor: "rgba(0, 0, 0, 0.1)" } }}
+				>
 					<Link href="/contact_us">
-						<ListItemButton
+						<Box
 							sx={{
-								textAlign: "left",
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
 							}}
 						>
-							<ListItemText primary="Contacto" />
-						</ListItemButton>
+							<PhoneCallback
+								sx={{ color: Colors.first_blue, marginLeft: "15px" }}
+							/>
+							<ListItemButton
+								sx={{
+									textAlign: "left",
+								}}
+							>
+								<ListItemText primary="Contacto" />
+							</ListItemButton>
+						</Box>
 					</Link>
 				</ListItem>
 			</List>
