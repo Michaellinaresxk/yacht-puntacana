@@ -10,6 +10,7 @@ export const Colors = {
 	title: "rgba(0, 0, 0, 0.7)",
 	body: "#fafafa",
 	white: "#FFF",
+	alt_color: "dce4ff"
 };
 
 export const theme = createTheme({
@@ -41,6 +42,10 @@ export const theme = createTheme({
 		white: {
 			main: Colors.white,
 		},
+		alt: {
+			main: Colors.alt_color,
+		},
+
 	},
 
 	// components: {
