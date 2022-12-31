@@ -20,7 +20,7 @@ export const MainTitle = () => {
 					variant="h2"
 					sx={{
 						fontWeight: "bold",
-						color: "rgba(0, 0, 0, 0.8)",
+						color: "first_blue",
 						fontSize: "clamp(2em, 5vw, 4em)",
 					}}
 				>

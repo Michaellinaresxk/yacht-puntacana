@@ -29,7 +29,6 @@ export const MainBanner = () => {
 				>
 					<Typography
 						sx={{
-							color: "rgba(0, 0, 0, 0.5)",
 							fontSize: "clamp(2em, 4vw, 3em)",
 							marginTop: { xs: "20px" },
 						}}
@@ -43,7 +42,6 @@ export const MainBanner = () => {
 					>
 						<Typography
 							sx={{
-								color: "rgba(0, 0, 0, 0.5)",
 								fontSize: "clamp(1.5em, 4vw, 3em)",
 							}}
 						>
@@ -51,8 +49,8 @@ export const MainBanner = () => {
 						</Typography>
 						<Typography
 							sx={{
-								color: "rgba(0, 0, 0, 0.8)",
 								marginLeft: "10px",
+								fontWeight: "bold",
 								fontSize: "clamp(1.5em, 4vw, 3em)",
 							}}
 						>
@@ -67,14 +65,14 @@ export const MainBanner = () => {
 						backgroundColor: "#fff",
 						marginLeft: { xs: "20px", sm: "40px", md: "60px", lg: "70px" },
 						marginTop: { xs: "180px", sm: "200px", md: "250px", lg: "280px" },
-						paddingRight: { xs: "5px", sm: "10px", md: "20px" },
-						paddingLeft: { xs: "5px", sm: "10px", md: "20px" },
+						paddingRight: { xs: "10px", sm: "10px", md: "20px" },
+						paddingLeft: { xs: "10px", sm: "10px", md: "20px" },
 						":hover": { backgroundColor: "#ddd" },
 						position: "absolute",
 						fontSize: { xs: "10px", sm: "13px", md: "18px" },
 					}}
 				>
-					LUXURY YACHt
+					LUXURY YACHT
 				</Button>
 			</Paper>
 		</>

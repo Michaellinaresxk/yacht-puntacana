@@ -11,7 +11,7 @@ export const DestinationsContainer = () => {
 					flexDirection: "column",
 					justifyContent: "center",
 					alignItems: "center",
-					marginTop: "50px",
+					marginTop: "5em",
 				}}
 			>
 				<Box
@@ -22,8 +22,8 @@ export const DestinationsContainer = () => {
 						alignItems: "center",
 					}}
 				>
-					<Typography variant="h4">Destinations:</Typography>
-					<Typography variant="body1">
+					<Typography variant="h3">Destinations:</Typography>
+					<Typography sx={{ fontSize: "1.2rem" }}>
 						Chosee one of the destinations we have for you.
 					</Typography>
 				</Box>
