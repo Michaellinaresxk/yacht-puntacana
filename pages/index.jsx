@@ -6,7 +6,6 @@ import { MainTitle } from "../components/MainTitle";
 import { BannerImageClip } from "../components/BannerImageClip";
 import { BookNowButton } from "../components/buttons/BookNowButton";
 import { VideoComponent } from "../components/VideoComponent";
-import TabsHomeComponent from "../components/TabsHomeComponent";
 import { BoatsComponent } from "../components/BoatsComponent";
 import { DestinationsContainer } from "../components/DestinationsContainer";
 
@@ -31,11 +30,10 @@ export default function Home({ boat_list }) {
 			<MainTitle />
 			<BoatsComponent data={boat_list} />
 			<BookNowButton />
-			<SupportBanner />
 			<VideoComponent />
-			<TabsHomeComponent />
-			<BannerImageClip />
+			<SupportBanner />
 			<DestinationsContainer />
+			<BannerImageClip />
 			<Footer />
 		</>
 	);

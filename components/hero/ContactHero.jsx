@@ -24,7 +24,7 @@ export const ContactHero = ({ theme }) => {
 						// position: "absolute",
 					}}
 				>
-					<Typography variant="h4" color={Colors.white}>
+					<Typography variant="h4" color={Colors.white} sx={{fontWeight: "bold"}}	>
 						Contact Us:
 					</Typography>
 				</Box>

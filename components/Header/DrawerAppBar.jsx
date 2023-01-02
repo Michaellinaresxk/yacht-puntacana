@@ -54,7 +54,7 @@ function DrawerAppBar(props) {
 						// height: "40px",
 						margin: "10px",
 					}}
-					width={140}
+					width={170}
 					height={50}
 				/>
 			</Link>
@@ -90,7 +90,7 @@ function DrawerAppBar(props) {
 								alignItems: "center",
 							}}
 						>
-							<House sx={{ marginLeft: "10px", color: Colors.first_blue }} />
+							<House sx={{ marginLeft: "15px", color: Colors.first_blue }} />
 							<ListItemButton
 								sx={{
 									textAlign: "left",

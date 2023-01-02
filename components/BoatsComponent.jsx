@@ -22,19 +22,19 @@ export const BoatsComponent = ({ data }) => {
 					maxWidth: "lg",
 				}}
 			>
-				<Grid container spacing={3} rowGap={2}>
+				<Grid container spacing={3} rowGap={3}>
 					{data.map((boat) => (
 						<Grid item key={boat.id} xs={12} sm={6} md={4}>
 							<Card
 								sx={{
-									maxWidth: 345,
+									maxWidth: 400,
 									marginLeft: { xs: "auto" },
 									marginRight: { xs: "auto" },
 								}}
-								elevation={10}
+								elevation={4}
 							>
 								<CardMedia
-									sx={{ height: 200 }}
+									sx={{ height: 250 }}
 									image={boat.principalImage}
 									title="green iguana"
 								/>

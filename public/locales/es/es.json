@@ -1,0 +1,139 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "destinations": "Destinos",
+    "contact": "Contacto"
+  },
+  "mainBanner": {
+    "title": "¡Sube a bordo",
+    "subtitle": "y vive la",
+    "span": " Experiencia!"
+  },
+  "weAre": {
+    "subtitle": "Somos:",
+    "slogan": "Disponemos de una amplia selección de alquiler de yates, en Punta Cana y Casa de campo."
+  },
+  "video-tour": {
+    "slogan": "Descubre nuestras más interesantes aventuras abordo de uno de nuestros yates."
+  },
+  "owners": {
+    "title": "Más de 10 años trabajando con los mejores precios, sin intermediarios para una mejor experiencia de alquiler de yates.",
+    "subtitle": "Somos propietarios nuestra flota de yates, los cuales están en perfecto estado de conservación y cuentan con todas las medidas de seguridad necesarias para que su alquiler sea una experiencia inolvidable.",
+    "list1": "Ahorra Disgustos",
+    "list2": "Contrata Expertos",
+    "list3": "Sin Intermadiarios",
+    "list4": "Garantiza tu seguridad",
+    "list5": "Vamos a navegar"
+  },
+  "yacht-card": {
+    "tiara39": "¿Buscas alquilar un bote privado a buen precio? Esta Tiara 39 Open es una fantástica opción de alquiler de yate en los destinos: Punta Cana, Cap Cana y Casa de campo",
+    "tiara43": "Perfecta embarcación para fondear muy cerca de la playa o en las piscinas naturales de Isla Saona o Playa Palmilla, donde el agua le llegará a la altura de su cintura.",
+    "fairline": "Ideal yate diseñado para tener una estancia de lujo y disfrutar de unas vacaciones inolvidables, es excelente para poder desplazarse rápidamente y recorrer la isla de Republica Dominicana.",
+    "cranchi": "Con este yate de alquiler en Punta Cana y La Romana “Casa de Campo”, harás realidad tus sueños de navegar por la isla de República Dominicana, asi que... no lo dudes más y reserva este yate!!",
+    "aiconfly-60": "El yate a motor, 'Acion Fly 60' es un buen ejemplo de diseño italiano. Dispone de dos camarotes cuidadosamente dispuestos y una habitación doble para niños o invitados. "
+  },
+  "services-card": {
+    "p1": "En Yachts Punta Cana hacemos todo posible, organizando chárteres de yates privados de lujo bajo las especificaciones del cliente y proporcionando el mejor servicio personalizado para cubrir todas las necesidades de tu evento.",
+    "p2": "Trabajamos con las mejores empresas de Catering de eventos privados de República Dominicana. Dinos que evento deseas celebrar y nuestro equipo se pondrá en contacto contigo para escucharte y ofrecerte propuestas personalizadas ajustadas a tus necesidades.",
+    "p3": "Ofrecemos un servicio garantizado desde la puntualidad, el confort de nuestros vehículos, la cálida atención de nuestros choferes y el compromiso por tu seguridad. Te recogemos en tu hotel o villa y te llevamos directamente a la Marina, para abordar tu yate, navegar a tu destino y vivir una experiencia inolvidable.",
+    "p4": "Somos una empresa con la experiencia, el conocimiento y la reputación de ofrecer los mejores eventos a la medida de nuestros clientes. Desde Punta Cana Yacht Rentals organizamos fiestas privadas, celebraciones de cumpleaños, despedida de solteros/as, eventos de empresa, fiestas de cóctel…",
+    "transport": "Transporte Privado"
+  },
+  "services-page": {
+    "title": "Elige tu Experiencia",
+    "our-services": "Nuestros Servicios",
+    "cite": "Si quieres libertad, aire fresco, aventuras. Todo esto esta en el oceano.",
+    "slogan": "Vive La Experiencia",
+    "subtitle": "Elige Tu Yate"
+  },
+  "destinations": {
+    "title": "Destinos:",
+    "slogan": "Elige uno de los destinos que tenemos para ti.",
+    "palmilla": "Playa Palmilla",
+    "palmilla-description": "Palmilla es una playa virgen integrante del Parque Nacional del Este, en la localidad de Bayahibe, situada en la zona peninsular del Este, justo enfrente de Isla Saona. Un entorno idílico de aguas turquesas, fina arena blanca, abundante selva tropical y piscinas naturales de un metro de profundidad situadas a 200 metros de la costa.",
+    "puntacana-description": "Punta Cana, en el extremo más oriental de República Dominicana, limita con el mar Caribe y con el océano Atlántico. La famosa playa de Bávaro, declarada como una de las mejores playas del mundo por la Unesco, se encuentra entre las playas de arena blanca más largas del Caribe, extendiéndose 32 kilómetros y rodeada de arrecifes de coral.",
+    "catalina": "Isla Catalina",
+    "catalina-description": "Situada a 1,5 millas de tierra firme en la esquina sureste de la República Dominicana, cerca de las provincias de La Altagracia y La Romana. Es un Parque Natural protegido con una superficie aproximada de 9.6 kilómetros cuadrados y totalmente deshabitado. Esta isla descubierta por los españoles, bautizada por el navegante Cristóbal Colón, dispone de paisajes realmente pintorescos y de belleza inigualable. Por sus cristalinas y tibias aguas es el hogar ideal para una infinidad de especies marinas. Isla Catalina es uno de los mejores lugares de República Dominicana para la práctica de snorkel, con su increíble vida marina y arrecifes de coral vírgenes."
+  },
+  "footer": {
+    "description": "Estas planeando rentar un yate en punta cana? Disfruta de un yacht charter privado and sail en el mar del caribe. Tenemos la mejor experiencia en renta de yates y contamos con nuestra flota de lujo. Con nosotros podrás encontrar las mejores ofertas para que tengas una experiencia inolvidable.",
+    "quicklinks": "Enlaces",
+    "payment-methods": "Metodos de pago"
+  },
+  "included-serv": {
+    "included": "Servicios Incluidos",
+    "fuel": "Fuel",
+    "captain": "Captain and Sailor",
+    "transport": "Transporte Privado",
+    "snorkeling": "Equipo de snorkel",
+    "lifeSavin": "Salvavidas",
+    "ice": "Hielo",
+    "water": "Agua",
+    "softDrinl": "Bebidas refrescantes",
+    "beer": "Cerveza",
+    "menu": "Menú a bordo (reservar)",
+    "access": "Acceso a Saona, Palmilla, e Isla Catalina"
+  },
+  "technical": {
+    "technical": "Especificaciones Tecnicas",
+    "Builder": "Constructor",
+    "Boat-Type": "Tipo de Barco",
+    "Year": "Año",
+    "Remodeling": "Renovación",
+    "Length": "Eslora",
+    "Beam": "Manga",
+    "Draft": "Calado",
+    "speed": "Velocidad Maxima",
+    "material": "Material del casco",
+    "Engines": "Motores",
+    "Fuel-Type": "Tipo de Combustible",
+    "Bathrooms": "Baños",
+    "Capacity": "Capacidad de pasajeros",
+    "Air-Conditioning": "Aire acondicionado",
+    "Sound-System": "Sistema de Sonido",
+    "Bluetooth": "Bluetooth"
+  },
+  "cranchi": {
+    "desc": "Descripción",
+    "p1": "Cranchi 50 significa diversión. Estar a bordo de un yate Cranchi es siempre una excelente experiencia. Experimenta lo excepcional, ser mejor que el mejor. Este yate tiene un perfil elegante y puede ofrecerte una experiencia digna de un rey. ",
+    "p2": "El yate cranchi 50 garantiza agilidad y excelente rendimiento. En el agua, este barco no te defraudará: puede ofrecerte una experiencia emocionante y garantizarte la seguridad en todo momento. Es ligero, equilibrado y súper resistente gracias a los materiales de primera calidad utilizados para construir el casco y la superestructura.",
+    "p3": "Los grandes espacios a bordo, que incluyen 3 camarotes y 2 baños, proporcionan una inmediata sensación de confort y bienestar, ofreciendo la posibilidad a cada pasajero de satisfacer las propias exigencias individuales. ",
+    "yacht-gallery": "Galeria",
+    "smart-choice": "Buena elección",
+    "p4": "Este yate en alquiler Cranchi 50 es una elección inteligente para aquellos que desean experimentar una nueva sensación de libertad en estilo y comodidad. Sube a bordo de este yate en República Dominicana y prepárate para una aventura de alta velocidad en el mar con tus amigos y familiares. Este yate de alquiler en Punta Cana tiene una capacidad de hasta 16 personas, y es perfecto para explorar las mejores playas de República Dominicana.",
+    "p5": "Cranchin 50 es un cómodo yate a motor con un estilo elegante, lleno de soluciones prácticas, que llenará de placer tu navegación y tus vacaciones. La espaciosa cubierta, la sala de estar interior, los camarotes y los baños te brindan libertad de movimiento y el equipamiento funcional y técnico brinda una comodidad extrema."
+  },
+  "contactQuote": {
+    "title": "Si no sabes exactamente que tipo de barco alquilar o no tienes tiempo, rellena este formulario y dinos cuantas personas irán a bordo, posibles fechas, presupuesto aproximado y te enviaremos una propuesta por email."
+  },
+  "contact-page": {
+    "title": "Contáctanos",
+    "address": "Dirección:",
+    "phone": "Teléfono:",
+    "email": "Correo",
+    "howtofindus": "Como encontrarnos:",
+    "keepinTouch": "Mantente en contacto"
+  },
+  "contactForm": {
+    "name": "Nombre:",
+    "email": "Correo:",
+    "message": "Mensaje:",
+    "errorMissing": "Todos los campos son obligatorios",
+    "errorNotValidEmail": "Write a valid email",
+    "emailSuccess": "Email sended successfully",
+    "sendingEmail": "Enviando Mensaje..."
+  },
+  "button": {
+    "Our-yachts": "Nuestos Yates",
+    "more": "Más Información",
+    "ContactUs": "Contáctanos",
+    "sendMessage": "Enviar Mensaje",
+    "Rent-Now": "Reserva Ya",
+    "bookYourYacht": "Reserva Tu Yate",
+    "luxuryyacht": "Yates de lujo",
+    "callUs": "Llamanos",
+    "email": "Correo",
+    "catering": "Mas Info de Servicios de catering"
+  }
+}
