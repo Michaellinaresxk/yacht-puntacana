@@ -136,7 +136,7 @@ export const boats = [
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1624143983/nuestra%20flota/aicon-fly-56/Aicon%20fly%2056.jpg",
 
-		shortDesc: "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests.",
+		shortDesc: "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests. 100% recommended",
 		p1: "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests. It also has a crew cabin, 3 bathrooms/showers, a living and dining room and a kitchen. It has air conditioning throughout the boat and its two 800Hp CAT diesel engines give it great power that will take you far to the places you have been dreaming of.",
 
 		gallery: [
@@ -201,7 +201,7 @@ export const boats = [
 		principalImage:
 			"https://res.cloudinary.com/michaelxk-com/image/upload/v1654297562/PC-YACHTS/yachts/Tiara-43-Sovran/1_gvy77c.jpg",
 
-		shortDesc: "Perfect yacht to anchor very close to the beach or in the natural pools of Saona island or Palmilla beach, where the water will come up to your waist.",
+		shortDesc: "Perfect yacht to anchor very close to the beach or in the natural pools of Saona island or Palmilla beach, where the water will come up to your waist. Good option for fun",
 		p1: "Why is this yacht charter in Punta Cana a very good choice for families? Because with this yacht you will find all the comfort both during navigation and during anchorage, thanks to its large comfort zone at the rear of the yacht. It is a boat with very easy access to the sea and with very little draft, so you can anchor very close to the beach or in the natural pools of Isla Saona or Playa Palmilla, where the water will come up to your waist. Thanks to this yacht for rent in Punta Cana, you can be 200 meters from the beach with the water at waist level and share a totally paradisiacal experience with all your family or friends.",
 		p2: "This Punta Cana charter yacht is a magnificent power charter boat designed for superior comfort with spacious open areas. With a length of 13.10 m and a width of 4.57 meters, this rental yacht in Punta Cana offers the necessary comfort to enjoy a yacht excursion along the most impressive transparent waters of the Caribbean Sea.",
 

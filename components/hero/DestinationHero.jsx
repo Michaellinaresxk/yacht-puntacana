@@ -26,8 +26,8 @@ export const DestinationHero = () => {
 						alignItems: "center",
 					}}
 				>
-					<Typography variant="h4" color={Colors.white}>
-						DESTINATIONS:
+					<Typography variant="h4" color={Colors.white} sx={{fontWeight: "bold"}}>
+						Destinations:
 					</Typography>
 
 					<Typography variant="h5" color={Colors.white}>
