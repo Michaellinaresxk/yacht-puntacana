@@ -96,7 +96,7 @@ function DrawerAppBar(props) {
 									textAlign: "left",
 								}}
 							>
-								<ListItemText primary="Inicio" />
+								<ListItemText primary="Home" />
 							</ListItemButton>
 						</Box>
 					</Link>
@@ -122,7 +122,7 @@ function DrawerAppBar(props) {
 									textAlign: "left",
 								}}
 							>
-								<ListItemText primary="Servicio" />
+								<ListItemText primary="Services" />
 							</ListItemButton>
 						</Box>
 					</Link>
@@ -149,7 +149,7 @@ function DrawerAppBar(props) {
 									":hover": { backgroundColor: "rgba(0, 0, 0, 0.1)" },
 								}}
 							>
-								<ListItemText primary="Destino" />
+								<ListItemText primary="Destination" />
 							</ListItemButton>
 						</Box>
 					</Link>
@@ -175,7 +175,7 @@ function DrawerAppBar(props) {
 									textAlign: "left",
 								}}
 							>
-								<ListItemText primary="Contacto" />
+								<ListItemText primary="Contact us" />
 							</ListItemButton>
 						</Box>
 					</Link>
@@ -279,7 +279,7 @@ function DrawerAppBar(props) {
 							color: Colors.title,
 							fontFamily: "Roboto",
 							fontWeight: "300",
-							fontSize: { sm: "12px", md: "14px", lg: "18px" },
+							fontSize: { sm: "12px", md: "14px", lg: "16px" },
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
@@ -289,8 +289,8 @@ function DrawerAppBar(props) {
 						sx={{
 							color: Colors.title,
 							fontFamily: "Roboto",
-							fontWeight: "700",
-							fontSize: { sm: "12px", md: "14px", lg: "18px" },
+							fontWeight: "300",
+							fontSize: { sm: "12px", md: "14px", lg: "16px" },
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
@@ -300,8 +300,8 @@ function DrawerAppBar(props) {
 						sx={{
 							color: Colors.title,
 							fontFamily: "Roboto",
-							fontWeight: "700",
-							fontSize: { sm: "12px", md: "14px", lg: "18px" },
+							fontWeight: "300",
+							fontSize: { sm: "12px", md: "14px", lg: "16px" },
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
@@ -311,8 +311,8 @@ function DrawerAppBar(props) {
 						sx={{
 							color: Colors.title,
 							fontFamily: "Roboto",
-							fontWeight: "700",
-							fontSize: { sm: "12px", md: "14px", lg: "18px" },
+							fontWeight: "300",
+							fontSize: { sm: "12px", md: "14px", lg: "16px" },
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
