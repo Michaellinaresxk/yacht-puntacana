@@ -26,3 +26,53 @@ a {
 		background: black;
 	}
 }
+
+.video-wrapper {
+	position: relative;
+	aspect-ratio: 16/9;
+	margin-top: 50px;
+	margin-bottom: 10%;
+	overflow: hidden;
+	max-width: 80%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* .iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border: none;
+} */
+
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 0;
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+}
+
+.video-player {
+	width: 80%;
+	height: auto;
+	position: relative;
+	padding-top: 56.25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.video-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
