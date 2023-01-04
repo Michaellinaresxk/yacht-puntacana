@@ -1,5 +1,4 @@
 import destinos from "../database/destinos.js";
-import "../database/destination.json";
 import Link from "next/link";
 import Image from "next/image.js";
 import {

@@ -9,13 +9,14 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 				sx={{
 					display: "flex",
 					flexDirection: "column",
-					justifyContent: "space-between",
+					justifyContent: { xs: "center", md: "space-between" },
 					backgroundColor: "white",
 					marginBottom: "100px",
 					alignItems: "center",
-					width: { xs: "60%", sm: "50%", md: "15%", lg: "20%", xl: "12%" },
-					height: { xs: "10%", md: "5%" },
-					marginTop: { xs: "5px", sm: "10px" },
+					// width: { xs: "30%", sm: "50%", md: "15%", lg: "20%", xl: "12%" },
+					// height: "auto",
+					// marginTop: { xs: "1px", sm: "3px" },
+					padding: 0,
 				}}
 			>
 				<Box>
@@ -36,7 +37,7 @@ export const ContactIcons = ({ icon, contact, contact_value }) => {
 						flexDirection: "column",
 						justifyContent: "center",
 						alignItems: "center",
-						marginTop: "30px",
+						marginTop: "20px",
 					}}
 				>
 					<Typography variant="subtitle1">{contact}:</Typography>

@@ -12,10 +12,18 @@ export const VideoDesktop = () => {
 					flexDirection: "column",
 					justifyContent: "center",
 					alignItems: "center",
+					width: { xs: "90%", md: "80%" },
+					marginLeft: "auto",
+					marginRight: "auto",
 				}}
 			>
-				<Typography variant="h3">Video Tour:</Typography>
-				<Typography sx={{ fontSize: "1.2rem" }}>
+				<Typography
+					variant="h3"
+					sx={{ fontSize: { xs: "2.3rem", md: "3rem" } }}
+				>
+					Video Tour:
+				</Typography>
+				<Typography sx={{ fontSize: { xs: "1.1rem", md: "1.2rem" } }}>
 					Find out more with our video of the most beautiful and pleasant yachts
 					adventures.
 				</Typography>
