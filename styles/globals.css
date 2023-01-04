@@ -27,18 +27,6 @@ a {
 	}
 }
 
-/* .video-wrapper {
-	position: relative;
-	aspect-ratio: 16/9;
-	margin-top: 50px;
-	margin-bottom: 10%;
-	overflow: hidden;
-	max-width: 80%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-} */
-
 .video-player {
 	width: 80%;
 	height: auto;
@@ -53,10 +41,4 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-}
-
-@media screen and (min-width: 600px) {
-	.image-responsive {
-		width: 500px;
-	}
 }

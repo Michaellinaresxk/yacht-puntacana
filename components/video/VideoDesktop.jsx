@@ -24,6 +24,9 @@ export const VideoDesktop = () => {
 					Video Tour:
 				</Typography>
 				<Typography sx={{ fontSize: { xs: "1.1rem", md: "1.2rem" } }}>
+
+				}}
+			>
 					Find out more with our video of the most beautiful and pleasant yachts
 					adventures.
 				</Typography>
