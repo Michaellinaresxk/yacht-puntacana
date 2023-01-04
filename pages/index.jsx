@@ -31,7 +31,6 @@ export default function Home({ boat_list }) {
 			<MainTitle />
 			<BoatsComponent data={boat_list} />
 			<BookNowButton />
-			{/* <VideoComponent /> */}
 			<VideoDesktop />
 			<SupportBanner />
 			<DestinationsContainer />

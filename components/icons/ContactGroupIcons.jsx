@@ -17,9 +17,14 @@ export const ContactGroupIcons = () => {
 				sx={{
 					display: "flex",
 					flexDirection: { xs: "column", md: "row" },
-					justifyContent: "space-around",
+					justifyContent: { xs: "center", md: "space-around" },
+					alignItems: { xs: "center" },
+					width: "90%",
+					height: "auto",
 					alignItems: "center",
-					marginTop: "50px",
+					marginTop: "70px",
+					marginLeft: "auto",
+					marginRight: "auto",
 				}}
 			>
 				<ContactIcons
@@ -28,7 +33,7 @@ export const ContactGroupIcons = () => {
 					contact_value="Casa Punta Cana"
 				/>
 
-				<Divider
+				{/* <Divider
 					component="hr"
 					sx={{
 						display: { xs: "block", md: "none" },
@@ -37,14 +42,14 @@ export const ContactGroupIcons = () => {
 					}}
 					light
 					flexItem={true}
-				/>
+				/> */}
 
 				<ContactIcons
 					icon={phone}
 					contact="Phone"
 					contact_value="+ 1 829 296 3529"
 				/>
-				<Divider
+				{/* <Divider
 					sx={{
 						display: { xs: "block", md: "none" },
 						marginBottom: "15px",
@@ -52,14 +57,14 @@ export const ContactGroupIcons = () => {
 					}}
 					light
 					flexItem={true}
-				/>
+				/> */}
 
 				<ContactIcons
 					icon={email}
 					contact="E-mail"
 					contact_value="booking@yachtpuntacana.com"
 				/>
-				<Divider
+				{/* <Divider
 					sx={{
 						display: { xs: "block", md: "none" },
 						marginBottom: "15px",
@@ -67,7 +72,7 @@ export const ContactGroupIcons = () => {
 					}}
 					flexItem={true}
 					light
-				/>
+				/> */}
 				<ContactIcons
 					icon={instagram}
 					contact="Instagram"
