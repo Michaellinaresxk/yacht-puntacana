@@ -12,8 +12,8 @@ import {
 export const BoatsTechnicalData = ({ data }) => {
 	// getting keys and values from the data object
 
-	let keys = Object.keys(data.features);
-	let values = Object.values(data.features);
+	const keys = Object.keys(data.features);
+	const values = Object.values(data.features);
 
 	return (
 		<>

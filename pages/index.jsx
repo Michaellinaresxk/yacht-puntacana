@@ -5,7 +5,6 @@ import { SupportBanner } from "../components/SupportBanner";
 import { MainTitle } from "../components/MainTitle";
 import { BannerImageClip } from "../components/BannerImageClip";
 import { BookNowButton } from "../components/buttons/BookNowButton";
-// import { VideoComponent } from "../components/video";
 import { VideoDesktop } from "../components/video/VideoDesktop";
 import { BoatsComponent } from "../components/BoatsComponent";
 import { DestinationsContainer } from "../components/DestinationsContainer";

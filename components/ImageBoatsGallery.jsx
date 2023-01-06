@@ -1,19 +1,20 @@
-"use client";
-
 import { useState } from "react";
 import { Box, Typography } from "@mui/material";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import ImageGallery from "react-image-gallery";
 
 export const ImageBoatsGallery = ({ data }) => {
-	const [imagedata, setImageData] = useState({ img: "", i: 0 });
+	// const dataBoat = Object.values(data.gallery);
+	// console.log(dataBoat);
+	// const [imagedata, setImageData] = useState({ img: "", i: 0 });
 
-	const viewImage = (img, i) => {
-		setImageData({ img, i });
-		// console.log(img, i);
-	};
+	// const viewImage = (img, i) => {
+	// 	setImageData({ img, i });
+	// console.log(img, i);
+
 	return (
 		<>
-			{imagedata.img && (
+			{/* {imagedata.img && (
 				<Box
 					component="div"
 					style={{
@@ -28,12 +29,12 @@ export const ImageBoatsGallery = ({ data }) => {
 					}}
 				>
 					<img
-						src={imagedata.img.imageUrl}
+						src={imagedata.img}
 						style={{ width: "auto", maxWidth: "90%", maxHeight: "90%" }}
 						alt=""
 					/>
 				</Box>
-			)}
+			)} */}
 			<Box
 				sx={{
 					marginTop: "15px",
@@ -47,7 +48,7 @@ export const ImageBoatsGallery = ({ data }) => {
 					Yacht Gallery
 				</Typography>
 
-				<ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 700: 2, 900: 3 }}>
+				{/* <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 700: 2, 900: 3 }}>
 					<Masonry gutter="10px">
 						{data.gallery.map((image, i) => (
 							<img
@@ -63,7 +64,8 @@ export const ImageBoatsGallery = ({ data }) => {
 							/>
 						))}
 					</Masonry>
-				</ResponsiveMasonry>
+							</ResponsiveMasonry> */}
+				<ImageGallery items={data.gallery} lazyLoad />
 			</Box>
 		</>
 	);

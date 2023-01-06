@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
+import { Colors } from "../../styles/theme";
 
 const image =
 	"https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1672758964/9-2_qqkusx.jpg";
@@ -14,22 +15,26 @@ export default function TestCard() {
 		<Card
 			sx={{
 				width: "80%",
+				height: { xs: "550px", sm: "500px", md: "auto" },
 				marginLeft: "auto",
 				marginRight: "auto",
 				display: "flex",
-				flexDirection: { xs: "column", sm: "row" },
+				flexDirection: { xs: "column", md: "row" },
 				marginTop: "50px",
 			}}
 		>
 			<Box>
 				<CardMedia
-					sx={{ width: { xs: "400px", md: "350" }, height: "250px" }}
+					sx={{
+						width: { xs: "400px", sm: "450px", md: "350" },
+						height: { xs: "250px", sm: "300", md: "225px" },
+					}}
 					image={image}
-					title="green iguana"
+					title="destination image"
 				/>
 			</Box>
 			<Box ml={2}>
-				<CardContent>
+				<CardContent sx={{ padding: "20px" }}>
 					<Typography gutterBottom variant="h5" component="div">
 						Lizard
 					</Typography>
@@ -39,8 +44,16 @@ export default function TestCard() {
 					</Typography>
 				</CardContent>
 				<CardActions>
-					<Button size="small">Share</Button>
-					<Button size="small">Learn More</Button>
+					<Button
+						variant="contained"
+						sx={{
+							backgroundColor: Colors.first_blue,
+							marginTop: "15px",
+							width: { xs: "auto", md: "40%" },
+						}}
+					>
+						Share
+					</Button>
 				</CardActions>
 			</Box>
 		</Card>
