@@ -1,12 +1,23 @@
 import { DestinationHero } from "../components/hero/DestinationHero";
 import { Footer } from "../components/Footer";
+import { BoatsComponent } from "../components/BoatsComponent";
 import { SupportBanner } from "../components/SupportBanner";
 import { BookNowButton } from "../components/buttons/BookNowButton";
+import { ServicesSliderPalmilla } from "../components/ServicesSliderPalmilla";
+import { ServicesSliderPuntaCana } from "../components/ServicesSliderPuntaCana";
+import { ServicesSliderSantaCatalina } from "../components/ServicesSliderSantaCatalina";
+import { MainTitleBoatServices } from "../components/MainTitleBoatServices";
+import { boats } from "../database/boat_data";
 
-function destiny() {
+function destiny({ boat_list }) {
 	return (
 		<>
 			<DestinationHero />
+			<ServicesSliderPalmilla />
+			<ServicesSliderPuntaCana />
+			<ServicesSliderSantaCatalina />
+			<MainTitleBoatServices />
+			<BoatsComponent data={boat_list} />
 			<BookNowButton />
 			<SupportBanner />
 			<Footer />
@@ -16,15 +27,10 @@ function destiny() {
 
 export default destiny;
 
-// import fsPromises from "fs/promises";
-// import path from "path";
-
-// export async function getStaticProps() {
-// 	const filePathBoats = path.join(process.cwd(), "database/yachtsDB.json");
-// 	const jsonData = await fsPromises.readFile(filePathBoats);
-// 	const objectDataBoats = JSON.parse(jsonData);
-
-// 	return {
-// 		props: objectDataBoats,
-// 	};
-// }
+export async function getStaticProps() {
+	return {
+		props: {
+			boat_list: boats,
+		},
+	};
+}

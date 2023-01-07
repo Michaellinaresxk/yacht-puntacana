@@ -227,6 +227,8 @@ function DrawerAppBar(props) {
 							<Image
 								src={yatch_logo}
 								alt="yatch logo company"
+								width={200}
+								height={50}
 								style={{ width: "200px", height: "50px" }}
 							/>
 						</Link>

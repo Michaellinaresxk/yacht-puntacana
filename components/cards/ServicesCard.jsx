@@ -1,6 +1,7 @@
 import { Paper, Box, Typography, Button } from "@mui/material";
 // import { styled } from "@mui/material/styles";
 import { Colors } from "../../styles/theme";
+// import style from "../../styles/sevices_card.module.css";
 
 const imageArray = [
 	{
@@ -57,8 +58,11 @@ export const ServicesCard = () => {
 						elevation={3}
 						key={image.id}
 						sx={{
+							// display: "flex",
+							// justifyContent: "center",
+							// alignItems: "center",
 							marginTop: "100px",
-							width: { xs: "73%", sm: "80%", md: "85%" },
+							width: { xs: "72.5%", sm: "80%", md: "85%" },
 							height: { xs: "550px", sm: "500px", md: "auto" },
 							marginRight: "auto",
 							marginLeft: "auto",
@@ -71,16 +75,23 @@ export const ServicesCard = () => {
 								marginTop: "30px",
 							}}
 						>
-							<Box>
+							<Box
+								sx={{
+									display: "inline-block",
+									width: "350px",
+									height: "250px",
+								}}
+							>
 								<img
-									className="image-responsive"
+									// className={style.sevices_card}
 									src={image.image}
+									alt=""
 									style={{
-										width: "350px",
-										height: "250px",
-										// objectFit: "cover",
-										// width: "100%",
-										// height: "100%",
+										// width: "350px",
+										// height: "250px",
+										objectFit: "cover",
+										width: "100%",
+										height: "100%",
 									}}
 								/>
 								{/* <BannerImage src={image.image} /> */}

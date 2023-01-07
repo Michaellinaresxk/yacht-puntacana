@@ -121,7 +121,12 @@ export const Footer = () => {
 							Payment Methods
 						</Typography>
 						<Box sx={{ marginTop: "1em" }}>
-							<Image alt="metodos de pago" src={pay_image} />
+							<Image
+								alt="metodos de pago"
+								src={pay_image}
+								width={200}
+								height={50}
+							/>
 						</Box>
 					</Box>
 				</Box>
@@ -133,6 +138,8 @@ export const Footer = () => {
 							alt="website logo"
 							src={logo}
 							style={{ width: "300px", height: "80px" }}
+							width={300}
+							height={80}
 						/>
 						<Typography sx={{ marginTop: "50px", marginBottom: "50px" }}>
 							2021 Yacht Punta Cana. All rights reserved
