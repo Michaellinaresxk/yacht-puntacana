@@ -1,16 +1,20 @@
 import { useState } from "react";
 import { Box, Typography } from "@mui/material";
-// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import ImageGallery from "react-image-gallery";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Lightbox from "yet-another-react-lightbox";
+import FullScreen from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export const ImageBoatsGallery = ({ data }) => {
 	// const dataBoat = Object.values(data.gallery);
-	// console.log(dataBoat);
 	// const [imagedata, setImageData] = useState({ img: "", i: 0 });
 
 	// const viewImage = (img, i) => {
 	// 	setImageData({ img, i });
-	// console.log(img, i);
+	// 	console.log(img, i);
+	// };
+
+	const [open, setOpen] = useState(false);
 
 	return (
 		<>
@@ -48,24 +52,29 @@ export const ImageBoatsGallery = ({ data }) => {
 					Yacht Gallery
 				</Typography>
 
-				{/* <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 700: 2, 900: 3 }}>
+				<ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 700: 2, 900: 3 }}>
 					<Masonry gutter="10px">
 						{data.gallery.map((image, i) => (
 							<img
 								key={i}
-								src={image.imageUrl}
+								src={image.src}
 								style={{
 									width: "100%",
 									display: "block",
 									cursor: "pointer",
 								}}
 								alt="boats images"
-								onClick={() => viewImage(image, i)}
+								onClick={() => setOpen(true)}
 							/>
 						))}
 					</Masonry>
-							</ResponsiveMasonry> */}
-				<ImageGallery items={data.gallery} lazyLoad />
+				</ResponsiveMasonry>
+				<Lightbox
+					open={open}
+					close={() => setOpen(false)}
+					slides={data.gallery}
+					plugins={[FullScreen]}
+				/>
 			</Box>
 		</>
 	);
