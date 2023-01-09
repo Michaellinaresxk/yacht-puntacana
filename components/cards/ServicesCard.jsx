@@ -87,11 +87,11 @@ export const ServicesCard = () => {
 									src={image.image}
 									alt=""
 									style={{
-										// width: "350px",
-										// height: "250px",
-										objectFit: "cover",
-										width: "100%",
-										height: "100%",
+										width: "350px",
+										height: "250px",
+										// objectFit: "cover",
+										// width: "100%",
+										// height: "100%",
 									}}
 								/>
 								{/* <BannerImage src={image.image} /> */}

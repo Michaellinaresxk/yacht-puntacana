@@ -7,6 +7,9 @@ import { DestinationsContainer } from "../components/DestinationsContainer";
 import { boats } from "../database/boat_data";
 import { BoatsComponent } from "../components/BoatsComponent";
 import { MainTitleBoatServices } from "../components/MainTitleBoatServices";
+import { SupportBanner } from "../components/SupportBanner";
+import { FixedComponent } from "../components/FixedComponent";
+import { FixedComponentImage } from "../components/FixedComponentImage";
 
 function Services({ boat_list }) {
 	return (
@@ -15,10 +18,12 @@ function Services({ boat_list }) {
 			<ServicesHero />
 			<OurServicesLogo />
 			<ServicesCard />
-			<DestinationsContainer />
+			<FixedComponentImage />
 			<MainTitleBoatServices />
 			<BoatsComponent data={boat_list} />
 			<BookNowButton />
+			<SupportBanner />
+			<DestinationsContainer />
 			<Footer />
 		</>
 	);
