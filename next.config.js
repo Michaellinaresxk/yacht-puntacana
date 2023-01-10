@@ -1,16 +1,11 @@
 /** @type {import('next').NextConfig} */
+const i18n = require('./next-18next.config');
 const nextConfig = {
 	reactStrictMode: true,
+	i18n,
 };
 
 module.exports = nextConfig;
-
-module.export = {
-	i18n: {
-		locales: ["es", "en"],
-		defaultLocale: "en",
-	},
-};
 
 module.exports = {
 	images: {

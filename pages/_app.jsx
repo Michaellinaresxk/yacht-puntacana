@@ -5,8 +5,9 @@ import { CssBaseline } from "@mui/material";
 import DrawerAppBar from "../components/Header/DrawerAppBar";
 import { WhatsAppButton } from "../components/buttons/WhatsAppButton";
 import { GoingUpButton } from "../components/buttons/GoingUpButton";
+import { appWithTranslation } from 'next-i18next'
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
 	return (
 		<>
 			<ThemeProvider theme={theme}>
@@ -19,3 +20,5 @@ export default function App({ Component, pageProps }) {
 		</>
 	);
 }
+
+export default appWithTranslation(App);
