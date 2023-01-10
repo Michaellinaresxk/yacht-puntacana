@@ -11,6 +11,12 @@ import { SupportBanner } from "../components/SupportBanner";
 import { FixedComponent } from "../components/FixedComponent";
 import { FixedComponentImage } from "../components/FixedComponentImage";
 
+const image1 =
+	"https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1671124936/DJI_0355_ze3vtu.jpg";
+
+const image2 =
+	"https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1671124942/opcion2_mfwnti.jpg";
+
 function Services({ boat_list }) {
 	return (
 		<>
@@ -18,11 +24,12 @@ function Services({ boat_list }) {
 			<ServicesHero />
 			<OurServicesLogo />
 			<ServicesCard />
-			<FixedComponentImage />
+			<FixedComponentImage image={image1} />
 			<MainTitleBoatServices />
 			<BoatsComponent data={boat_list} />
 			<BookNowButton />
 			<SupportBanner />
+			<FixedComponentImage image={image2} />
 			<DestinationsContainer />
 			<Footer />
 		</>
