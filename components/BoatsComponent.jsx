@@ -11,6 +11,8 @@ import {
 	CardActions,
 } from "@mui/material";
 
+import { motion } from "framer-motion";
+
 import Link from "next/link";
 
 export const BoatsComponent = ({ data }) => {
@@ -43,7 +45,7 @@ export const BoatsComponent = ({ data }) => {
 										{boat.name}
 									</Typography>
 									<Typography variant="body2" color="text.secondary">
-									   {boat.shortDesc}
+										{boat.shortDesc}
 									</Typography>
 								</CardContent>
 								<CardActions
@@ -54,17 +56,26 @@ export const BoatsComponent = ({ data }) => {
 									}}
 								>
 									<Link href={`/boat/${boat.id}`}>
-										<Button
-											color="primary"
-											size="large"
-											mt={2}
-											variant="contained"
-											sx={{
-												marginBottom: "50px",
+										<motion.div
+											className="animatable"
+											whileHover={{
+												scale: 1.1,
+												transition: { duration: 0.3 },
 											}}
+											whileTap={{ scale: 0.9 }}
 										>
-											More Information
-										</Button>
+											<Button
+												color="primary"
+												size="large"
+												mt={2}
+												variant="contained"
+												sx={{
+													marginBottom: "50px",
+												}}
+											>
+												More Information
+											</Button>
+										</motion.div>
 									</Link>
 								</CardActions>
 							</Card>

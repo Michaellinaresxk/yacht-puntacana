@@ -2,6 +2,7 @@ import { Paper, Box, Typography, Button } from "@mui/material";
 // import { styled } from "@mui/material/styles";
 import { Colors } from "../../styles/theme";
 // import style from "../../styles/sevices_card.module.css";
+import { motion } from "framer-motion";
 
 const imageArray = [
 	{
@@ -54,84 +55,94 @@ export const ServicesCard = () => {
 		<>
 			<Box>
 				{imageArray.map((image) => (
-					<Paper
-						elevation={3}
-						key={image.id}
-						sx={{
-							// display: "flex",
-							// justifyContent: "center",
-							// alignItems: "center",
-							marginTop: "100px",
-							width: { xs: "72.5%", sm: "80%", md: "85%" },
-							height: { xs: "550px", sm: "500px", md: "auto" },
-							marginRight: "auto",
-							marginLeft: "auto",
+					<motion.div
+						className="animatable"
+						whileHover={{
+							scale: 1.1,
+							transition: { duration: 0.3 },
 						}}
+						whileTap={{ scale: 0.9 }}
+						key={image.id}
 					>
-						<Box
+						<Paper
+							elevation={3}
 							sx={{
-								display: "flex",
-								flexDirection: { xs: "column", md: "row" },
-								marginTop: "30px",
+								// display: "flex",
+								// justifyContent: "center",
+								// alignItems: "center",
+								marginTop: "100px",
+								width: { xs: "72.5%", sm: "80%", md: "85%" },
+								height: { xs: "550px", sm: "500px", md: "auto" },
+								marginRight: "auto",
+								marginLeft: "auto",
 							}}
 						>
 							<Box
 								sx={{
-									display: "inline-block",
-									width: "350px",
-									height: "250px",
+									display: "flex",
+									flexDirection: { xs: "column", md: "row" },
+									marginTop: "30px",
 								}}
 							>
-								<img
-									// className={style.sevices_card}
-									src={image.image}
-									alt=""
-									style={{
-										width: "350px",
-										height: "250px",
-										// objectFit: "cover",
-										// width: "100%",
-										// height: "100%",
-									}}
-								/>
-								{/* <BannerImage src={image.image} /> */}
-							</Box>
-							<Box>
 								<Box
 									sx={{
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignContent: "center",
-										width: "90%",
-										marginLeft: "auto",
-										marginRight: "auto",
+										display: "inline-block",
+										width: "350px",
+										height: "250px",
 									}}
 								>
-									<Typography
-										mt={2}
-										variant="subtitle1"
-										color={Colors.first_blue}
-									>
-										{image.title}
-									</Typography>
-									<Typography mt={1}>{image.description}</Typography>
-									<Button
-										variant="contained"
+									<img
+										// className={style.sevices_card}
+										src={image.image}
+										alt=""
+										style={{
+											width: "350px",
+											height: "250px",
+											// objectFit: "cover",
+											// width: "100%",
+											// height: "100%",
+										}}
+									/>
+									{/* <BannerImage src={image.image} /> */}
+								</Box>
+								<Box>
+									<Box
 										sx={{
-											backgroundColor: Colors.first_blue,
-											marginTop: "15px",
-											width: { xs: "auto", md: "40%" },
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignContent: "center",
+											width: "90%",
+											marginLeft: "auto",
+											marginRight: "auto",
 										}}
 									>
-										<Typography>{image.action}</Typography>
-									</Button>
+										<Typography
+											mt={2}
+											variant="subtitle1"
+											color={Colors.first_blue}
+										>
+											{image.title}
+										</Typography>
+										<Typography mt={1}>{image.description}</Typography>
+										<Button
+											variant="contained"
+											sx={{
+												backgroundColor: Colors.first_blue,
+												marginTop: "15px",
+												width: { xs: "auto", md: "40%" },
+											}}
+										>
+											<Typography>{image.action}</Typography>
+										</Button>
+									</Box>
 								</Box>
 							</Box>
-						</Box>
-					</Paper>
+						</Paper>
+					</motion.div>
 				))}
 			</Box>
+			;
 		</>
 	);
 };
