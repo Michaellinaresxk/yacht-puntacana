@@ -61,9 +61,14 @@ export const ServicesSliderPuntaCana = () => {
 					<Box sx={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}>
 						<Typography variant="h4">Punta Cana</Typography>
 						<Typography>
-							ddsfsdkfjksdjf dskfdsfj sjsjfsdjf sfjsdfjsdf dfjsdjfjsdf
-							sdfjsdjfjsdff fdsfksdfksdfksd fsdfjsdfjsdf sjfjsfjsfjs sfjsdjfjsdf
-							nczmmmsf jfkskfskfks sfkskfkskff skfskfkskf ksfkskf ksfsks
+							Punta Cana, at the easternmost tip of the Dominican Republic,
+							borders the Caribbean Sea and the Atlantic Ocean. It is a region
+							known for its 48 km long beaches and clear waters. The Bavaro and
+							Punta Cana areas combine to form what is known as La Costa del
+							Coco, an area with exclusive all-inclusive tourist attractions.
+							The famous Bávaro Beach, declared one of the best beaches in the
+							world by UNESCO, is among the longest white sand beaches in the
+							Caribbean, stretching 32 kilometers and surrounded by coral reefs
 						</Typography>
 					</Box>
 				</Box>

@@ -1,4 +1,5 @@
 import { Paper, Box, Typography } from "@mui/material";
+import { motion } from "framer-motion";
 
 export const ServicesHero = () => {
 	return (
@@ -17,25 +18,27 @@ export const ServicesHero = () => {
 					backgroundRepeat: "no-repeat",
 				}}
 			>
-				<Box
-					sx={{
-						alignSelf: "center",
-						position: "absolute",
-						marginTop: { xs: "75px", sm: "80px", md: "60px" },
-						padding: "15px",
-						borderRadius: "10px",
-						// backgroundColor: "rgba(0, 0, 0, 0.4)",
-						color: "white",
-						marginLeft: { xs: "20%", sm: "27%", md: "25%" },
-						height: "60px",
-					}}
-				>
-					<Typography
-						sx={{ fontSize: "clamp(2.2em, 6vw, 7em)", fontWeight: "bold" }}
+				<motion.div animate={{ y: [-100, 0] }} transition={{ duration: 1 }}>
+					<Box
+						sx={{
+							alignSelf: "center",
+							position: "absolute",
+							marginTop: { xs: "75px", sm: "80px", md: "60px" },
+							padding: "15px",
+							borderRadius: "10px",
+							// backgroundColor: "rgba(0, 0, 0, 0.4)",
+							color: "white",
+							marginLeft: { xs: "20%", sm: "27%", md: "25%" },
+							height: "60px",
+						}}
 					>
-						Yacht Punta Cana
-					</Typography>
-				</Box>
+						<Typography
+							sx={{ fontSize: "clamp(2.2em, 6vw, 7em)", fontWeight: "bold" }}
+						>
+							Yacht Punta Cana
+						</Typography>
+					</Box>
+				</motion.div>
 			</Paper>
 		</>
 	);

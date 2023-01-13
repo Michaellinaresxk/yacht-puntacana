@@ -1,5 +1,6 @@
 import { Typography, Paper, Button, Box } from "@mui/material";
 import { WhatsApp, Email, Phone } from "@mui/icons-material";
+import { motion } from "framer-motion";
 
 import { Colors } from "../styles/theme";
 import Link from "next/link";
@@ -49,6 +50,7 @@ export const SupportBanner = () => {
 							Contact Us
 						</Typography>
 					</Box>
+
 					<Box
 						sx={{
 							display: "flex",

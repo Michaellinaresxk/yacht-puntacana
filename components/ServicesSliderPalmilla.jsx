@@ -62,9 +62,11 @@ export const ServicesSliderPalmilla = () => {
 					<Box sx={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}>
 						<Typography variant="h4">Palmilla Beach</Typography>
 						<Typography>
-							ddsfsdkfjksdjf dskfdsfj sjsjfsdjf sfjsdfjsdf dfjsdjfjsdf
-							sdfjsdjfjsdff fdsfksdfksdfksd fsdfjsdfjsdf sjfjsfjsfjs sfjsdjfjsdf
-							nczmmmsf jfkskfskfks sfkskfkskff skfskfkskf ksfkskf ksfsks
+							Palmilla is a virgin beach that is part of the Parque Nacional del
+							Este, in the town of Bayahibe, located in the eastern peninsula,
+							just in front of Isla Saona. An idyllic setting of turquoise
+							waters, fine white sand, abundant rainforest and one meter deep
+							natural pools located 200 meters from the coast.
 						</Typography>
 					</Box>
 				</Box>

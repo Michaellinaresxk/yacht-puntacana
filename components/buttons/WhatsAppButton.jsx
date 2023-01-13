@@ -1,6 +1,7 @@
 import { Box, Avatar, Button } from "@mui/material";
 import { WhatsApp } from "@mui/icons-material";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const WhatsAppButton = () => {
 	return (
@@ -13,6 +14,7 @@ export const WhatsAppButton = () => {
 				}
 			>
 				<Avatar
+					component="div"
 					sx={{
 						width: "50px",
 						height: "50px",
@@ -22,9 +24,14 @@ export const WhatsAppButton = () => {
 						bottom: "8%",
 					}}
 				>
-					<Button>
-						<WhatsApp color="white" />
-					</Button>
+					<motion.div whileHover={{ scale: 1.5 }}>
+						<Button component="button">
+							<WhatsApp
+								color="white"
+								style={{ width: "30px", height: "30px" }}
+							/>
+						</Button>
+					</motion.div>
 				</Avatar>
 			</Link>
 		</>

@@ -60,9 +60,16 @@ export const ServicesSliderSantaCatalina = () => {
 					<Box sx={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}>
 						<Typography variant="h4">Santa Catalina</Typography>
 						<Typography>
-							ddsfsdkfjksdjf dskfdsfj sjsjfsdjf sfjsdfjsdf dfjsdjfjsdf
-							sdfjsdjfjsdff fdsfksdfksdfksd fsdfjsdfjsdf sjfjsfjsfjs sfjsdjfjsdf
-							nczmmmsf jfkskfskfks sfkskfkskff skfskfkskf ksfkskf ksfsks
+							Located 1.5 miles from the mainland in the southeast corner of the
+							Dominican Republic, near the provinces of La Altagracia and La
+							Romana. It is a protected Natural Park with an approximate area of
+							​​9.6 square kilometers and totally uninhabited. This island
+							discovered by the Spanish, baptized by the navigator Christopher
+							Columbus, has truly picturesque landscapes and incomparable
+							beauty. Due to its crystal clear and warm waters, it is the ideal
+							home for an infinity of marine species. Catalina Island is one of
+							the best places in the Dominican Republic for snorkeling, with its
+							incredible marine life and pristine coral reefs.
 						</Typography>
 					</Box>
 				</Box>
