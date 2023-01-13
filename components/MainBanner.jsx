@@ -1,4 +1,5 @@
 import { Paper, Typography, Box, Button } from "@mui/material";
+import { motion } from "framer-motion";
 
 export const MainBanner = () => {
 	return (
@@ -58,22 +59,26 @@ export const MainBanner = () => {
 						</Typography>
 					</Box>
 				</Box>
-				<Button
-					variant="text"
-					size="medium"
-					sx={{
-						backgroundColor: "#fff",
-						marginLeft: { xs: "20px", sm: "40px", md: "60px", lg: "70px" },
-						marginTop: { xs: "180px", sm: "200px", md: "250px", lg: "280px" },
-						paddingRight: { xs: "10px", sm: "10px", md: "20px" },
-						paddingLeft: { xs: "10px", sm: "10px", md: "20px" },
-						":hover": { backgroundColor: "#ddd" },
-						position: "absolute",
-						fontSize: { xs: "10px", sm: "13px", md: "18px" },
-					}}
-				>
-					LUXURY YACHT
-				</Button>
+				<motion.div animate={{ x: [-300, 0] }} transition={{ duration: 2.5 }}>
+					<Button
+						component="button"
+						variant="text"
+						size="medium"
+						sx={{
+							backgroundColor: "#fff",
+							marginLeft: { xs: "20px", sm: "40px", md: "60px", lg: "70px" },
+							marginTop: { xs: "180px", sm: "200px", md: "250px", lg: "280px" },
+							paddingRight: { xs: "10px", sm: "10px", md: "20px" },
+							paddingLeft: { xs: "10px", sm: "10px", md: "20px" },
+							":hover": { backgroundColor: "#ddd" },
+							position: "absolute",
+							fontSize: { xs: "10px", sm: "13px", md: "18px" },
+							borderRadius: "10px",
+						}}
+					>
+						LUXURY YACHT
+					</Button>
+				</motion.div>
 			</Paper>
 		</>
 	);

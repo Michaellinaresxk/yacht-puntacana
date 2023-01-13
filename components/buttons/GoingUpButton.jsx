@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { Fab } from "@mui/material";
+import { Box, Fab } from "@mui/material";
 import { ArrowUpward } from "@mui/icons-material";
 import { Colors } from "../../styles/theme";
+import { motion } from "framer-motion";
 
 const useIsSsr = () => {
 	const [isSsr, setIsSsr] = useState(true);
@@ -54,7 +55,12 @@ export const GoingUpButton = () => {
 				}}
 				onClick={scrollToTop}
 			>
-				<ArrowUpward color="white" />
+				<motion.div whileHover={{ scale: 1.4 }}>
+					<ArrowUpward
+						sx={{ mt: 1.1, width: "30px", height: "30px" }}
+						color="white"
+					/>
+				</motion.div>
 			</Fab>
 		</>
 	);

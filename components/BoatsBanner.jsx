@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { Colors } from "../styles/theme";
+import { motion } from "framer-motion";
 
 export const BoatsBanner = ({ data }) => {
 	return (
@@ -32,12 +33,14 @@ export const BoatsBanner = ({ data }) => {
 					height: "60px",
 				}}
 			>
-				<Typography
-					variant="h4"
-					sx={{ color: Colors.white, fontSize: "clamp(1.5em, 3vw, 2em)" }}
-				>
-					{data.name}
-				</Typography>
+				<motion.div animate={{ x: [-500, 0] }} transition={{ duration: 1 }}>
+					<Typography
+						variant="h4"
+						sx={{ color: Colors.white, fontSize: "clamp(1.5em, 3vw, 2em)" }}
+					>
+						{data.name}
+					</Typography>
+				</motion.div>
 			</Box>
 		</Box>
 	);

@@ -1,6 +1,7 @@
 import { Typography, Box, Paper } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import logo from "../assets/icons/logo-colorfull-1.png";
 import pay_image from "../assets/icons/pagos-con-paypal.png";
@@ -72,39 +73,59 @@ export const Footer = () => {
 						</Typography>
 						<Box sx={{ marginTop: "1em" }}>
 							<Link href="/">
-								<Typography sx={{ ":hover": { color: Colors.first_blue } }}>
-									Home
-								</Typography>
+								<motion.div
+									whileHover={{ translateY: -5 }}
+									transition={{ duration: 0.5 }}
+								>
+									<Typography sx={{ ":hover": { color: Colors.first_blue } }}>
+										Home
+									</Typography>
+								</motion.div>
 							</Link>
 							<Link href="/services">
-								<Typography
-									sx={{
-										":hover": { color: Colors.first_blue },
-										marginTop: "5px",
-									}}
+								<motion.div
+									whileHover={{ translateY: -5 }}
+									transition={{ duration: 0.5 }}
 								>
-									Services
-								</Typography>
+									<Typography
+										sx={{
+											":hover": { color: Colors.first_blue },
+											marginTop: "5px",
+										}}
+									>
+										Services
+									</Typography>
+								</motion.div>
 							</Link>
 							<Link href="/destiny">
-								<Typography
-									sx={{
-										":hover": { color: Colors.first_blue },
-										marginTop: "5px",
-									}}
+								<motion.div
+									whileHover={{ translateY: -5 }}
+									transition={{ duration: 0.5 }}
 								>
-									Destinations
-								</Typography>
+									<Typography
+										sx={{
+											":hover": { color: Colors.first_blue },
+											marginTop: "5px",
+										}}
+									>
+										Destinations
+									</Typography>
+								</motion.div>
 							</Link>
 							<Link href="/contact_us">
-								<Typography
-									sx={{
-										":hover": { color: Colors.first_blue },
-										marginTop: "5px",
-									}}
+								<motion.div
+									whileHover={{ translateY: -5 }}
+									transition={{ duration: 0.5 }}
 								>
-									Contact
-								</Typography>
+									<Typography
+										sx={{
+											":hover": { color: Colors.first_blue },
+											marginTop: "5px",
+										}}
+									>
+										Contact
+									</Typography>
+								</motion.div>
 							</Link>
 						</Box>
 					</Box>
