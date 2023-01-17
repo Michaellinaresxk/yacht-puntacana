@@ -3,6 +3,7 @@ import { Check } from "@mui/icons-material";
 import { Colors } from "../styles/theme";
 
 export const BannerImageClip = () => {
+	const action = "Let's go yachting";
 	return (
 		<>
 			<Paper
@@ -90,7 +91,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Let's go yachting
+								{action}
 							</Typography>
 						</Box>
 					</Box>
