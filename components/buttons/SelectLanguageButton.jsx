@@ -4,13 +4,21 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+// import { useRouter } from "next/router";
 
 export const SelectLanguageButton = () => {
+	const idioms = ["Es", "En"];
+	// const { locales, push } = useRouter();
 	const [language, setLanguage] = useState("");
 
 	const handleLanguageChange = (e) => {
 		setLanguage(e.target.value);
 	};
+
+	const handleClick = (l) => {
+		push("/", undefined, { locale: l });
+	};
+
 	return (
 		<>
 			<Box
@@ -29,8 +37,14 @@ export const SelectLanguageButton = () => {
 						label="Idioma"
 						onChange={handleLanguageChange}
 					>
-						<MenuItem value="Es">Esp</MenuItem>
-						<MenuItem value="En">Ing</MenuItem>
+						<MenuItem value={idioms[0]}>Esp</MenuItem>
+						<MenuItem value={idioms[1]}>Ing</MenuItem>
+
+						{/* {locales.map((l, i) => (
+							<MenuItem key={i} value={idioms[i]} onClick={handleClick(l)}>
+								{idioms[i]}
+							</MenuItem>
+						))} */}
 					</Select>
 				</FormControl>
 			</Box>

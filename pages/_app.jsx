@@ -5,7 +5,7 @@ import { CssBaseline } from "@mui/material";
 import DrawerAppBar from "../components/Header/DrawerAppBar";
 import { WhatsAppButton } from "../components/buttons/WhatsAppButton";
 import { GoingUpButton } from "../components/buttons/GoingUpButton";
-import { appWithTranslation } from 'next-i18next'
+import { appWithTranslation } from "next-i18next";
 
 function App({ Component, pageProps }) {
 	return (

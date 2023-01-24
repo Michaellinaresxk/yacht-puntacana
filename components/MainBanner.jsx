@@ -1,7 +1,9 @@
 import { Paper, Typography, Box, Button } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
 
 export const MainBanner = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Paper
@@ -34,7 +36,7 @@ export const MainBanner = () => {
 							marginTop: { xs: "20px" },
 						}}
 					>
-						Welcome aboard
+						{t("mainBanner.title")}
 					</Typography>
 					<Box
 						sx={{
@@ -46,7 +48,7 @@ export const MainBanner = () => {
 								fontSize: "clamp(1.5em, 4vw, 3em)",
 							}}
 						>
-							live the
+							{t("mainBanner.subtitle")}
 						</Typography>
 						<Typography
 							sx={{
@@ -55,7 +57,7 @@ export const MainBanner = () => {
 								fontSize: "clamp(1.5em, 4vw, 3em)",
 							}}
 						>
-							Experience!
+							{t("mainBanner.span")}
 						</Typography>
 					</Box>
 				</Box>

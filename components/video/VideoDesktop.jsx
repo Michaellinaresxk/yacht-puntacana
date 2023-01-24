@@ -1,7 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import ReactPlayer from "react-player";
+import { useTranslation } from "next-i18next";
 
 export const VideoDesktop = () => {
+	const { t } = useTranslation();
 	const urlVideo =
 		"https://res.cloudinary.com/freelancer2222222222222222/video/upload/v1671285248/video-tour_sxqsw8.mp4";
 	return (
@@ -24,8 +26,7 @@ export const VideoDesktop = () => {
 					Video Tour:
 				</Typography>
 				<Typography sx={{ fontSize: { xs: "1.1rem", md: "1.2rem" } }}>
-					Find out more with our video of the most beautiful and pleasant yachts
-					adventures.
+					{t("video-tour.slogan")}
 				</Typography>
 			</Box>
 			<div className="video-player">
