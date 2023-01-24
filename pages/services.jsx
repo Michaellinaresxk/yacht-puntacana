@@ -10,7 +10,7 @@ import { MainTitleBoatServices } from "../components/MainTitleBoatServices";
 import { SupportBanner } from "../components/SupportBanner";
 import { FixedComponent } from "../components/FixedComponent";
 import { FixedComponentImage } from "../components/FixedComponentImage";
-
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const image1 =
 	"https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1671124936/DJI_0355_ze3vtu.jpg";
 
@@ -38,10 +38,11 @@ function Services({ boat_list }) {
 
 export default Services;
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
 	return {
 		props: {
 			boat_list: boats,
+			...(await serverSideTranslations(locale, ["common"])),
 		},
 	};
 }

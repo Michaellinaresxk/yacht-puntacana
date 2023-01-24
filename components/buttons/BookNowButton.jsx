@@ -1,8 +1,10 @@
 import { Box, Button } from "@mui/material";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
 
 export function BookNowButton() {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Box
@@ -27,8 +29,7 @@ export function BookNowButton() {
 								fontSize: { xs: "1rem", md: "1.5rem" },
 							}}
 						>
-							{" "}
-							BOOK YOUR YACHT{" "}
+							{t("button.bookYourYacht")}
 						</Button>
 					</motion.div>
 				</Link>
