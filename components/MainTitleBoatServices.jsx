@@ -1,6 +1,8 @@
 import { Typography, Box } from "@mui/material";
+import { useTranslation } from "next-i18next";
 
 export const MainTitleBoatServices = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Box
@@ -23,11 +25,10 @@ export const MainTitleBoatServices = () => {
 						fontSize: "clamp(2em, 5vw, 4em)",
 					}}
 				>
-					Choose your Yacht
+					{t("services-page.subtitle")}
 				</Typography>
 				<Typography sx={{ fontSize: "1.2rem" }}>
-					We have a wide selection of unique yachts for rent, in Punta Cana and
-					Casa de Campo
+					{t("weAre.slogan")} {t("weAre.slogan1")}
 				</Typography>
 			</Box>
 		</>

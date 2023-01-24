@@ -1,7 +1,9 @@
 import { Paper, Box, Typography } from "@mui/material";
 import { Colors } from "../../styles/theme";
+import { useTranslation } from "next-i18next";
 
 export const ContactHero = ({ theme }) => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Paper
@@ -24,8 +26,12 @@ export const ContactHero = ({ theme }) => {
 						// position: "absolute",
 					}}
 				>
-					<Typography variant="h4" color={Colors.white} sx={{fontWeight: "bold"}}	>
-						Contact Us:
+					<Typography
+						variant="h4"
+						color={Colors.white}
+						sx={{ fontWeight: "bold" }}
+					>
+						{t("contact-page.title")}:
 					</Typography>
 				</Box>
 			</Paper>

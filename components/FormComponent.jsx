@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "next-i18next";
 
 import {
 	Grid,
@@ -14,6 +15,7 @@ import {
 import { Colors } from "../styles/theme";
 
 export const FormComponent = () => {
+	const { t } = useTranslation();
 	const form = useRef();
 
 	const sendEmail = (e) => {
@@ -47,7 +49,9 @@ export const FormComponent = () => {
 				>
 					<Grid item>
 						<Paper sx={{ p: 2, borderRadius: "0.5em" }} elevation={3}>
-							<Typography variant="h4">Keep in Touch: </Typography>
+							<Typography variant="h4">
+								{t("contact-page.keepinTouch")}:
+							</Typography>
 							<Box
 								component="form"
 								id="template_9015"
@@ -58,14 +62,14 @@ export const FormComponent = () => {
 								<TextField
 									name="user_name"
 									fullWidth
-									label="Name"
+									label={t("contactForm.name")}
 									required
 									sx={{ mt: 2, mb: 2 }}
 								/>
 								<TextField
 									name="user_email"
 									fullWidth
-									label="Email"
+									label={t("contactForm.email")}
 									type="email"
 									required
 									sx={{ mt: 2, mb: 2 }}
@@ -73,7 +77,7 @@ export const FormComponent = () => {
 								<TextField
 									name="user_message"
 									fullWidth
-									label="Message"
+									label={t("contactForm.message")}
 									required
 									multiline
 									sx={{ mt: 2, mb: 2 }}
@@ -92,7 +96,7 @@ export const FormComponent = () => {
 									}}
 									size="large"
 								>
-									Send Mesaage
+									{t("button.sendMessage")}
 								</Button>
 							</Box>
 						</Paper>

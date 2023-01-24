@@ -7,6 +7,7 @@ import { ServicesSliderPalmilla } from "../components/ServicesSliderPalmilla";
 import { ServicesSliderPuntaCana } from "../components/ServicesSliderPuntaCana";
 import { ServicesSliderSantaCatalina } from "../components/ServicesSliderSantaCatalina";
 import { MainTitleBoatServices } from "../components/MainTitleBoatServices";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { boats } from "../database/boat_data";
 
 function destiny({ boat_list }) {
@@ -27,10 +28,11 @@ function destiny({ boat_list }) {
 
 export default destiny;
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
 	return {
 		props: {
 			boat_list: boats,
+			...(await serverSideTranslations(locale, ["common"])),
 		},
 	};
 }

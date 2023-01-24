@@ -2,6 +2,7 @@ import { Box, Paper, Typography } from "@mui/material";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { Colors } from "../styles/theme";
+import { useTranslation } from "next-i18next";
 
 const puntacana = [
 	"https://res.cloudinary.com/michaelxk-com/image/upload/v1649090188/cygnus%20yachts/pictures/destinations/pages/puntacana/PCYRC_dfgmbs.jpg",
@@ -12,6 +13,7 @@ const puntacana = [
 ];
 
 export const ServicesSliderPuntaCana = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Paper
@@ -60,16 +62,7 @@ export const ServicesSliderPuntaCana = () => {
 				>
 					<Box sx={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}>
 						<Typography variant="h4">Punta Cana</Typography>
-						<Typography>
-							Punta Cana, at the easternmost tip of the Dominican Republic,
-							borders the Caribbean Sea and the Atlantic Ocean. It is a region
-							known for its 48 km long beaches and clear waters. The Bavaro and
-							Punta Cana areas combine to form what is known as La Costa del
-							Coco, an area with exclusive all-inclusive tourist attractions.
-							The famous Bávaro Beach, declared one of the best beaches in the
-							world by UNESCO, is among the longest white sand beaches in the
-							Caribbean, stretching 32 kilometers and surrounded by coral reefs
-						</Typography>
+						<Typography>{t("destinations.puntacana-description")}</Typography>
 					</Box>
 				</Box>
 			</Paper>
