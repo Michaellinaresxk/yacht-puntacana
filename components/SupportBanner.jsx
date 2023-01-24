@@ -1,9 +1,8 @@
 import { Typography, Paper, Button, Box } from "@mui/material";
 import { WhatsApp, Email, Phone } from "@mui/icons-material";
-import { motion } from "framer-motion";
-
 import { Colors } from "../styles/theme";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 // creating string for links
 
@@ -15,6 +14,7 @@ const phone_number = "tel:+18292963529";
 const email_address = "mailto:booking@yachtpuntacana.com";
 
 export const SupportBanner = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Paper
@@ -47,7 +47,7 @@ export const SupportBanner = () => {
 				>
 					<Box>
 						<Typography variant="h4" color={Colors.white}>
-							Contact Us
+							{t("button.ContactUs")}
 						</Typography>
 					</Box>
 
@@ -77,10 +77,7 @@ export const SupportBanner = () => {
 								},
 							}}
 						>
-							If you do not know exactly what type of boat to rent or you do not
-							have time, fill out this form and tell us how many people will be
-							on board, possible dates, approximate budget and we will send you
-							a proposal by email.
+							{t("contactQuote.title")}
 						</Typography>
 					</Box>
 					<Box
@@ -147,7 +144,7 @@ export const SupportBanner = () => {
 										},
 									}}
 								>
-									CALL US
+									{t("button.callUs")}
 								</Typography>
 							</Button>
 						</Link>
@@ -179,7 +176,7 @@ export const SupportBanner = () => {
 										},
 									}}
 								>
-									E-MAIL
+									{t("button.email")}
 								</Typography>
 							</Button>
 						</Link>

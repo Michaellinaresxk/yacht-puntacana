@@ -1,6 +1,8 @@
 import { Typography, Box } from "@mui/material";
+import { useTranslation } from "next-i18next";
 
 export const MainTitle = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Box
@@ -15,7 +17,10 @@ export const MainTitle = () => {
 					marginRight: { xs: "15px" },
 				}}
 			>
-				<Typography sx={{ fontSize: "1.2rem" }}> We are: </Typography>
+				<Typography sx={{ fontSize: "1.2rem" }}>
+					{" "}
+					{t("weAre.subtitle")}{" "}
+				</Typography>
 				<Typography
 					variant="h2"
 					sx={{
@@ -26,11 +31,9 @@ export const MainTitle = () => {
 				>
 					Yacht Punta Cana
 				</Typography>
+				<Typography sx={{ fontSize: "1.2rem" }}>{t("weAre.slogan")}</Typography>
 				<Typography sx={{ fontSize: "1.2rem" }}>
-				  We have a wide selection of unique yachts for rent, 
-				</Typography>
-				<Typography sx={{ fontSize: "1.2rem" }}>
-				in Punta Cana and Casa de Campo.
+					{t("weAre.slogan1")}
 				</Typography>
 			</Box>
 		</>

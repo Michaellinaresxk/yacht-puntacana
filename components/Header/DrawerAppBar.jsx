@@ -19,14 +19,12 @@ import {
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Colors } from "../../styles/theme";
-
 import { SelectLanguageButton } from "../buttons/SelectLanguageButton";
 import "@fontsource/roboto";
-
 import Image from "next/image";
 import Link from "next/link";
-
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
 
 import yatch_logo from "../../assets/icons/logo-colorfull-1.png";
 
@@ -35,6 +33,7 @@ const drawerWidth = 240;
 const navItems = ["Inicio", "Servicios", "Destino", "Contacto"];
 
 function DrawerAppBar(props) {
+	const { t } = useTranslation();
 	const { window } = props;
 	const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -96,7 +95,7 @@ function DrawerAppBar(props) {
 									textAlign: "left",
 								}}
 							>
-								<ListItemText primary="Home" />
+								<ListItemText primary={t("navbar.home")} />
 							</ListItemButton>
 						</Box>
 					</Link>
@@ -122,7 +121,7 @@ function DrawerAppBar(props) {
 									textAlign: "left",
 								}}
 							>
-								<ListItemText primary="Services" />
+								<ListItemText primary={t("navbar.services")} />
 							</ListItemButton>
 						</Box>
 					</Link>
@@ -149,7 +148,7 @@ function DrawerAppBar(props) {
 									":hover": { backgroundColor: "rgba(0, 0, 0, 0.1)" },
 								}}
 							>
-								<ListItemText primary="Destination" />
+								<ListItemText primary={t("navbar.destinations")} />
 							</ListItemButton>
 						</Box>
 					</Link>
@@ -175,7 +174,7 @@ function DrawerAppBar(props) {
 									textAlign: "left",
 								}}
 							>
-								<ListItemText primary="Contact us" />
+								<ListItemText primary={t("navbar.contact")} />
 							</ListItemButton>
 						</Box>
 					</Link>
@@ -285,7 +284,7 @@ function DrawerAppBar(props) {
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
-						<Link href="/">Home</Link>
+						<Link href="/">{t("navbar.home")}</Link>
 					</Button>
 					<Button
 						sx={{
@@ -296,7 +295,7 @@ function DrawerAppBar(props) {
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
-						<Link href="/services">Services</Link>
+						<Link href="/services">{t("navbar.services")}</Link>
 					</Button>
 					<Button
 						sx={{
@@ -307,7 +306,7 @@ function DrawerAppBar(props) {
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
-						<Link href="/destiny">Destinations</Link>
+						<Link href="/destiny">{t("navbar.destinations")}</Link>
 					</Button>
 					<Button
 						sx={{
@@ -318,7 +317,7 @@ function DrawerAppBar(props) {
 							marginRight: { sm: "10px", md: "30px" },
 						}}
 					>
-						<Link href="/contact_us">Contact</Link>
+						<Link href="/contact_us">{t("navbar.contact")}</Link>
 					</Button>
 				</Box>
 			</AppBar>

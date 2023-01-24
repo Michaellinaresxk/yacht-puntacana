@@ -2,12 +2,13 @@ import { Typography, Box, Paper } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
 import logo from "../assets/icons/logo-colorfull-1.png";
 import pay_image from "../assets/icons/pagos-con-paypal.png";
 import { Colors } from "../styles/theme";
+import { useTranslation } from "next-i18next";
 
 export const Footer = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Paper
@@ -52,10 +53,7 @@ export const Footer = () => {
 							}}
 						>
 							<Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
-								Are you planning to rent a yacht in punta cana? Enjoy a private
-								yacht charter and sail in the Caribbean Sea. We provide the best
-								yacht experience with our luxury yachts. With us you will find
-								the best offers for your unforgettable trip.
+								{t("footer.description")}
 							</Typography>
 						</Box>
 					</Box>
@@ -69,7 +67,7 @@ export const Footer = () => {
 						}}
 					>
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
-							Quick Links
+							{t("footer.quicklinks")}
 						</Typography>
 						<Box sx={{ marginTop: "1em" }}>
 							<Link href="/">
@@ -78,7 +76,7 @@ export const Footer = () => {
 									transition={{ duration: 0.5 }}
 								>
 									<Typography sx={{ ":hover": { color: Colors.first_blue } }}>
-										Home
+										{t("navbar.home")}
 									</Typography>
 								</motion.div>
 							</Link>
@@ -93,7 +91,7 @@ export const Footer = () => {
 											marginTop: "5px",
 										}}
 									>
-										Services
+										{t("navbar.services")}
 									</Typography>
 								</motion.div>
 							</Link>
@@ -108,7 +106,7 @@ export const Footer = () => {
 											marginTop: "5px",
 										}}
 									>
-										Destinations
+										{t("navbar.destinations")}
 									</Typography>
 								</motion.div>
 							</Link>
@@ -123,7 +121,7 @@ export const Footer = () => {
 											marginTop: "5px",
 										}}
 									>
-										Contact
+										{t("navbar.contact")}
 									</Typography>
 								</motion.div>
 							</Link>
@@ -139,7 +137,7 @@ export const Footer = () => {
 						}}
 					>
 						<Typography sx={{ color: Colors.soft_blue }} variant="h5">
-							Payment Methods
+							{t("footer.payment-methods")}
 						</Typography>
 						<Box sx={{ marginTop: "1em" }}>
 							<Image

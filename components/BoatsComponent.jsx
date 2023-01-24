@@ -81,69 +81,6 @@ export const BoatsComponent = ({ data }) => {
 									</CardActions>
 								</Card>
 							</motion.div>
-							{/* <Paper
-								sx={{
-									width: { xs: "80%", sm: "280px", lg: "350px" },
-									marginLeft: { xs: "auto" },
-									marginRight: { xs: "auto" },
-									columnGap: {
-										sm: "10px",
-										md: "15px",
-									},
-								}}
-								elevation={10}
-							>
-								<Card>
-									<CardMedia
-										sx={{
-											paddingTop: "56.25%",
-										}}
-										image={boat.principalImage}
-										alt="image of boat"
-										height={300}
-									/>
-
-									<CardContent>
-										<Typography variant="h5" mt={2}>
-											{boat.name}
-										</Typography>
-
-										<Typography
-											mt={2}
-											variant="subtitle1"
-											component="div"
-											pr={5}
-											mr={10}
-										>
-											dbdvbsdjbjhsdhjcsd z zxcjasncasc
-											scsajcscnksncsnkcnjsncksacascascsakcmskacksamckasmkcsacas
-											scjsancjsnjsancjnsajkcnjsancjsanjcnasjncjsancjsn
-										</Typography>
-									</CardContent>
-									<CardActions
-										sx={{
-											display: "flex",
-											flexGrow: 1,
-											justifyContent: "center",
-											alignItems: "center",
-										}}
-									>
-										<Link href={`/boat/${boat.id}`}>
-											<Button
-												color="primary"
-												size="large"
-												mt={2}
-												variant="contained"
-												sx={{
-													marginBottom: "50px",
-												}}
-											>
-												More Information
-											</Button>
-										</Link>
-									</CardActions>
-								</Card>
-							</Paper> */}
 						</Grid>
 					))}
 				</Grid>
