@@ -12,7 +12,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { boats } from "../database/boat_data";
 import { useRouter } from "next/router";
 
-export default function Home({ boat_list }) {
+export default function Home() {
 	const { locale } = useRouter();
 	return (
 		<>
@@ -29,9 +29,8 @@ export default function Home({ boat_list }) {
 				/>
 			</Head>
 			<MainBanner />
-			<h1>{locale}</h1>
 			<MainTitle />
-			<BoatsComponent data={boat_list} />
+			<BoatsComponent />
 			<BookNowButton />
 			<VideoDesktop />
 			<SupportBanner />
@@ -45,7 +44,6 @@ export default function Home({ boat_list }) {
 export async function getStaticProps({ locale }) {
 	return {
 		props: {
-			boat_list: boats,
 			...(await serverSideTranslations(locale, ["common"])),
 		},
 	};

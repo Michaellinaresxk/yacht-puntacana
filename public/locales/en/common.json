@@ -32,8 +32,8 @@
 		"tiara43": "Perfect yacht to anchor very close to the beach or in the natural pools of Saona island or Palmilla beach, where the water will come up to your waist.",
 		"fairline": "Ideal yacht designed to have a luxurious stay and enjoy an unforgettable vacation. It is excellent to be able to move quickly and explore the island of the Dominican Republic.",
 		"cranchi": "With this rental yacht in Punta Cana and La Romana Casa de Campo, you will make your dreams of sailing around the island of the Dominican Republic come true, so... don't hesitate and book this yacht!",
-		"aiconfly-60": "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests. ",
-		"meridian": "This Punta Cana Meridian 42 charter yacht is a magnificent motor charter boat designed for superior comfort with spacious open areas."
+		"aiconfly-60": "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests. A good choice. ",
+		"meridian": "This Punta Cana Meridian 42 charter yacht is a magnificent motor charter boat designed for superior comfort with spacious open areas. Try it now!"
 	},
 	"services-card": {
 		"p1": "At Punta Cana Yacht Rentals we make everything possible, organizing private luxury yacht charters under customer specifications and providing the best personalized service to cover all the needs of your event.",
@@ -101,10 +101,51 @@
 		"p1": "Cranchi 50 means fun. Being aboard in the Cranchi yacht is always an excellent experience. Experience the exceptional, be better than the best. This yacht has an elegant profile and can offer you an experience fit for a king.",
 		"p2": "The cranchi 50 yacht guarantees agility and excellent performance. On the water, this boat will not let you down: it can offer you an exciting experience and always guarantee your safety. It is light, balanced and super strong thanks to the premium materials used to build the hull and superstructure.",
 		"p3": "The large spaces on board, which include 3 cabins and 2 bathrooms, provide an immediate feeling of comfort and well-being, offering each passenger the possibility of satisfying their own individual needs.",
-		"yacht-gallery": "Galeria",
+		"yacht-gallery": "Gallery",
 		"smart-choice": "Buena elección",
 		"p4": "The large spaces on board, which include 3 cabins and 2 bathrooms, provide an immediate feeling of comfort and well-being, offering each passenger the possibility of satisfying their own individual needs.",
 		"p5": "This Cranchi 50 charter yacht is a smart choice for those who want to experience a new sense of freedom in style and comfort. Climb aboard this yacht in the Dominican Republic and get ready for a high-speed adventure at sea with your friends and family. This rental yacht in Punta Cana has a capacity of up to 16 people, it is perfect for exploring the best beaches in the Dominican Republic."
+	},
+	"fairline": {
+		"desc": "Description",
+		"p1": "Exclusive yacht for rent in Punta Cana of 15 meters in length, perfect for touring the island of the Dominican Republic. Ideal for life on board, this yacht is designed to have a luxurious stay and enjoy unforgettable vacations.",
+		"p2": "This Fairline 50 yacht is a wonderful yacht to share with family and friends as you cruise the beaches of the Caribbean Sea. It’s main features include a spacious cabin with a cozy alfresco dining area, sunbathing cushions and bimini top, fully equipped galley and spacious lounge and dining area.",
+		"p3": "With two 2x430 hp engines, it’s great for getting around quickly. It’s offers good compartment during navigation, being very stable and agile in handling, with a cruising speed of 25 knots. It’s sporty behavior leaves no one indifferent, with stylized lines and very well designed. It has a large solarium in the bow ideal for sunbathing and the stern is open and very wide designed to make life on board. It has a bathing platform, which provides you with a comfortable and easy entry into the water.",
+		"yacht-gallery": "Gallery",
+		"smart-choice": "Recommended",
+		"p4": "The Fairline 50 yacht is the most popular and valued sports yachts in the yachting industry. This elegant Punta Cana charter yacht is designed for both socializing and speed, the Fairline 50 yacht does both exceptionally well, accommodating up to 16 guests during the day.",
+		"p5": "On board this yacht you can take a private tour with a crew to Saona Island, Palmilla Beach or Catalina Island. On the way back you can enjoy the beautiful sunsets that the Dominican Republic has for you. Thanks to this yacht charter in Punta Cana, you will be able to explore the Caribbean Sea in a unique way."
+	},
+	"tiara-43": {
+		"desc": "Description",
+		"p1": "Why is this yacht charter in Punta Cana a very good choice for families? Because with this yacht you will find all the comfort both during navigation and during anchorage, thanks to its large comfort zone at the rear of the yacht. It is a boat with very easy access to the sea and with very little draft, so you can anchor very close to the beach or in the natural pools of Isla Saona or Playa Palmilla, where the water will come up to your waist. Thanks to this yacht for rent in Punta Cana, you can be 200 meters from the beach with the water at waist level and share a totally paradisiacal experience with all your family or friends.",
+		"p2": "This Punta Cana charter yacht is a magnificent power charter boat designed for superior comfort with spacious open areas. With a length of 13.10 m and a width of 4.57 meters, this rental yacht in Punta Cana offers the necessary comfort to enjoy a yacht excursion along the most impressive transparent waters of the Caribbean Sea.",
+		"yacht-gallery": "Gallery",
+		"smart-choice": "Recommended"
+	},
+	"tiara-39": {
+		"desc": "Description",
+		"p1": "This yacht for rent in Punta Cana Tiara 38 is a magnificent boat for cruising, fishing and family tourism. If you are looking for a private boat at a good price in Punta Cana, this Tiara 38 is a fantastic yacht rental option in Punta Cana.",
+		"p2": "Is a motor charter boat with a design that perfectly combines comfort and speed. With its two powerful engines of 400 hp each, all our clients enjoy a pleasant navigation. Is one of those exceptional boats whose enduring popularity makes it’s a classic design. Aside from its quality construction and sporty profile, its appeal has a lot to do with its large fishing cabin and comfortable teak trimmed interior. Notable features of it include wide side decks, hard top, excellent skid decks and diesel engines.",
+		"yacht-gallery": "Gallery",
+		"smart-choice": "Recommended",
+		"p4": "This Punta Cana charter yacht is the perfect boat for spending quality time on the water with family and friends, sailing for a day, spending a weekend fishing, or sailing from port to port.",
+		"p5": "Are you looking to rent a private boat at a good price? This yacht is the best yacht charter option in Punta Cana."
+	},
+	"aiconfly": {
+		"desc": "Description",
+		"p1": "The motor yacht, 'Acion Fly 60' is a fine example of Italian design. It has two meticulously arranged cabins and a double room for children or guests. It also has a crew cabin, 3 bathrooms/showers, a living and dining room and a kitchen. It has air conditioning throughout the boat and its two 800Hp CAT diesel engines give it great power that will take you far to the places you have been dreaming of.",
+		"yacht-gallery": "Gallery",
+		"smart-choice": "Recommended",
+		"p4": "This powerboat is available for charter at spectacular value for money."
+	},
+	"meridian": {
+		"desc": "Description",
+		"p1": "This Punta Cana Meridian 42 charter yacht is a magnificent motor charter boat designed for superior comfort with spacious open areas. With a length of 12.49 m and a width of 4.21 meters, this rental yacht in Punta Cana offers the necessary comfort to enjoy a yacht excursion along the most impressive transparent waters of the Caribbean Sea.",
+		"yacht-gallery": "Gallery",
+		"smart-choice": "Recommended",
+		"p4": "This beautiful yacht also offers to spend the night on board for those clients (maximum 2 people) who wish to spend their vacations in the Caribbean Sea. This impressive charter yacht in Punta Cana opens the doors to the possibility of falling asleep under the full moon and waking up on the virgin and beautiful Palmilla Beach.",
+		"p5": "Are you looking to rent a private boat at a good price? This yacht is the best yacht charter option in Punta Cana."
 	},
 	"contactQuote": {
 		"title": "If you do not know exactly what type of boat to rent or you do not have time, fill out this form and tell us how many people will be on board, possible dates, approximate budget and we will send you a proposal by email."
@@ -128,7 +169,7 @@
 	},
 	"button": {
 		"Our-yachts": "Our Yachts",
-		"more": "More Info",
+		"more": "More Information",
 		"ContactUs": "Contact Us",
 		"sendMessage": "Send Message",
 		"Rent-Now": "Rent Now",

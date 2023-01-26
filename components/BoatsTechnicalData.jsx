@@ -9,11 +9,13 @@ import {
 	TableBody,
 } from "@mui/material";
 
-export const BoatsTechnicalData = ({ data }) => {
-	// getting keys and values from the data object
+import { useTranslation } from "next-i18next";
 
-	const keys = Object.keys(data.features);
-	const values = Object.values(data.features);
+export const BoatsTechnicalData = ({ features }) => {
+	// getting keys and values from the data object
+	const { t } = useTranslation();
+	const keys = Object.keys(features);
+	const values = Object.values(features);
 
 	return (
 		<>
@@ -25,7 +27,7 @@ export const BoatsTechnicalData = ({ data }) => {
 				}}
 			>
 				<Typography variant="h4" sx={{ marginTop: "50px" }}>
-					Technical Specifications:
+					{t("technical.technical")}:
 				</Typography>
 			</Box>
 			<Box

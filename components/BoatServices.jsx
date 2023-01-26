@@ -9,10 +9,11 @@ import BeachAccessIcon from "@mui/icons-material/BeachAccess";
 import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
 import LocalDrinkIcon from "@mui/icons-material/LocalDrink";
 import LiquorIcon from "@mui/icons-material/Liquor";
-
+import { useTranslation } from "next-i18next";
 import { Colors } from "../styles/theme";
 
 export const BoatServices = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Box
@@ -23,7 +24,7 @@ export const BoatServices = () => {
 					marginTop: "70px",
 				}}
 			>
-				<Typography variant="h4">Included Services:</Typography>
+				<Typography variant="h4">{t("included-serv.included")}:</Typography>
 			</Box>
 			<Box
 				sx={{
@@ -49,7 +50,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Fuel
+							{t("included-serv.fuel")}
 						</Typography>
 					</Box>
 					<Box display="flex" sx={{ marginTop: { xs: "10px" } }}>
@@ -61,7 +62,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Support
+							{t("included-serv.lifeSavin")}
 						</Typography>
 					</Box>
 					<Box display="flex" sx={{ marginTop: { xs: "10px" } }}>
@@ -73,7 +74,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Beers
+							{t("included-serv.beer")}
 						</Typography>
 					</Box>
 				</Box>
@@ -88,7 +89,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Captain and Sailor
+							{t("included-serv.captain")}
 						</Typography>
 					</Box>
 
@@ -101,7 +102,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Menu on Board(request quote)
+							{t("included-serv.menu")}
 						</Typography>
 					</Box>
 
@@ -114,7 +115,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Pick up with private transport
+							{t("included-serv.transport")}
 						</Typography>
 					</Box>
 				</Box>
@@ -128,7 +129,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Water
+							{t("included-serv.water")}
 						</Typography>
 					</Box>
 
@@ -140,7 +141,9 @@ export const BoatServices = () => {
 								color: Colors.second_blue,
 							}}
 						/>
-						<Typography variant="subtitle1">Access to Saona Island</Typography>
+						<Typography variant="subtitle1">
+							{t("included-serv.access")}
+						</Typography>
 					</Box>
 				</Box>
 				<Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -153,7 +156,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Snorkeling Equipment
+							{t("included-serv.snorkeling")}
 						</Typography>
 					</Box>
 
@@ -166,7 +169,7 @@ export const BoatServices = () => {
 							}}
 						/>
 						<Typography variant="subtitle1" ml={1}>
-							Soft Drinks
+							{t("included-serv.softDrinl")}
 						</Typography>
 					</Box>
 				</Box>
