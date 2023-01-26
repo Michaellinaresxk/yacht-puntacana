@@ -5,16 +5,10 @@ import Lightbox from "yet-another-react-lightbox";
 import FullScreen from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
 
-export const ImageBoatsGallery = ({ data }) => {
-	// const dataBoat = Object.values(data.gallery);
-	// const [imagedata, setImageData] = useState({ img: "", i: 0 });
-
-	// const viewImage = (img, i) => {
-	// 	setImageData({ img, i });
-	// 	console.log(img, i);
-	// };
-
+export const ImageBoatsGallery = ({ image_array }) => {
+	const { t } = useTranslation();
 	const [open, setOpen] = useState(false);
 
 	return (
@@ -29,12 +23,12 @@ export const ImageBoatsGallery = ({ data }) => {
 				}}
 			>
 				<Typography variant="h4" mb={3}>
-					Yacht Gallery
+					{t("cranchi.yacht-gallery")}
 				</Typography>
 
 				<ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 700: 2, 900: 3 }}>
 					<Masonry gutter="10px">
-						{data.gallery.map((image, i) => (
+						{image_array.map((image, i) => (
 							<motion.div
 								whileHover={{ translateY: -10 }}
 								transition={{ duration: 1 }}
@@ -57,7 +51,7 @@ export const ImageBoatsGallery = ({ data }) => {
 				<Lightbox
 					open={open}
 					close={() => setOpen(false)}
-					slides={data.gallery}
+					slides={image_array}
 					plugins={[FullScreen]}
 				/>
 			</Box>

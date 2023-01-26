@@ -2,13 +2,13 @@ import { Box, Typography } from "@mui/material";
 import { Colors } from "../styles/theme";
 import { motion } from "framer-motion";
 
-export const BoatsBanner = ({ data }) => {
+export const BoatsBanner = ({ url, name }) => {
 	return (
 		<Box
 			sx={{
 				display: "flex",
 				alignItems: "center",
-				backgroundImage: `url(${data.principalImage})`,
+				backgroundImage: `url(${url})`,
 				width: "100%",
 				height: { xs: "500px", sm: "450px", md: "550px", lg: "650px" },
 				backgroundPosition: {
@@ -38,7 +38,7 @@ export const BoatsBanner = ({ data }) => {
 						variant="h4"
 						sx={{ color: Colors.white, fontSize: "clamp(1.5em, 3vw, 2em)" }}
 					>
-						{data.name}
+						{name}
 					</Typography>
 				</motion.div>
 			</Box>
