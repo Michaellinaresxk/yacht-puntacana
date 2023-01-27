@@ -1,22 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 export const SelectLanguageButton = () => {
-	const idioms = ["Es", "En"];
-	// const { locales, push } = useRouter();
+	const idioms = ["En", "Es"];
+
+	const router = useRouter();
+
+	const { locales, locale, push, pathname } = useRouter();
+
 	const [language, setLanguage] = useState("");
 
+	useEffect(() => {}, [locales]);
+
+	const handleClick = (l) => () => {
+		push(`/${pathname}`, undefined, { locale: l });
+	};
 	const handleLanguageChange = (e) => {
 		setLanguage(e.target.value);
-	};
-
-	const handleClick = (l) => {
-		push("/", undefined, { locale: l });
 	};
 
 	return (
@@ -37,14 +42,14 @@ export const SelectLanguageButton = () => {
 						label="Idioma"
 						onChange={handleLanguageChange}
 					>
-						<MenuItem value={idioms[0]}>Esp</MenuItem>
-						<MenuItem value={idioms[1]}>Ing</MenuItem>
+						{/* <MenuItem value={idioms[0]}>Esp</MenuItem>
+						<MenuItem value={idioms[1]}>Ing</MenuItem> */}
 
-						{/* {locales.map((l, i) => (
-							<MenuItem key={i} value={idioms[i]} onClick={handleClick(l)}>
-								{idioms[i]}
+						{router.locales.map((l) => (
+							<MenuItem key={l} value={l} onClick={handleClick(l)}>
+								{l}
 							</MenuItem>
-						))} */}
+						))}
 					</Select>
 				</FormControl>
 			</Box>

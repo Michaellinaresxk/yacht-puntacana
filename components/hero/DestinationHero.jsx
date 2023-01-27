@@ -1,7 +1,9 @@
 import { Paper, Box, Typography } from "@mui/material";
 import { Colors } from "../../styles/theme";
+import { useTranslation } from "next-i18next";
 
 export const DestinationHero = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Paper
@@ -26,12 +28,16 @@ export const DestinationHero = () => {
 						alignItems: "center",
 					}}
 				>
-					<Typography variant="h4" color={Colors.white} sx={{fontWeight: "bold"}}>
-						Destinations:
+					<Typography
+						variant="h4"
+						color={Colors.white}
+						sx={{ fontWeight: "bold" }}
+					>
+						{t("destinations.title")}
 					</Typography>
 
 					<Typography variant="h5" color={Colors.white}>
-						Choose one of the destinations we have for you.
+						{t("destinations.slogan")}
 					</Typography>
 				</Box>
 			</Paper>

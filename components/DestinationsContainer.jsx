@@ -1,7 +1,9 @@
 import { Paper, Typography, Box } from "@mui/material";
 import { DestinationsComponent } from "./DestinationsComponent";
+import { useTranslation } from "next-i18next";
 
 export const DestinationsContainer = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Paper
@@ -22,9 +24,9 @@ export const DestinationsContainer = () => {
 						alignItems: "center",
 					}}
 				>
-					<Typography variant="h3">Destinations:</Typography>
+					<Typography variant="h3">{t("destinations.title")}</Typography>
 					<Typography sx={{ fontSize: "1.2rem" }}>
-						Chosee one of the destinations we have for you.
+						{t("destinations.slogan")}
 					</Typography>
 				</Box>
 
