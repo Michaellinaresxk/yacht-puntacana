@@ -78,7 +78,7 @@ export const MainBanner = () => {
 							borderRadius: "10px",
 						}}
 					>
-						LUXURY YACHT
+						{t("button.luxuryyacht")}
 					</Button>
 				</motion.div>
 			</Paper>

@@ -17,6 +17,7 @@ export const VideoDesktop = () => {
 					width: { xs: "90%", md: "80%" },
 					marginLeft: "auto",
 					marginRight: "auto",
+					marginBottom: "50px",
 				}}
 			>
 				<Typography
