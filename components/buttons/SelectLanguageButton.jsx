@@ -7,8 +7,6 @@ import Select from "@mui/material/Select";
 import { useRouter } from "next/router";
 
 export const SelectLanguageButton = () => {
-	const idioms = ["En", "Es"];
-
 	const router = useRouter();
 
 	const { locales, locale, push, pathname } = useRouter();

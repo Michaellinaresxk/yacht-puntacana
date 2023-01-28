@@ -1,9 +1,11 @@
 import { Typography, Paper, Box, List } from "@mui/material";
 import { Check } from "@mui/icons-material";
 import { Colors } from "../styles/theme";
+import { useTranslation } from "next-i18next";
 
 export const BannerImageClip = () => {
-	const action = "Let's go yachting";
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<Paper
@@ -29,14 +31,10 @@ export const BannerImageClip = () => {
 						marginLeft: "40px",
 					}}
 				>
-					<Typography variant="h4">
-						More than 10 years providing the best yacht charter prices without
-						intermediaries for a perfect and beautiful experience.
-					</Typography>
+					<Typography variant="h4">{t("owners.title")}</Typography>
 
 					<Typography variant="h6" marginTop={5}>
-						We are owners of our yacht fleet and we have the experience and
-						knowledge to offer you the best
+						{t("owners.subtitle")}
 					</Typography>
 					<Box sx={{ color: Colors.first_blue }} marginTop={5}>
 						<Box
@@ -47,7 +45,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Save Hassle
+								{t("owners.list1")}
 							</Typography>
 						</Box>
 						<Box
@@ -58,7 +56,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Hire Experts
+								{t("owners.list2")}
 							</Typography>
 						</Box>
 						<Box
@@ -69,7 +67,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Without Intermediaries
+								{t("owners.list3")}
 							</Typography>
 						</Box>
 						<Box
@@ -80,7 +78,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								Ensure your safety
+								{t("owners.list4")}
 							</Typography>
 						</Box>
 						<Box
@@ -91,7 +89,7 @@ export const BannerImageClip = () => {
 						>
 							<Check />
 							<Typography variant="h5" marginLeft={1}>
-								{action}
+								{t("owners.list5")}
 							</Typography>
 						</Box>
 					</Box>
