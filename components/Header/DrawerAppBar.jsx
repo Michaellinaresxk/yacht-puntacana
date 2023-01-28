@@ -25,12 +25,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
-
+import { motion } from "framer-motion";
 import yatch_logo from "../../assets/icons/logo-colorfull-1.png";
 
 const drawerWidth = 240;
-
-const navItems = ["Inicio", "Servicios", "Destino", "Contacto"];
 
 function DrawerAppBar(props) {
 	const { t } = useTranslation();
@@ -65,18 +63,6 @@ function DrawerAppBar(props) {
 					fontSize: "22px",
 				}}
 			>
-				{/* {navItems.map((item) => (
-					<ListItem key={item} disablePadding>
-						<ListItemButton
-							sx={{
-								textAlign: "left",
-							}}
-						>
-							<ListItemText primary={item} />
-						</ListItemButton>
-					</ListItem>
-				))} */}
-
 				<ListItem
 					disablePadding
 					sx={{ ":hover": { backgroundColor: "rgba(0, 0, 0, 0.1)" } }}
@@ -195,7 +181,9 @@ function DrawerAppBar(props) {
 					flexDirection: "row",
 					justifyContent: { xs: "space-between", sm: "space-around" },
 					alignItems: "center",
-					backgroundColor: Colors.white,
+					// backgroundColor: Colors.white,
+					backgroundColor: "#7bd5f5",
+					borderRadius: "20px",
 				}}
 				elevation={5}
 			>
@@ -260,64 +248,74 @@ function DrawerAppBar(props) {
 						display: { xs: "none", sm: "block" },
 					}}
 				>
-					{/* {navItems.map((item) => (
-							<Button
-								key={item}
-								sx={{
-									color: Colors.title,
-									fontFamily: "Raleway",
-									fontWeight: "700",
-									fontSize: { md: "14px", lg: "18px" },
-									marginRight: "30px",
-								}}
-							>
-								<Link href={}>{item}</Link>
-							</Button>
-						))} */}
+					<Button
+						sx={{
+							color: Colors.title,
+							fontFamily: "Roboto",
+							fontWeight: "500",
+							fontSize: { sm: "12px", md: "14px", lg: "16px" },
+							marginRight: { sm: "10px", md: "30px" },
+							letterSpacing: 1.5,
+						}}
+					>
+						<motion.div
+							whileHover={{ translateY: -5 }}
+							transition={{ duration: 0.5 }}
+						>
+							<Link href="/">{t("navbar.home")}</Link>
+						</motion.div>
+					</Button>
 
 					<Button
 						sx={{
 							color: Colors.title,
 							fontFamily: "Roboto",
-							fontWeight: "300",
+							fontWeight: "550",
 							fontSize: { sm: "12px", md: "14px", lg: "16px" },
 							marginRight: { sm: "10px", md: "30px" },
+							letterSpacing: 1.5,
 						}}
 					>
-						<Link href="/">{t("navbar.home")}</Link>
+						<motion.div
+							whileHover={{ translateY: -5 }}
+							transition={{ duration: 0.5 }}
+						>
+							<Link href="/services">{t("navbar.services")}</Link>
+						</motion.div>
 					</Button>
 					<Button
 						sx={{
 							color: Colors.title,
 							fontFamily: "Roboto",
-							fontWeight: "300",
+							fontWeight: "550",
 							fontSize: { sm: "12px", md: "14px", lg: "16px" },
 							marginRight: { sm: "10px", md: "30px" },
+							letterSpacing: 1.5,
 						}}
 					>
-						<Link href="/services">{t("navbar.services")}</Link>
+						<motion.div
+							whileHover={{ translateY: -5 }}
+							transition={{ duration: 0.5 }}
+						>
+							<Link href="/destiny">{t("navbar.destinations")}</Link>
+						</motion.div>
 					</Button>
 					<Button
 						sx={{
 							color: Colors.title,
 							fontFamily: "Roboto",
-							fontWeight: "300",
+							fontWeight: "550",
 							fontSize: { sm: "12px", md: "14px", lg: "16px" },
 							marginRight: { sm: "10px", md: "30px" },
+							letterSpacing: 1.5,
 						}}
 					>
-						<Link href="/destiny">{t("navbar.destinations")}</Link>
-					</Button>
-					<Button
-						sx={{
-							color: Colors.title,
-							fontFamily: "Roboto",
-							fontWeight: "300",
-							fontSize: { sm: "12px", md: "14px", lg: "16px" },
-							marginRight: { sm: "10px", md: "30px" },
-						}}
-					>
-						<Link href="/contact_us">{t("navbar.contact")}</Link>
+						<motion.div
+							whileHover={{ translateY: -5 }}
+							transition={{ duration: 0.5 }}
+						>
+							<Link href="/contact_us">{t("navbar.contact")}</Link>
+						</motion.div>
 					</Button>
 				</Box>
 			</AppBar>

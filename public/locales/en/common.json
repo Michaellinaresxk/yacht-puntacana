@@ -40,7 +40,11 @@
 		"p2": "We work with the best catering companies for private events in the Republic Dominican. Tell us what event you want to celebrate and our team will contact you to listen to you and offer you personalized proposals tailored to your needs.",
 		"p3": "For us as a company the most important thing is the safety and comfort of our clients, for this reason we offer you private transportation. We pick you up at your hotel or villa and take you directly to the Marina, to board your yacht, sail to your destination and live an unforgettable experience.",
 		"p4": "We are a company with the experience, knowledge and reputation of offering the best events tailored to our clients. At Punta Cana Yacht Rentals we organize private parties, birthday celebrations, bachelor parties, company events, cocktail parties...",
-		"transport": "Private Transport"
+		"transport": "Private Transport",
+		"boat": "Yacht Charter",
+		"catering": "Catering Services",
+		"more-info": "More info",
+		"book": "Book now"
 	},
 	"services-page": {
 		"title": "Choose your Experience",

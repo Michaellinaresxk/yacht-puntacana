@@ -1,8 +1,16 @@
 import { Paper, Box, Typography, Button } from "@mui/material";
-// import { styled } from "@mui/material/styles";
 import { Colors } from "../../styles/theme";
-// import style from "../../styles/sevices_card.module.css";
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
+
+const image1 =
+	"https://res.cloudinary.com/michaelxk-com/image/upload/v1624139571/servicios/yates1_2_wbiap8.jpg";
+
+const image2 =
+	"https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1672758964/9-2_qqkusx.jpg";
+
+const image3 =
+	"https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1672758977/transporte_zrihn3.webp";
 
 const imageArray = [
 	{
@@ -35,112 +43,241 @@ const imageArray = [
 	},
 ];
 
-// const BannerImage = styled("img")(({ src, theme }) => ({
-// 	src: `url(${src})`,
-// 	width: "350px",
-// 	height: "250px",
-// 	[theme.breakpoints.down("md")]: {
-// 		width: "450px",
-// 		height: "300px",
-// 	},
-
-// 	[theme.breakpoints.down("sm")]: {
-// 		width: "320px",
-// 		height: "300px",
-// 	},
-// }));
-
 export const ServicesCard = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<Box>
-				{imageArray.map((image) => (
-					<motion.div
-						className="animatable"
-						whileHover={{
-							scale: 1.05,
-							transition: { duration: 0.3 },
+				<motion.div
+					className="animatable"
+					whileHover={{
+						scale: 1.05,
+						transition: { duration: 0.3 },
+					}}
+					whileTap={{ scale: 0.9 }}
+				>
+					<Paper
+						elevation={3}
+						sx={{
+							marginTop: "100px",
+							width: { xs: "72.5%", sm: "80%", md: "85%" },
+							height: { xs: "550px", sm: "500px", md: "auto" },
+							marginRight: "auto",
+							marginLeft: "auto",
 						}}
-						whileTap={{ scale: 0.9 }}
-						key={image.id}
 					>
-						<Paper
-							elevation={3}
+						<Box
 							sx={{
-								// display: "flex",
-								// justifyContent: "center",
-								// alignItems: "center",
-								marginTop: "100px",
-								width: { xs: "72.5%", sm: "80%", md: "85%" },
-								height: { xs: "550px", sm: "500px", md: "auto" },
-								marginRight: "auto",
-								marginLeft: "auto",
+								display: "flex",
+								flexDirection: { xs: "column", md: "row" },
+								marginTop: "30px",
 							}}
 						>
 							<Box
 								sx={{
-									display: "flex",
-									flexDirection: { xs: "column", md: "row" },
-									marginTop: "30px",
+									display: "inline-block",
+									width: "350px",
+									height: "250px",
 								}}
 							>
-								<Box
-									sx={{
-										display: "inline-block",
+								<img
+									src={image1}
+									alt=""
+									style={{
 										width: "350px",
 										height: "250px",
 									}}
+								/>
+								{/* <BannerImage src={image.image} /> */}
+							</Box>
+							<Box>
+								<Box
+									sx={{
+										display: "flex",
+										flexDirection: "column",
+										justifyContent: "center",
+										alignContent: "center",
+										width: "90%",
+										marginLeft: "auto",
+										marginRight: "auto",
+									}}
 								>
-									<img
-										// className={style.sevices_card}
-										src={image.image}
-										alt=""
-										style={{
-											width: "350px",
-											height: "250px",
-											// objectFit: "cover",
-											// width: "100%",
-											// height: "100%",
-										}}
-									/>
-									{/* <BannerImage src={image.image} /> */}
-								</Box>
-								<Box>
-									<Box
+									<Typography
+										mt={2}
+										variant="subtitle1"
+										color={Colors.first_blue}
+									>
+										{t("services-card.boat")}
+									</Typography>
+									<Typography mt={1}>{t("services-card.p1")}</Typography>
+									<Button
+										variant="contained"
 										sx={{
-											display: "flex",
-											flexDirection: "column",
-											justifyContent: "center",
-											alignContent: "center",
-											width: "90%",
-											marginLeft: "auto",
-											marginRight: "auto",
+											backgroundColor: Colors.first_blue,
+											marginTop: "15px",
+											width: { xs: "auto", md: "40%" },
 										}}
 									>
-										<Typography
-											mt={2}
-											variant="subtitle1"
-											color={Colors.first_blue}
-										>
-											{image.title}
-										</Typography>
-										<Typography mt={1}>{image.description}</Typography>
-										<Button
-											variant="contained"
-											sx={{
-												backgroundColor: Colors.first_blue,
-												marginTop: "15px",
-												width: { xs: "auto", md: "40%" },
-											}}
-										>
-											<Typography>{image.action}</Typography>
-										</Button>
-									</Box>
+										<Typography>{t("services-card.book")}</Typography>
+									</Button>
 								</Box>
 							</Box>
-						</Paper>
-					</motion.div>
-				))}
+						</Box>
+					</Paper>
+				</motion.div>
+				<motion.div
+					className="animatable"
+					whileHover={{
+						scale: 1.05,
+						transition: { duration: 0.3 },
+					}}
+					whileTap={{ scale: 0.9 }}
+				>
+					<Paper
+						elevation={3}
+						sx={{
+							marginTop: "100px",
+							width: { xs: "72.5%", sm: "80%", md: "85%" },
+							height: { xs: "550px", sm: "500px", md: "auto" },
+							marginRight: "auto",
+							marginLeft: "auto",
+						}}
+					>
+						<Box
+							sx={{
+								display: "flex",
+								flexDirection: { xs: "column", md: "row" },
+								marginTop: "30px",
+							}}
+						>
+							<Box
+								sx={{
+									display: "inline-block",
+									width: "350px",
+									height: "250px",
+								}}
+							>
+								<img
+									src={image2}
+									alt=""
+									style={{
+										width: "350px",
+										height: "250px",
+									}}
+								/>
+								{/* <BannerImage src={image.image} /> */}
+							</Box>
+							<Box>
+								<Box
+									sx={{
+										display: "flex",
+										flexDirection: "column",
+										justifyContent: "center",
+										alignContent: "center",
+										width: "90%",
+										marginLeft: "auto",
+										marginRight: "auto",
+									}}
+								>
+									<Typography
+										mt={2}
+										variant="subtitle1"
+										color={Colors.first_blue}
+									>
+										{t("services-card.catering")}
+									</Typography>
+									<Typography mt={1}>{t("services-card.p2")}</Typography>
+									<Button
+										variant="contained"
+										sx={{
+											backgroundColor: Colors.first_blue,
+											marginTop: "15px",
+											width: { xs: "auto", md: "40%" },
+										}}
+									>
+										<Typography>{t("services-card.more-info")}</Typography>
+									</Button>
+								</Box>
+							</Box>
+						</Box>
+					</Paper>
+				</motion.div>
+				<motion.div
+					className="animatable"
+					whileHover={{
+						scale: 1.05,
+						transition: { duration: 0.3 },
+					}}
+					whileTap={{ scale: 0.9 }}
+				>
+					<Paper
+						elevation={3}
+						sx={{
+							marginTop: "100px",
+							width: { xs: "72.5%", sm: "80%", md: "85%" },
+							height: { xs: "550px", sm: "500px", md: "auto" },
+							marginRight: "auto",
+							marginLeft: "auto",
+						}}
+					>
+						<Box
+							sx={{
+								display: "flex",
+								flexDirection: { xs: "column", md: "row" },
+								marginTop: "30px",
+							}}
+						>
+							<Box
+								sx={{
+									display: "inline-block",
+									width: "350px",
+									height: "250px",
+								}}
+							>
+								<img
+									src={image3}
+									alt=""
+									style={{
+										width: "350px",
+										height: "250px",
+									}}
+								/>
+							</Box>
+							<Box>
+								<Box
+									sx={{
+										display: "flex",
+										flexDirection: "column",
+										justifyContent: "center",
+										alignContent: "center",
+										width: "90%",
+										marginLeft: "auto",
+										marginRight: "auto",
+									}}
+								>
+									<Typography
+										mt={2}
+										variant="subtitle1"
+										color={Colors.first_blue}
+									>
+										{t("services-card.transport")}
+									</Typography>
+									<Typography mt={1}>{t("services-card.p3")}</Typography>
+									<Button
+										variant="contained"
+										sx={{
+											backgroundColor: Colors.first_blue,
+											marginTop: "15px",
+											width: { xs: "auto", md: "40%" },
+										}}
+									>
+										<Typography>{t("services-card.more-info")}</Typography>
+									</Button>
+								</Box>
+							</Box>
+						</Box>
+					</Paper>
+				</motion.div>
 			</Box>
 			;
 		</>
