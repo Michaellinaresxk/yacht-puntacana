@@ -40,7 +40,11 @@
 		"p2": "Trabajamos con las mejores empresas de Catering de eventos privados de República Dominicana. Dinos que evento deseas celebrar y nuestro equipo se pondrá en contacto contigo para escucharte y ofrecerte propuestas personalizadas ajustadas a tus necesidades.",
 		"p3": "Ofrecemos un servicio garantizado desde la puntualidad, el confort de nuestros vehículos, la cálida atención de nuestros choferes y el compromiso por tu seguridad. Te recogemos en tu hotel o villa y te llevamos directamente a la Marina, para abordar tu yate, navegar a tu destino y vivir una experiencia inolvidable.",
 		"p4": "Somos una empresa con la experiencia, el conocimiento y la reputación de ofrecer los mejores eventos a la medida de nuestros clientes. Desde Punta Cana Yacht Rentals organizamos fiestas privadas, celebraciones de cumpleaños, despedida de solteros/as, eventos de empresa, fiestas de cóctel…",
-		"transport": "Transporte Privado"
+		"transport": "Transporte Privado",
+		"boat": "Yacht Charter",
+		"catering": "Servicios de Catering",
+		"more-info": "More Información",
+		"book": "Reserva ya"
 	},
 	"services-page": {
 		"title": "Elige tu Experiencia",
