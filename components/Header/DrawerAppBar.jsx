@@ -182,7 +182,8 @@ function DrawerAppBar(props) {
 					justifyContent: { xs: "space-between", sm: "space-around" },
 					alignItems: "center",
 					// backgroundColor: Colors.white,
-					backgroundColor: "#7bd5f5",
+					// backgroundColor: "#7bd5f5",
+					backgroundColor: "#1ffdf9",
 					borderRadius: "20px",
 				}}
 				elevation={5}

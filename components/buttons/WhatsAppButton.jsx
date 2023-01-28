@@ -1,4 +1,4 @@
-import { Box, Avatar, Button } from "@mui/material";
+import { Avatar, Button } from "@mui/material";
 import { WhatsApp } from "@mui/icons-material";
 import Link from "next/link";
 import { motion } from "framer-motion";
