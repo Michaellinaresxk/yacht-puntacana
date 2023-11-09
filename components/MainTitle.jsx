@@ -13,8 +13,8 @@ export const MainTitle = () => {
 					justifyContent: "center",
 					marginTop: "150px",
 					marginBottom: "100px",
-					marginLeft: { xs: "15px" },
-					marginRight: { xs: "15px" },
+					marginLeft: { xs: "25px" },
+					marginRight: { xs: "25px" },
 				}}
 			>
 				<Typography sx={{ fontSize: "1.2rem" }}>
@@ -31,9 +31,17 @@ export const MainTitle = () => {
 				>
 					Yacht Punta Cana
 				</Typography>
-				<Typography sx={{ fontSize: "1.2rem" }}>{t("weAre.slogan")}</Typography>
-				<Typography sx={{ fontSize: "1.2rem" }}>
-					{t("weAre.slogan1")}
+
+				<Typography
+					sx={{
+						fontSize: {
+							xs: "1.2rem",
+							md: "1.5rem",
+						},
+						marginTop: "7px",
+					}}
+				>
+					{t("weAre.slogan")} {t("weAre.slogan1")}
 				</Typography>
 			</Box>
 		</>

@@ -26,7 +26,13 @@ export const VideoDesktop = () => {
 				>
 					Video Tour:
 				</Typography>
-				<Typography sx={{ fontSize: { xs: "1.1rem", md: "1.2rem" } }}>
+				<Typography
+					sx={{
+						fontSize: { xs: "1.1rem", md: "1.2rem" },
+						marginLeft: { xs: "15px" },
+						marginRight: { xs: "15px" },
+					}}
+				>
 					{t("video-tour.slogan")}
 				</Typography>
 			</Box>
