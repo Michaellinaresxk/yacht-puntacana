@@ -15,7 +15,7 @@ export const Footer = () => {
 				sx={{
 					display: "flex",
 					flexDirection: "column",
-					marginTop: "200px",
+					marginTop: { xs: "20px", sm: "25px", md: "50px" },
 					backgroundColor: Colors.body,
 					marginBottom: 0,
 				}}

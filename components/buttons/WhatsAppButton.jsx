@@ -22,6 +22,7 @@ export const WhatsAppButton = () => {
 						position: "fixed",
 						left: "2%",
 						bottom: "8%",
+						zIndex: 7,
 					}}
 				>
 					<motion.div whileHover={{ scale: 1.5 }}>
