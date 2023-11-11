@@ -57,7 +57,7 @@ export const ServicesCard = () => {
 					whileTap={{ scale: 0.9 }}
 				>
 					<Paper
-						elevation={3}
+						elevation={2}
 						sx={{
 							marginTop: "100px",
 							width: { xs: "72.5%", sm: "80%", md: "85%" },
@@ -109,7 +109,12 @@ export const ServicesCard = () => {
 									>
 										{t("services-card.boat")}
 									</Typography>
-									<Typography mt={1}>{t("services-card.p1")}</Typography>
+									<Typography
+										mt={1}
+										sx={{ textAlign: "justify", padding: "3px" }}
+									>
+										{t("services-card.p1")}
+									</Typography>
 									<Button
 										variant="contained"
 										sx={{
@@ -134,7 +139,7 @@ export const ServicesCard = () => {
 					whileTap={{ scale: 0.9 }}
 				>
 					<Paper
-						elevation={3}
+						elevation={2}
 						sx={{
 							marginTop: "100px",
 							width: { xs: "72.5%", sm: "80%", md: "85%" },
@@ -186,7 +191,12 @@ export const ServicesCard = () => {
 									>
 										{t("services-card.catering")}
 									</Typography>
-									<Typography mt={1}>{t("services-card.p2")}</Typography>
+									<Typography
+										mt={1}
+										sx={{ textAlign: "justify", padding: "3px" }}
+									>
+										{t("services-card.p2")}
+									</Typography>
 									<Button
 										variant="contained"
 										sx={{
@@ -211,7 +221,7 @@ export const ServicesCard = () => {
 					whileTap={{ scale: 0.9 }}
 				>
 					<Paper
-						elevation={3}
+						elevation={2}
 						sx={{
 							marginTop: "100px",
 							width: { xs: "72.5%", sm: "80%", md: "85%" },
@@ -262,7 +272,12 @@ export const ServicesCard = () => {
 									>
 										{t("services-card.transport")}
 									</Typography>
-									<Typography mt={1}>{t("services-card.p3")}</Typography>
+									<Typography
+										mt={1}
+										sx={{ textAlign: "justify", padding: "3px" }}
+									>
+										{t("services-card.p3")}
+									</Typography>
 									<Button
 										variant="contained"
 										sx={{

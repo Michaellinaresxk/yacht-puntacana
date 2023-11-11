@@ -11,7 +11,7 @@ export const OurServicesLogo = () => {
 					flexDirection: "column",
 					alignItems: "center",
 					justifyContent: "center",
-					marginTop: "150px",
+					marginTop: "85px",
 					marginBottom: "100px",
 					marginLeft: { xs: "15px" },
 					marginRight: { xs: "15px" },

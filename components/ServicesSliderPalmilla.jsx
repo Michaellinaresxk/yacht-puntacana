@@ -17,6 +17,7 @@ export const ServicesSliderPalmilla = () => {
 	return (
 		<>
 			<Paper
+				elevation={0}
 				sx={{
 					display: "flex",
 					flexDirection: { xs: "column", sm: "row" },
@@ -26,7 +27,21 @@ export const ServicesSliderPalmilla = () => {
 					marginTop: "100px",
 				}}
 			>
-				<Box sx={{ width: "50%" }}>
+				<Box
+					sx={{
+						width: {
+							xs: "90%",
+							sm: "50%",
+						},
+
+						marginLeft: {
+							xs: "auto",
+						},
+						marginRight: {
+							xs: "auto",
+						},
+					}}
+				>
 					<Slide>
 						<Box className="each-slide-effect" component="div">
 							<Box sx={{ backgroundImage: `url(${palmilla[0]})` }}>
@@ -57,13 +72,33 @@ export const ServicesSliderPalmilla = () => {
 						justifyContent: "center",
 						alignItems: "center",
 						backgroundColor: "white",
-						width: "50%",
-						height: "350px",
+						width: {
+							xs: "90%",
+							sm: "50%",
+						},
+
+						marginLeft: {
+							xs: "auto",
+						},
+						marginRight: {
+							xs: "auto",
+						},
 					}}
 				>
-					<Box sx={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}>
+					<Box
+						sx={{
+							width: "90%",
+							paddingBottom: "20px",
+							marginLeft: "auto",
+							marginRight: "auto",
+							marginTop: "20px",
+							textAlign: "justify",
+						}}
+					>
 						<Typography variant="h4">Palmilla Beach</Typography>
-						<Typography>{t("destinations.palmilla-description")}</Typography>
+						<Typography sx={{ marginTop: "5px" }}>
+							{t("destinations.palmilla-description")}
+						</Typography>
 					</Box>
 				</Box>
 			</Paper>

@@ -11,8 +11,11 @@ export const MainTitleBoatServices = () => {
 					flexDirection: "column",
 					alignItems: "center",
 					justifyContent: "center",
-					marginTop: "150px",
-					marginBottom: "100px",
+					marginTop: {
+						xs: "35px",
+						sm: "50px",
+						md: "75px",
+					},
 					marginLeft: { xs: "15px" },
 					marginRight: { xs: "15px" },
 				}}
@@ -27,7 +30,14 @@ export const MainTitleBoatServices = () => {
 				>
 					{t("services-page.subtitle")}
 				</Typography>
-				<Typography sx={{ fontSize: "1.2rem" }}>
+				<Typography
+					sx={{
+						fontSize: { xs: "1rem", sm: "1.2rem", md: "1.5rem" },
+						marginLeft: { xs: "10px" },
+						marginRight: { xs: "10px" },
+						marginTop: "5px",
+					}}
+				>
 					{t("weAre.slogan")} {t("weAre.slogan1")}
 				</Typography>
 			</Box>
