@@ -8,6 +8,7 @@ export const FixedComponentImage = ({ image }) => {
 					backgroundImage: `url(${image})`,
 					width: "100%",
 					height: "100vh",
+					marginTop: "50px",
 					backgroundPosition: "50% 50%",
 					backgroundAttachment: "fixed",
 					backgroundSize: "cover",

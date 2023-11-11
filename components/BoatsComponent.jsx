@@ -32,7 +32,7 @@ export const BoatsComponent = () => {
 		<>
 			<Container
 				sx={{
-					marginTop: "20px",
+					marginTop: "60px",
 					maxWidth: "lg",
 				}}
 			>

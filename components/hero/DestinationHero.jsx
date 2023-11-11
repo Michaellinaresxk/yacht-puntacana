@@ -36,7 +36,13 @@ export const DestinationHero = () => {
 						{t("destinations.title")}
 					</Typography>
 
-					<Typography variant="h5" color={Colors.white}>
+					<Typography
+						variant="h5"
+						color={Colors.white}
+						sx={{
+							fontSize: { xs: "19px", sm: "22px", md: "25px", lg: "28px" },
+						}}
+					>
 						{t("destinations.slogan")}
 					</Typography>
 				</Box>
