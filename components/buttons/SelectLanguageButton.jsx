@@ -32,7 +32,7 @@ export const SelectLanguageButton = () => {
 					height: "55px",
 				}}
 			>
-				<FormControl fullWidth>
+				<FormControl fullWidth size="small" margin="dense">
 					<InputLabel id="demo-simple-select-label">
 						<Language sx={{ marginLeft: "0.2px" }} color="primary" />
 					</InputLabel>
