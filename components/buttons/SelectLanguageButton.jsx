@@ -5,6 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { useRouter } from "next/router";
+import { Language } from "@mui/icons-material";
 
 export const SelectLanguageButton = () => {
 	const router = useRouter();
@@ -26,13 +27,15 @@ export const SelectLanguageButton = () => {
 		<>
 			<Box
 				sx={{
-					display: { xs: "none", sm: "block" },
-					width: { sm: "50px", md: "80px" },
-					height: "50px",
+					margin: "5px",
+					width: "70px",
+					height: "55px",
 				}}
 			>
 				<FormControl fullWidth>
-					<InputLabel id="demo-simple-select-label">Ln</InputLabel>
+					<InputLabel id="demo-simple-select-label">
+						<Language sx={{ marginLeft: "0.2px" }} color="primary" />
+					</InputLabel>
 					<Select
 						labelId="demo-simple-select-label"
 						id="demo-simple-select"

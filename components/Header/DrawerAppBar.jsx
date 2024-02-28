@@ -11,7 +11,6 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
 	House,
-	Language,
 	RoomService,
 	Navigation,
 	PhoneCallback,
@@ -229,15 +228,6 @@ function DrawerAppBar(props) {
 					}}
 				>
 					<Box>
-						<Language
-							sx={{
-								display: { xs: "block", sm: "none" },
-								marginRight: "10px",
-								width: "40px",
-								height: "40px",
-								color: Colors.first_blue,
-							}}
-						/>
 						<SelectLanguageButton />
 					</Box>
 				</Box>
