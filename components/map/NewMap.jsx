@@ -18,6 +18,24 @@ export const NewMap = () => {
 					height: " calc(80vh - 77px)",
 					marginLeft: "auto",
 					marginRight: "auto",
+					// marginLeft: {
+					// 	xs: "auto",
+					// },
+					// marginRight: {
+					// 	xs: "auto",
+					// },
+					// marginLeft: {
+					// 	sm: "auto",
+					// },
+					// marginRight: {
+					// 	sm: "auto",
+					// },
+					// marginLeft: {
+					// 	md: "auto",
+					// },
+					// marginRight: {
+					// 	md: "auto",
+					// },
 				}}
 				mapStyle="https://api.maptiler.com/maps/streets/style.json?key=RD2wTsj4fy4oPde6tlVb"
 			>

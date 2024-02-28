@@ -39,7 +39,7 @@ export const FormComponent = () => {
 	};
 	return (
 		<>
-			<Container maxWidth="sm">
+			<Container maxWidth="sm" sx={{ marginTop: "100px" }}>
 				<Grid
 					container
 					direction="column"
@@ -48,7 +48,7 @@ export const FormComponent = () => {
 					sx={{ maxHeight: "100vh", marginTop: "50px" }}
 				>
 					<Grid item>
-						<Paper sx={{ p: 2, borderRadius: "0.5em" }} elevation={3}>
+						<Paper sx={{ p: 2, borderRadius: "0.5em" }} elevation={1}>
 							<Typography variant="h4">
 								{t("contact-page.keepinTouch")}:
 							</Typography>
@@ -95,6 +95,7 @@ export const FormComponent = () => {
 										borderRadius: "0.5em",
 									}}
 									size="large"
+									onSubmit={sendEmail}
 								>
 									{t("button.sendMessage")}
 								</Button>
